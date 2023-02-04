@@ -1,10 +1,14 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using QFramework;
 using Roots.Event;
 using Roots.Game;
 using UnityEditor;
 using UnityEngine;
+using Utility;
 using Event = cfg.Event;
+using EventType = cfg.EventType;
 using NotImplementedException = System.NotImplementedException;
 
 
@@ -13,15 +17,26 @@ namespace MatchThree.System
     //你好
     public class GameEventSystem : AbstractSystem
     {
+
         public List<Event> ChildNormalEvents = new List<Event>();
         public List<Event> ChildInteractiveEvents = new List<Event>();
         public List<Event> AdultNormalEvents = new List<Event>();
         public List<Event> AdultInteractiveEvents = new List<Event>();
 
         public GameSystem GameSystem => this.GetSystem<GameSystem>();
+
+        private List<Event> EventBase = new List<Event>();
+        private List<Event> NormalEventBase = new List<Event>();
+        private List<Event> MainCharacterEvents = new List<Event>();
         protected override void OnInit()
         {
-            
+            NormalEventBase.AddRange(GameSystem.Table.TbEvent.DataList.Where(e => e.EventType == EventType.Normal).ToList());
+        }
+
+        public void OnGenerationStart()
+        {
+            MainCharacterEvents.Clear();
+            MainCharacterEvents.AddRange(this.GetSystem<GameSystem>().Table.TbEvent.DataList);
         }
 
         public List<cfg.Event> DrawEvent(Character character)
@@ -40,16 +55,12 @@ namespace MatchThree.System
             this.SendEvent(new GetNewEvent(){Events = evt});
             return evt;
         }
-
-        public List<Event> DrawChildrenEvent(Character character)
-        {
-            return null;
-        }
-
+        
 
         private List<Event> ChooseEventFromAll(Character character)
         {
             List<Event> Evts = new List<Event>();
+            
             if (character.Age >= 18)
             {
                 for (int i = 0; i < AdultInteractiveEvents.Count; i++)
