@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using cfg;
 using MatchThree.System;
 using QFramework;
 using Unity.VisualScripting;
+using UnityEngine.TextCore.Text;
 
 namespace Roots.Game
 {
@@ -45,6 +47,33 @@ namespace Roots.Game
         public List<Character> Children;
 
         #endregion
+
+        public Character(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
+        {
+            this.Name= name;
+            this.Age = Age;
+            this.MaxAge= MaxAge;
+            this.Sex = Sex;
+            this.MainParent = MainParent;
+            this.SubParent = SubParent;
+            //TODO:三项属性的随机生成（未知取值范围）
+
+
+            this.CharacterState = CharacterState.Live;
+            this.Birth();
+        }
+
+        public void Birth()
+        {
+            if (MainParent != null)
+            {
+                MainParent.AddToChildren(this);
+            }
+            if (SubParent != null)
+            {
+                SubParent.AddToChildren(this);
+            }
+        }
 
 
         public void Die()

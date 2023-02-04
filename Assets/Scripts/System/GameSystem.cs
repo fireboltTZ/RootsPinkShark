@@ -68,7 +68,7 @@ namespace MatchThree.System
 
             if(mainCharacter.CharacterState != CharacterState.Live)
             {
-                ChangeMainCharacter();
+                //TODO:打开选择继承人Panel
             }
         }
 
@@ -76,9 +76,15 @@ namespace MatchThree.System
         /// <summary>
         /// 角色死亡或隐退，触发更换主角
         /// </summary>
-        public void ChangeMainCharacter()
+        public void ChangeMainCharacter(Character character)
         {
-            
+            mainCharacter = character;
+        }
+
+
+        public bool IsMainCharacter(Character character)
+        {
+            return mainCharacter == character;
         }
     }
 }
