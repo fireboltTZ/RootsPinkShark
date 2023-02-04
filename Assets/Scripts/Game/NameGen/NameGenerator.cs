@@ -38,7 +38,16 @@ public class NameGenerator : MonoSingleton<NameGenerator>
             return;
         }
 
+        inheritedNameObject = Resources.Load<InheritedNameObject>("InheritedNameObject");        
+        
+        if (inheritedNameObject == null)
+        {
+            Debug.LogError("null exp");
+            return;
+        }
+
         ImportNames();
+        ImportInheritedName();
     }
 
     private void ImportNames()

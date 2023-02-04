@@ -13,7 +13,7 @@ public class InheritedNameObject : ScriptableObject
     public List<string> Hao = new List<string>();
 
 #if UNITY_EDITOR
-    [MenuItem("NameGenerator/CreateNameObject")]
+    [MenuItem("NameGenerator/CreateInheriteNameObject")]
     public static void GenerateNameObject()
     {
         InheritedNameObject nameObject = ScriptableObject.CreateInstance<InheritedNameObject>();
