@@ -42,6 +42,7 @@ namespace Roots.Game
 
         #region Relationship
 
+        public Character Spouse;
         public Character MainParent;
         public Character SubParent;
         public List<Character> Children;
@@ -75,7 +76,6 @@ namespace Roots.Game
             }
         }
 
-
         public void Die()
         {
             CharacterState = CharacterState.Die;
@@ -86,6 +86,12 @@ namespace Roots.Game
         {
             CharacterState = CharacterState.Retired;
         }
+
+        public void Marry(Character character)
+        {
+            Spouse = character;
+        }
+
 
         public void IncreaseAge()
         {
@@ -116,7 +122,14 @@ namespace Roots.Game
 
         public void AddToChildren(Character character)
         {
-            Children.Add(character);
+            if (Children == null)
+            { 
+                Children= new List<Character>();
+            }
+            if (!Children.Contains(character))
+            {
+                Children.Add(character);
+            }
             if(MainParent!= null)
             {
                 MainParent.AddToChildren(character);
