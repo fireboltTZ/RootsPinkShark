@@ -95,6 +95,7 @@ namespace Roots.Game
         public void Marry(Character character)
         {
             Spouse = character;
+            character.Spouse = this;
         }
 
 
