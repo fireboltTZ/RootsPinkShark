@@ -16,9 +16,9 @@ namespace MatchThree.System
             
         }
 
-        public Event DrawEvent(Character character)
+        public cfg.Event DrawEvent(Character character)
         {
-            Event evt;
+            cfg.Event evt;
             if (this.GetSystem<GameSystem>().IsMainCharacter(character))
             {
                 evt = ChooseEventFromAll(character);
