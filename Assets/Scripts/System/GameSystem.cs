@@ -25,6 +25,10 @@ namespace MatchThree.System
         private List<Character> characterList = new List<Character>();
         private float yearLength;
         public Tables Table;
+
+        public List<int> GenUnique = new List<int>();
+        public List<int> HistUnique = new List<int>();
+
         protected override void OnInit()
         {
             ResKit.Init();
@@ -124,6 +128,7 @@ namespace MatchThree.System
             mainCharacter = character;
             character.Resources.AddRange(resources);
             character.GetTag(tag);
+            GenUnique.Clear();
             this.SendEvent(new ChooseNewCharacterEvent() { Character = character });
         }
 
