@@ -4,6 +4,7 @@ using QFramework;
 
 namespace Roots
 {
+	
 	public class UIEventPanelData : UIPanelData
 	{
 	}
