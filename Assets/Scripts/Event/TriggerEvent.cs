@@ -21,6 +21,21 @@ namespace Roots.Event
     {
         public GameResource GameResource;
     }
+
+    public struct AgeChangeEvent
+    {
+        public int Age;
+    }
+
+    public struct GetNewTagEvent
+    {
+        public List<cfg.GameTag> Tags;
+    }
+
+    public struct GetNewResourcesEvent
+    {
+        public List<cfg.GameResource> Resources;
+    }
     
     
 }

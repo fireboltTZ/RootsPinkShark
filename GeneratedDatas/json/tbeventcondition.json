@@ -1,7 +1,37 @@
 [
   {
-    "EventConditionName": "Age",
-    "Para1": 10,
-    "Para2": 20
+    "EventConditionName": 0,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 1,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 2,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 3,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 4,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 5,
+    "Para1": 0,
+    "Para2": 0
+  },
+  {
+    "EventConditionName": 6,
+    "Para1": 0,
+    "Para2": 0
   }
 ]

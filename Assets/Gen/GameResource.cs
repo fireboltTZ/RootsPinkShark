@@ -26,13 +26,13 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         { var __json0 = _json["Effects"]; if(!__json0.IsArray) { throw new SerializationException(); } Effects = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  Effects.Add(__v0); }   }
         { if(!_json["IsUsable"].IsBoolean) { throw new SerializationException(); }  IsUsable = _json["IsUsable"]; }
         { var __json0 = _json["UsedEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } UsedEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  UsedEffect.Add(__v0); }   }
-        { var __json0 = _json["EndingPara"]; if(!__json0.IsArray) { throw new SerializationException(); } EndingPara = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  EndingPara.Add(__v0); }   }
+        { var __json0 = _json["UseCondition"]; if(!__json0.IsArray) { throw new SerializationException(); } UseCondition = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  UseCondition.Add(__v0); }   }
         { var __json0 = _json["ResourceTags"]; if(!__json0.IsArray) { throw new SerializationException(); } ResourceTags = new System.Collections.Generic.List<ResourceTag>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { ResourceTag __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = (ResourceTag)__e0.AsInt; }  ResourceTags.Add(__v0); }   }
         { if(!_json["ResourceImage"].IsString) { throw new SerializationException(); }  ResourceImage = _json["ResourceImage"]; }
         PostInit();
     }
 
-    public GameResource(int ResourceId, bool IsInherit, string Desc, string Name, ResourceType ResourceType, System.Collections.Generic.List<EventEffect> Effects, bool IsUsable, System.Collections.Generic.List<EventEffect> UsedEffect, System.Collections.Generic.List<int> EndingPara, System.Collections.Generic.List<ResourceTag> ResourceTags, string ResourceImage ) 
+    public GameResource(int ResourceId, bool IsInherit, string Desc, string Name, ResourceType ResourceType, System.Collections.Generic.List<EventEffect> Effects, bool IsUsable, System.Collections.Generic.List<EventEffect> UsedEffect, System.Collections.Generic.List<EventCondition> UseCondition, System.Collections.Generic.List<ResourceTag> ResourceTags, string ResourceImage ) 
     {
         this.ResourceId = ResourceId;
         this.IsInherit = IsInherit;
@@ -42,7 +42,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         this.Effects = Effects;
         this.IsUsable = IsUsable;
         this.UsedEffect = UsedEffect;
-        this.EndingPara = EndingPara;
+        this.UseCondition = UseCondition;
         this.ResourceTags = ResourceTags;
         this.ResourceImage = ResourceImage;
         PostInit();
@@ -86,9 +86,9 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
     /// </summary>
     public System.Collections.Generic.List<EventEffect> UsedEffect { get; private set; }
     /// <summary>
-    /// 结局参数补正
+    /// 使用条件
     /// </summary>
-    public System.Collections.Generic.List<int> EndingPara { get; private set; }
+    public System.Collections.Generic.List<EventCondition> UseCondition { get; private set; }
     /// <summary>
     /// 资源特性
     /// </summary>
@@ -105,6 +105,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
     {
         foreach(var _e in Effects) { _e?.Resolve(_tables); }
         foreach(var _e in UsedEffect) { _e?.Resolve(_tables); }
+        foreach(var _e in UseCondition) { _e?.Resolve(_tables); }
         PostResolve();
     }
 
@@ -112,6 +113,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
     {
         foreach(var _e in Effects) { _e?.TranslateText(translator); }
         foreach(var _e in UsedEffect) { _e?.TranslateText(translator); }
+        foreach(var _e in UseCondition) { _e?.TranslateText(translator); }
     }
 
     public override string ToString()
@@ -125,7 +127,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         + "Effects:" + Bright.Common.StringUtil.CollectionToString(Effects) + ","
         + "IsUsable:" + IsUsable + ","
         + "UsedEffect:" + Bright.Common.StringUtil.CollectionToString(UsedEffect) + ","
-        + "EndingPara:" + Bright.Common.StringUtil.CollectionToString(EndingPara) + ","
+        + "UseCondition:" + Bright.Common.StringUtil.CollectionToString(UseCondition) + ","
         + "ResourceTags:" + Bright.Common.StringUtil.CollectionToString(ResourceTags) + ","
         + "ResourceImage:" + ResourceImage + ","
         + "}";

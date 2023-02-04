@@ -24,10 +24,12 @@ public sealed partial class GameTag :  Bright.Config.BeanBase
         { if(!_json["TagGroupId"].IsNumber) { throw new SerializationException(); }  TagGroupId = _json["TagGroupId"]; }
         { if(!_json["IsGoodTag"].IsBoolean) { throw new SerializationException(); }  IsGoodTag = _json["IsGoodTag"]; }
         { if(!_json["IsInherit"].IsBoolean) { throw new SerializationException(); }  IsInherit = _json["IsInherit"]; }
+        { if(!_json["ifNatrual"].IsBoolean) { throw new SerializationException(); }  IfNatrual = _json["ifNatrual"]; }
+        { if(!_json["ifPatnerNatrual"].IsBoolean) { throw new SerializationException(); }  IfPatnerNatrual = _json["ifPatnerNatrual"]; }
         PostInit();
     }
 
-    public GameTag(int TagId, string TagName, string Desc, int TagGroupId, bool IsGoodTag, bool IsInherit ) 
+    public GameTag(int TagId, string TagName, string Desc, int TagGroupId, bool IsGoodTag, bool IsInherit, bool ifNatrual, bool ifPatnerNatrual ) 
     {
         this.TagId = TagId;
         this.TagName = TagName;
@@ -35,6 +37,8 @@ public sealed partial class GameTag :  Bright.Config.BeanBase
         this.TagGroupId = TagGroupId;
         this.IsGoodTag = IsGoodTag;
         this.IsInherit = IsInherit;
+        this.IfNatrual = ifNatrual;
+        this.IfPatnerNatrual = ifPatnerNatrual;
         PostInit();
     }
 
@@ -67,6 +71,14 @@ public sealed partial class GameTag :  Bright.Config.BeanBase
     /// 是否继承
     /// </summary>
     public bool IsInherit { get; private set; }
+    /// <summary>
+    /// 是否是出生时随机的tag
+    /// </summary>
+    public bool IfNatrual { get; private set; }
+    /// <summary>
+    /// 是否伴侣初始携带
+    /// </summary>
+    public bool IfPatnerNatrual { get; private set; }
 
     public const int __ID__ = 1469036072;
     public override int GetTypeId() => __ID__;
@@ -89,6 +101,8 @@ public sealed partial class GameTag :  Bright.Config.BeanBase
         + "TagGroupId:" + TagGroupId + ","
         + "IsGoodTag:" + IsGoodTag + ","
         + "IsInherit:" + IsInherit + ","
+        + "IfNatrual:" + IfNatrual + ","
+        + "IfPatnerNatrual:" + IfPatnerNatrual + ","
         + "}";
     }
     

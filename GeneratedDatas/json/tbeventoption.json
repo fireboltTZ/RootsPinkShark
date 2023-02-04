@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "EventOptionid": 1,
+    "EventOptionDesc": "利用灵力催发冲击，破坏石头",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 5
+      }
+    ],
+    "InputSpace": [
+      0,
+      0,
+      0
+    ],
+    "OptionWinEffect": [
+      {
+        "EffectType": 4,
+        "Para1": 0,
+        "Para2": 1
+      },
+      {
+        "EffectType": 4,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "用灵力震碎了石头，意外获得了几块金币"
+  },
+  {
+    "EventOptionid": 2,
+    "EventOptionDesc": "浑身包裹鬼气穿过石头",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 5,
+        "Para2": 2
+      }
+    ],
+    "InputSpace": [
+      0,
+      0,
+      0
+    ],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "隐约瞧见了石头的内壁上写了文字，一股记忆传入脑海"
+  }
+]

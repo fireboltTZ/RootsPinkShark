@@ -5,19 +5,28 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:f159d711-1d93-45cf-83a1-93df519a9bdd
+	// Generate Id:ec92cf1a-256b-46a1-9734-9e065f61bd99
 	public partial class UIGamePanel
 	{
 		public const string Name = "UIGamePanel";
 		
 		[SerializeField]
-		public UnityEngine.UI.Button Item;
+		public ChasracterCanvas CharacterCanvas;
+		[SerializeField]
+		public AgeCanvas AgeBar;
+		[SerializeField]
+		public EventCalendar EventCalender;
+		[SerializeField]
+		public ItemBar ItemBar;
 		
 		private UIGamePanelData mPrivateData = null;
 		
 		protected override void ClearUIComponents()
 		{
-			Item = null;
+			CharacterCanvas = null;
+			AgeBar = null;
+			EventCalender = null;
+			ItemBar = null;
 			
 			mData = null;
 		}

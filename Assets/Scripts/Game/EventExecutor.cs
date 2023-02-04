@@ -1,3 +1,5 @@
+using System;
+using cfg;
 using MatchThree.System;
 using QFramework;
 using UnityEngine;
@@ -30,13 +32,28 @@ namespace Roots.Game
         {
             switch (condition.EventConditionName)
             {
-                case "Age":
+
+                case EffectCondition.AGEBETWEEN:
                     if(character.Age>condition.Para1 && character.Age<condition.Para2)
                     {
                         available = true;
                         return true;
                     }
                     break;
+                case EffectCondition.HAS_CHILDREN:
+                    break;
+                case EffectCondition.THIS_HAVEDONE:
+                    break;
+                case EffectCondition.ALL_HAVEDONE:
+                    break;
+                case EffectCondition.ATTRIMINNEED:
+                    break;
+                case EffectCondition.HAVETAG:
+                    break;
+                case EffectCondition.HAVERES:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
             available = false;
             return false;

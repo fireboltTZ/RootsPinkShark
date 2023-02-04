@@ -11,13 +11,68 @@ namespace cfg
 { 
     public enum EffectType
     {
+        /// <summary>
+        /// 属性成长
+        /// </summary>
         GROWTH = 0,
+        /// <summary>
+        /// 结婚
+        /// </summary>
         MARRY = 1,
-        GetResource = 2,
-        GetTag = 3,
-        LostResource = 4,
-        LostTag = 5,
-        Bear = 6
+
+        /// <summary>
+        /// 死亡
+        /// </summary>
+        DIE = 2,
+        /// <summary>
+        /// 孩子死亡
+        /// </summary>
+        DIE_SON = 3,
+        /// <summary>
+        /// 获得资源
+        /// </summary>
+        ADD_RESOURCE = 4,
+        /// <summary>
+        /// 获得钱
+        /// </summary>
+        ADD_MONEY = 5,
+        /// <summary>
+        /// 这一代获得新的事件
+        /// </summary>
+        ADD_CURR_EVENT = 6,
+        /// <summary>
+        /// 下一代获得新的事件
+        /// </summary>
+        ADD_NEXT_EVENT = 7,
+        /// <summary>
+        /// 当代曾触发过事件
+        /// </summary>
+        THIS_HAVEDONE = 8,
+        /// <summary>
+        /// 历史曾触发过事件
+        /// </summary>
+        ALL_HAVEDONE = 9,
+        /// <summary>
+        /// 道心属性成长
+        /// </summary>
+        HEARTGROWTH = 10,
+        /// <summary>
+        /// 激活tag
+        /// </summary>
+        TAGACTIVE = 11,
+        /// <summary>
+        /// 年龄变化
+        /// </summary>
+        AGECHANGE = 12,
+        /// <summary>
+        /// 从掉落组中抽取物品
+        /// </summary>
+        DROP = 13,
+        /// <summary>
+        /// 临时属性
+        /// </summary>
+        TATTRI = 14,
+
     }
 
 } 

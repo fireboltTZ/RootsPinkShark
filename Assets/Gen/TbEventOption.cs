@@ -16,29 +16,29 @@ namespace cfg
 
 public sealed partial class TbEventOption
 {
-    private readonly Dictionary<string, EventOption> _dataMap;
+    private readonly Dictionary<int, EventOption> _dataMap;
     private readonly List<EventOption> _dataList;
     
     public TbEventOption(JSONNode _json)
     {
-        _dataMap = new Dictionary<string, EventOption>();
+        _dataMap = new Dictionary<int, EventOption>();
         _dataList = new List<EventOption>();
         
         foreach(JSONNode _row in _json.Children)
         {
             var _v = EventOption.DeserializeEventOption(_row);
             _dataList.Add(_v);
-            _dataMap.Add(_v.EventOptionName, _v);
+            _dataMap.Add(_v.EventOptionid, _v);
         }
         PostInit();
     }
 
-    public Dictionary<string, EventOption> DataMap => _dataMap;
+    public Dictionary<int, EventOption> DataMap => _dataMap;
     public List<EventOption> DataList => _dataList;
 
-    public EventOption GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public EventOption Get(string key) => _dataMap[key];
-    public EventOption this[string key] => _dataMap[key];
+    public EventOption GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public EventOption Get(int key) => _dataMap[key];
+    public EventOption this[int key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

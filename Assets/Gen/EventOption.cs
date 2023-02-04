@@ -18,25 +18,25 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
 {
     public EventOption(JSONNode _json) 
     {
-        { if(!_json["EventOptionName"].IsString) { throw new SerializationException(); }  EventOptionName = _json["EventOptionName"]; }
+        { if(!_json["EventOptionid"].IsNumber) { throw new SerializationException(); }  EventOptionid = _json["EventOptionid"]; }
         { if(!_json["EventOptionDesc"].IsString) { throw new SerializationException(); }  EventOptionDesc = _json["EventOptionDesc"]; }
         { var __json0 = _json["Limit"]; if(!__json0.IsArray) { throw new SerializationException(); } Limit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  Limit.Add(__v0); }   }
         { var __json0 = _json["AttrLimit"]; if(!__json0.IsArray) { throw new SerializationException(); } AttrLimit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AttrLimit.Add(__v0); }   }
         { var __json0 = _json["InputSpace"]; if(!__json0.IsArray) { throw new SerializationException(); } InputSpace = new System.Collections.Generic.List<ResourceType>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { ResourceType __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = (ResourceType)__e0.AsInt; }  InputSpace.Add(__v0); }   }
         { var __json0 = _json["OptionWinEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } OptionWinEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  OptionWinEffect.Add(__v0); }   }
-        { var __json0 = _json["OptionLoseEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } OptionLoseEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  OptionLoseEffect.Add(__v0); }   }
+        { if(!_json["OptionDES"].IsString) { throw new SerializationException(); }  OptionDES = _json["OptionDES"]; }
         PostInit();
     }
 
-    public EventOption(string EventOptionName, string EventOptionDesc, System.Collections.Generic.List<EventCondition> Limit, System.Collections.Generic.List<EventCondition> AttrLimit, System.Collections.Generic.List<ResourceType> InputSpace, System.Collections.Generic.List<EventEffect> OptionWinEffect, System.Collections.Generic.List<EventEffect> OptionLoseEffect ) 
+    public EventOption(int EventOptionid, string EventOptionDesc, System.Collections.Generic.List<EventCondition> Limit, System.Collections.Generic.List<EventCondition> AttrLimit, System.Collections.Generic.List<ResourceType> InputSpace, System.Collections.Generic.List<EventEffect> OptionWinEffect, string OptionDES ) 
     {
-        this.EventOptionName = EventOptionName;
+        this.EventOptionid = EventOptionid;
         this.EventOptionDesc = EventOptionDesc;
         this.Limit = Limit;
         this.AttrLimit = AttrLimit;
         this.InputSpace = InputSpace;
         this.OptionWinEffect = OptionWinEffect;
-        this.OptionLoseEffect = OptionLoseEffect;
+        this.OptionDES = OptionDES;
         PostInit();
     }
 
@@ -46,9 +46,9 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
     }
 
     /// <summary>
-    /// 选项名称
+    /// 选项id
     /// </summary>
-    public string EventOptionName { get; private set; }
+    public int EventOptionid { get; private set; }
     /// <summary>
     /// 选项描述
     /// </summary>
@@ -70,9 +70,9 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
     /// </summary>
     public System.Collections.Generic.List<EventEffect> OptionWinEffect { get; private set; }
     /// <summary>
-    /// 失败效果
+    /// 成功效果说明
     /// </summary>
-    public System.Collections.Generic.List<EventEffect> OptionLoseEffect { get; private set; }
+    public string OptionDES { get; private set; }
 
     public const int __ID__ = 1656861583;
     public override int GetTypeId() => __ID__;
@@ -82,7 +82,6 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
         foreach(var _e in Limit) { _e?.Resolve(_tables); }
         foreach(var _e in AttrLimit) { _e?.Resolve(_tables); }
         foreach(var _e in OptionWinEffect) { _e?.Resolve(_tables); }
-        foreach(var _e in OptionLoseEffect) { _e?.Resolve(_tables); }
         PostResolve();
     }
 
@@ -91,19 +90,18 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
         foreach(var _e in Limit) { _e?.TranslateText(translator); }
         foreach(var _e in AttrLimit) { _e?.TranslateText(translator); }
         foreach(var _e in OptionWinEffect) { _e?.TranslateText(translator); }
-        foreach(var _e in OptionLoseEffect) { _e?.TranslateText(translator); }
     }
 
     public override string ToString()
     {
         return "{ "
-        + "EventOptionName:" + EventOptionName + ","
+        + "EventOptionid:" + EventOptionid + ","
         + "EventOptionDesc:" + EventOptionDesc + ","
         + "Limit:" + Bright.Common.StringUtil.CollectionToString(Limit) + ","
         + "AttrLimit:" + Bright.Common.StringUtil.CollectionToString(AttrLimit) + ","
         + "InputSpace:" + Bright.Common.StringUtil.CollectionToString(InputSpace) + ","
         + "OptionWinEffect:" + Bright.Common.StringUtil.CollectionToString(OptionWinEffect) + ","
-        + "OptionLoseEffect:" + Bright.Common.StringUtil.CollectionToString(OptionLoseEffect) + ","
+        + "OptionDES:" + OptionDES + ","
         + "}";
     }
     

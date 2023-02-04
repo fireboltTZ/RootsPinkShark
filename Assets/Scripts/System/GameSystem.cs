@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using SimpleJSON;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
@@ -28,6 +29,7 @@ namespace MatchThree.System
 
         public List<int> GenUnique = new List<int>();
         public List<int> HistUnique = new List<int>();
+        public Character MainCharacter => mainCharacter;
 
         protected override void OnInit()
         {
@@ -84,7 +86,7 @@ namespace MatchThree.System
             return character;
         }
 
-
+        
 
         /// <summary>
         /// 创建游戏开始时第一个主角
@@ -109,7 +111,7 @@ namespace MatchThree.System
             {
                 if (characterList[i].CharacterState != CharacterState.Die)
                 {
-                    characterList[i].IncreaseAge();
+                    characterList[i].IncreaseAge(1);
                 }
             }
 
