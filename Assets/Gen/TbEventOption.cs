@@ -28,7 +28,7 @@ public sealed partial class TbEventOption
         {
             var _v = EventOption.DeserializeEventOption(_row);
             _dataList.Add(_v);
-            _dataMap.Add(_v.EventName, _v);
+            _dataMap.Add(_v.EventOptionName, _v);
         }
         PostInit();
     }

@@ -28,7 +28,7 @@ public sealed partial class TbEventCondition
         {
             var _v = EventCondition.DeserializeEventCondition(_row);
             _dataList.Add(_v);
-            _dataMap.Add(_v.EventName, _v);
+            _dataMap.Add(_v.EventConditionName, _v);
         }
         PostInit();
     }

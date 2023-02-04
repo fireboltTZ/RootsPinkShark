@@ -18,33 +18,25 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
 {
     public EventOption(JSONNode _json) 
     {
-        { if(!_json["EventName"].IsString) { throw new SerializationException(); }  EventName = _json["EventName"]; }
-        { if(!_json["Desc"].IsString) { throw new SerializationException(); }  Desc = _json["Desc"]; }
-        { if(!_json["EventType"].IsNumber) { throw new SerializationException(); }  EventType = (EventType)_json["EventType"].AsInt; }
-        { if(!_json["EventId"].IsNumber) { throw new SerializationException(); }  EventId = _json["EventId"]; }
-        { if(!_json["GroupId"].IsNumber) { throw new SerializationException(); }  GroupId = _json["GroupId"]; }
-        { if(!_json["IsGenUnique"].IsBoolean) { throw new SerializationException(); }  IsGenUnique = _json["IsGenUnique"]; }
-        { if(!_json["IsAllUnique"].IsBoolean) { throw new SerializationException(); }  IsAllUnique = _json["IsAllUnique"]; }
-        { if(!_json["IsInteractive"].IsBoolean) { throw new SerializationException(); }  IsInteractive = _json["IsInteractive"]; }
-        { var __json0 = _json["AppearCondition"]; if(!__json0.IsArray) { throw new SerializationException(); } AppearCondition = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AppearCondition.Add(__v0); }   }
-        { var __json0 = _json["Options"]; if(!__json0.IsArray) { throw new SerializationException(); } Options = new System.Collections.Generic.List<EventOption>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventOption __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventOption.DeserializeEventOption(__e0);  }  Options.Add(__v0); }   }
-        { var __json0 = _json["Effects"]; if(!__json0.IsArray) { throw new SerializationException(); } Effects = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  Effects.Add(__v0); }   }
+        { if(!_json["EventOptionName"].IsString) { throw new SerializationException(); }  EventOptionName = _json["EventOptionName"]; }
+        { if(!_json["EventOptionDesc"].IsString) { throw new SerializationException(); }  EventOptionDesc = _json["EventOptionDesc"]; }
+        { var __json0 = _json["Limit"]; if(!__json0.IsArray) { throw new SerializationException(); } Limit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  Limit.Add(__v0); }   }
+        { var __json0 = _json["AttrLimit"]; if(!__json0.IsArray) { throw new SerializationException(); } AttrLimit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AttrLimit.Add(__v0); }   }
+        { var __json0 = _json["InputSpace"]; if(!__json0.IsArray) { throw new SerializationException(); } InputSpace = new System.Collections.Generic.List<ResourceType>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { ResourceType __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = (ResourceType)__e0.AsInt; }  InputSpace.Add(__v0); }   }
+        { var __json0 = _json["OptionWinEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } OptionWinEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  OptionWinEffect.Add(__v0); }   }
+        { var __json0 = _json["OptionLoseEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } OptionLoseEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  OptionLoseEffect.Add(__v0); }   }
         PostInit();
     }
 
-    public EventOption(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<EventOption> Options, System.Collections.Generic.List<EventEffect> Effects ) 
+    public EventOption(string EventOptionName, string EventOptionDesc, System.Collections.Generic.List<EventCondition> Limit, System.Collections.Generic.List<EventCondition> AttrLimit, System.Collections.Generic.List<ResourceType> InputSpace, System.Collections.Generic.List<EventEffect> OptionWinEffect, System.Collections.Generic.List<EventEffect> OptionLoseEffect ) 
     {
-        this.EventName = EventName;
-        this.Desc = Desc;
-        this.EventType = EventType;
-        this.EventId = EventId;
-        this.GroupId = GroupId;
-        this.IsGenUnique = IsGenUnique;
-        this.IsAllUnique = IsAllUnique;
-        this.IsInteractive = IsInteractive;
-        this.AppearCondition = AppearCondition;
-        this.Options = Options;
-        this.Effects = Effects;
+        this.EventOptionName = EventOptionName;
+        this.EventOptionDesc = EventOptionDesc;
+        this.Limit = Limit;
+        this.AttrLimit = AttrLimit;
+        this.InputSpace = InputSpace;
+        this.OptionWinEffect = OptionWinEffect;
+        this.OptionLoseEffect = OptionLoseEffect;
         PostInit();
     }
 
@@ -54,82 +46,64 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
     }
 
     /// <summary>
-    /// 事件名称
+    /// 选项名称
     /// </summary>
-    public string EventName { get; private set; }
+    public string EventOptionName { get; private set; }
     /// <summary>
-    /// 事件描述
+    /// 选项描述
     /// </summary>
-    public string Desc { get; private set; }
+    public string EventOptionDesc { get; private set; }
     /// <summary>
-    /// 事件类型
+    /// 特定条件
     /// </summary>
-    public EventType EventType { get; private set; }
+    public System.Collections.Generic.List<EventCondition> Limit { get; private set; }
     /// <summary>
-    /// 事件ID
+    /// 属性要求
     /// </summary>
-    public int EventId { get; private set; }
+    public System.Collections.Generic.List<EventCondition> AttrLimit { get; private set; }
     /// <summary>
-    /// 所属事件组ID
+    /// 投入物品栏
     /// </summary>
-    public int GroupId { get; private set; }
+    public System.Collections.Generic.List<ResourceType> InputSpace { get; private set; }
     /// <summary>
-    /// 是否此代唯一
+    /// 成功效果
     /// </summary>
-    public bool IsGenUnique { get; private set; }
+    public System.Collections.Generic.List<EventEffect> OptionWinEffect { get; private set; }
     /// <summary>
-    /// 是否历史唯一
+    /// 失败效果
     /// </summary>
-    public bool IsAllUnique { get; private set; }
-    /// <summary>
-    /// 是否是可交互事件
-    /// </summary>
-    public bool IsInteractive { get; private set; }
-    /// <summary>
-    /// 出现条件
-    /// </summary>
-    public System.Collections.Generic.List<EventCondition> AppearCondition { get; private set; }
-    /// <summary>
-    /// 事件选项
-    /// </summary>
-    public System.Collections.Generic.List<EventOption> Options { get; private set; }
-    /// <summary>
-    /// 事件结果（非交互事件才需要）
-    /// </summary>
-    public System.Collections.Generic.List<EventEffect> Effects { get; private set; }
+    public System.Collections.Generic.List<EventEffect> OptionLoseEffect { get; private set; }
 
     public const int __ID__ = 1656861583;
     public override int GetTypeId() => __ID__;
 
     public  void Resolve(Dictionary<string, object> _tables)
     {
-        foreach(var _e in AppearCondition) { _e?.Resolve(_tables); }
-        foreach(var _e in Options) { _e?.Resolve(_tables); }
-        foreach(var _e in Effects) { _e?.Resolve(_tables); }
+        foreach(var _e in Limit) { _e?.Resolve(_tables); }
+        foreach(var _e in AttrLimit) { _e?.Resolve(_tables); }
+        foreach(var _e in OptionWinEffect) { _e?.Resolve(_tables); }
+        foreach(var _e in OptionLoseEffect) { _e?.Resolve(_tables); }
         PostResolve();
     }
 
     public  void TranslateText(System.Func<string, string, string> translator)
     {
-        foreach(var _e in AppearCondition) { _e?.TranslateText(translator); }
-        foreach(var _e in Options) { _e?.TranslateText(translator); }
-        foreach(var _e in Effects) { _e?.TranslateText(translator); }
+        foreach(var _e in Limit) { _e?.TranslateText(translator); }
+        foreach(var _e in AttrLimit) { _e?.TranslateText(translator); }
+        foreach(var _e in OptionWinEffect) { _e?.TranslateText(translator); }
+        foreach(var _e in OptionLoseEffect) { _e?.TranslateText(translator); }
     }
 
     public override string ToString()
     {
         return "{ "
-        + "EventName:" + EventName + ","
-        + "Desc:" + Desc + ","
-        + "EventType:" + EventType + ","
-        + "EventId:" + EventId + ","
-        + "GroupId:" + GroupId + ","
-        + "IsGenUnique:" + IsGenUnique + ","
-        + "IsAllUnique:" + IsAllUnique + ","
-        + "IsInteractive:" + IsInteractive + ","
-        + "AppearCondition:" + Bright.Common.StringUtil.CollectionToString(AppearCondition) + ","
-        + "Options:" + Bright.Common.StringUtil.CollectionToString(Options) + ","
-        + "Effects:" + Bright.Common.StringUtil.CollectionToString(Effects) + ","
+        + "EventOptionName:" + EventOptionName + ","
+        + "EventOptionDesc:" + EventOptionDesc + ","
+        + "Limit:" + Bright.Common.StringUtil.CollectionToString(Limit) + ","
+        + "AttrLimit:" + Bright.Common.StringUtil.CollectionToString(AttrLimit) + ","
+        + "InputSpace:" + Bright.Common.StringUtil.CollectionToString(InputSpace) + ","
+        + "OptionWinEffect:" + Bright.Common.StringUtil.CollectionToString(OptionWinEffect) + ","
+        + "OptionLoseEffect:" + Bright.Common.StringUtil.CollectionToString(OptionLoseEffect) + ","
         + "}";
     }
     
