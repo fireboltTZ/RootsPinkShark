@@ -30,6 +30,11 @@ namespace MatchThree.System
             return evt;
         }
 
+        public Event DrawChildrenEvent(Character character)
+        {
+            return null;
+        }
+
 
         private Event ChooseEventFromAll(Character character)
         {
