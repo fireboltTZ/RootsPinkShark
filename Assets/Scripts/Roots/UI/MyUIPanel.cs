@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 
 namespace Roots
 {
-    public class MyUIPanel : UIPanel, ICanGetSystem
+    public class MyUIPanel : UIPanel, ICanGetSystem, ICanRegisterEvent
     {
         public GameSystem GameSystem => this.GetSystem<GameSystem>();
         public AudioSystem AudioSystem => this.GetSystem<AudioSystem>();

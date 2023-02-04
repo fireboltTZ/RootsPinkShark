@@ -7,7 +7,7 @@ namespace Roots
 	public class UIGamePanelData : UIPanelData
 	{
 	}
-	public partial class UIGamePanel : UIPanel
+	public partial class UIGamePanel : MyUIPanel
 	{
 		
 		protected override void OnInit(IUIData uiData = null)
@@ -20,6 +20,7 @@ namespace Roots
             //DragAndDrop
             //
 			//Item.GetComponent<DragAndDrop>().OnBeginDrag.AddListener(() => { })
+			
 			
 			
 
