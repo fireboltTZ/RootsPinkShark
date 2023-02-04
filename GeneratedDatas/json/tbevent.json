@@ -126,13 +126,7 @@
     "IsInteractive": false,
     "AppearCondition": [],
     "Options": [],
-    "Effects": [
-      {
-        "EffectType": 4,
-        "Para1": 0,
-        "Para2": 0
-      }
-    ],
+    "Effects": [],
     "IsOnBase": true
   },
   {
@@ -272,7 +266,7 @@
     "Effects": [
       {
         "EffectType": 4,
-        "Para1": 0,
+        "Para1": 1,
         "Para2": 0
       }
     ],

@@ -79,10 +79,10 @@ namespace Roots
 		
 		private void SetNewResources(List<GameResource> list)
 		{
-			TagBar.transform.DestroyChildren();
+			ItemBar.Content.transform.DestroyChildren();
 			foreach (var gameResource in list)
 			{
-				GameItem gto = Instantiate(GameItemPrefab, ItemBar.transform);
+				GameItem gto = Instantiate(GameItemPrefab, ItemBar.Content.transform);
 				gto.Init(gameResource);
 			}
 		}
