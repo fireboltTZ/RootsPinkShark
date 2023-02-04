@@ -41,6 +41,22 @@ namespace Roots.Game
                         Character another = this.GetSystem<GameSystem>().CreateCharacter("", 18, 80, !character.Sex);
                         character.Marry(another);
                         break;
+                    case EffectType.GetResource:
+                        character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[effects[i].Para1]);
+                        break;
+                    case EffectType.LostResource:
+                        character.Resources.Remove(this.GetSystem<GameSystem>().Table.TbResource[effects[i].Para1]);
+                        break;
+                    case EffectType.GetTag:
+                        character.GetTag(this.GetSystem<GameSystem>().Table.TbTag[effects[i].Para1]);
+                        break;
+                    case EffectType.LostTag:
+                        character.Tags.Remove(this.GetSystem<GameSystem>().Table.TbTag[effects[i].Para1]);
+                        break;
+                    case EffectType.Bear:
+                        int sex = Random.Range(0, 2);
+                        Character child = this.GetSystem<GameSystem>().CreateCharacter(NameGenerator.Instance.GenerateName(sex == 1), 1, 80, sex == 1, character, character.Spouse);
+                        break;
                 }
             }
         }

@@ -11,6 +11,7 @@ namespace cfg
 { 
     public enum ResourceType
     {
+
     }
 
 } 

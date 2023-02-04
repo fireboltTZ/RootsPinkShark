@@ -13,6 +13,11 @@ namespace cfg
     {
         GROWTH = 0,
         MARRY = 1,
+        GetResource = 2,
+        GetTag = 3,
+        LostResource = 4,
+        LostTag = 5,
+        Bear = 6
     }
 
 } 
