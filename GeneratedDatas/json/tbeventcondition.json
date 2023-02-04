@@ -1,7 +1,12 @@
 [
   {
-    "EventConditionName": "Age",
+    "EventConditionName": "AGE",
     "Para1": 10,
     "Para2": 20
+  },
+  {
+    "EventConditionName": "HAS_CHILDREN",
+    "Para1": 0,
+    "Para2": 0
   }
 ]

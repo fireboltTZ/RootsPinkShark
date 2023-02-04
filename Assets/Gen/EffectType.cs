@@ -11,8 +11,38 @@ namespace cfg
 { 
     public enum EffectType
     {
+        /// <summary>
+        /// 属性成长
+        /// </summary>
         GROWTH = 0,
+        /// <summary>
+        /// 结婚
+        /// </summary>
         MARRY = 1,
+        /// <summary>
+        /// 死亡
+        /// </summary>
+        DIE = 2,
+        /// <summary>
+        /// 孩子死亡
+        /// </summary>
+        DIE_SON = 3,
+        /// <summary>
+        /// 获得资源
+        /// </summary>
+        ADD_RESOURCE = 4,
+        /// <summary>
+        /// 获得钱
+        /// </summary>
+        ADD_MONEY = 5,
+        /// <summary>
+        /// 这一代获得新的事件
+        /// </summary>
+        ADD_CURR_EVENT = 6,
+        /// <summary>
+        /// 下一代获得新的事件
+        /// </summary>
+        ADD_NEXT_EVENT = 7,
     }
 
 } 

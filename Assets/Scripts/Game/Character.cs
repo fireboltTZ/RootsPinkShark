@@ -55,7 +55,7 @@ namespace Roots.Game
             this.Name= name;
             this.Age = Age;
             this.MaxAge= MaxAge;
-            this.Sex = Sex;
+            this.Sex = Sex;  
             this.MainParent = MainParent;
             this.SubParent = SubParent;
             Strength = UnityEngine.Random.Range(1, 6);
@@ -107,7 +107,7 @@ namespace Roots.Game
                 return;
             }
             this.GetSystem<GameEventSystem>().DrawEvent(this);
-            
+           
         }
 
 //TODO
@@ -124,7 +124,7 @@ namespace Roots.Game
 
 
         /// <summary>
-        /// »ñµÃTag
+        /// ???Tag
         /// </summary>
         /// <param name="tag"></param>
         public void GetTag(GameTag tag)

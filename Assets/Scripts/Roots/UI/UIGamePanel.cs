@@ -9,6 +9,7 @@ namespace Roots
 	}
 	public partial class UIGamePanel : UIPanel
 	{
+		
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();

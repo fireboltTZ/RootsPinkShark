@@ -27,7 +27,8 @@
         "Para1": 1,
         "Para2": 1
       }
-    ]
+    ],
+    "IsOnBase": true
   },
   {
     "EventName": "结婚",
@@ -52,6 +53,187 @@
         "Para1": 0,
         "Para2": 0
       }
-    ]
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "佳偶天成",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 3,
+    "GroupId": 1,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 1,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "意外身故",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 4,
+    "GroupId": 0,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 2,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "痛失爱子",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 5,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 3,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "明镜高悬",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 6,
+    "GroupId": 0,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 4,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "偶得机缘",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 7,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 6,
+        "Para1": 11,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "初窥门径",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 8,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 6,
+        "Para1": 14,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": false
+  },
+  {
+    "EventName": "登堂入室",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 9,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 5,
+        "Para1": 100,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "小有进财",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 10,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 5,
+        "Para1": 10,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
+  },
+  {
+    "EventName": "富甲一方",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 11,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 5,
+        "Para1": 100,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false
   }
 ]

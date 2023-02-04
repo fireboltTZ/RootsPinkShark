@@ -29,10 +29,11 @@ public sealed partial class Event :  Bright.Config.BeanBase
         { var __json0 = _json["AppearCondition"]; if(!__json0.IsArray) { throw new SerializationException(); } AppearCondition = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AppearCondition.Add(__v0); }   }
         { var __json0 = _json["Options"]; if(!__json0.IsArray) { throw new SerializationException(); } Options = new System.Collections.Generic.List<EventOption>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventOption __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventOption.DeserializeEventOption(__e0);  }  Options.Add(__v0); }   }
         { var __json0 = _json["Effects"]; if(!__json0.IsArray) { throw new SerializationException(); } Effects = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  Effects.Add(__v0); }   }
+        { if(!_json["IsOnBase"].IsBoolean) { throw new SerializationException(); }  IsOnBase = _json["IsOnBase"]; }
         PostInit();
     }
 
-    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<EventOption> Options, System.Collections.Generic.List<EventEffect> Effects ) 
+    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<EventOption> Options, System.Collections.Generic.List<EventEffect> Effects, bool IsOnBase ) 
     {
         this.EventName = EventName;
         this.Desc = Desc;
@@ -45,6 +46,7 @@ public sealed partial class Event :  Bright.Config.BeanBase
         this.AppearCondition = AppearCondition;
         this.Options = Options;
         this.Effects = Effects;
+        this.IsOnBase = IsOnBase;
         PostInit();
     }
 
@@ -97,6 +99,10 @@ public sealed partial class Event :  Bright.Config.BeanBase
     /// 事件结果（非交互事件才需要）
     /// </summary>
     public System.Collections.Generic.List<EventEffect> Effects { get; private set; }
+    /// <summary>
+    /// 是否在初始事件库
+    /// </summary>
+    public bool IsOnBase { get; private set; }
 
     public const int __ID__ = 67338874;
     public override int GetTypeId() => __ID__;
@@ -130,6 +136,7 @@ public sealed partial class Event :  Bright.Config.BeanBase
         + "AppearCondition:" + Bright.Common.StringUtil.CollectionToString(AppearCondition) + ","
         + "Options:" + Bright.Common.StringUtil.CollectionToString(Options) + ","
         + "Effects:" + Bright.Common.StringUtil.CollectionToString(Effects) + ","
+        + "IsOnBase:" + IsOnBase + ","
         + "}";
     }
     

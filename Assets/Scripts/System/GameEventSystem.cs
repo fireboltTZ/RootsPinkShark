@@ -60,7 +60,8 @@ namespace MatchThree.System
         private List<Event> ChooseEventFromAll(Character character)
         {
             List<Event> Evts = new List<Event>();
-            
+            Evts.Add(NormalEventBase[0]);
+            return Evts;
             if (character.Age >= 18)
             {
                 for (int i = 0; i < AdultInteractiveEvents.Count; i++)
