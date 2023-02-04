@@ -18,13 +18,13 @@ public sealed partial class EventCondition :  Bright.Config.BeanBase
 {
     public EventCondition(JSONNode _json) 
     {
-        { if(!_json["EventConditionName"].IsString) { throw new SerializationException(); }  EventConditionName = _json["EventConditionName"]; }
+        { if(!_json["EventConditionName"].IsNumber) { throw new SerializationException(); }  EventConditionName = (EffectCondition)_json["EventConditionName"].AsInt; }
         { if(!_json["Para1"].IsNumber) { throw new SerializationException(); }  Para1 = _json["Para1"]; }
         { if(!_json["Para2"].IsNumber) { throw new SerializationException(); }  Para2 = _json["Para2"]; }
         PostInit();
     }
 
-    public EventCondition(string EventConditionName, int Para1, int Para2 ) 
+    public EventCondition(EffectCondition EventConditionName, int Para1, int Para2 ) 
     {
         this.EventConditionName = EventConditionName;
         this.Para1 = Para1;
@@ -40,7 +40,7 @@ public sealed partial class EventCondition :  Bright.Config.BeanBase
     /// <summary>
     /// 事件出现条件
     /// </summary>
-    public string EventConditionName { get; private set; }
+    public EffectCondition EventConditionName { get; private set; }
     /// <summary>
     /// 参数1
     /// </summary>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using cfg;
 using MatchThree.System;
 using QFramework;
+using Roots.Event;
 using Unity.VisualScripting;
 using UnityEngine.TextCore.Text;
 
@@ -13,7 +14,7 @@ namespace Roots.Game
     {
         Die, Retired, Live, Children
     }
-    public class Character : ICanGetSystem
+    public class Character : ICanGetSystem, ICanSendEvent
     {
         #region BasicAttribute
 
@@ -38,6 +39,7 @@ namespace Roots.Game
         public List<GameResource> Resources;
         public List<GameTag> Tags;
 
+        public BindableProperty<int> AgeBind = new BindableProperty<int>();
         #endregion
 
         #region Relationship
@@ -65,6 +67,16 @@ namespace Roots.Game
             {
                 Intelligence = 0;
             }
+
+            AgeBind.Register(e =>
+            {
+                if (this.GetSystem<GameSystem>().IsMainCharacter(this))
+                {
+                    
+                }
+            });
+            AgeBind.Value = Age;
+            
             this.CharacterState = CharacterState.Live;
             this.Birth();
         }
@@ -98,14 +110,30 @@ namespace Roots.Game
         }
 
 
-        public void IncreaseAge()
+        // public void IncreaseAge()
+        // {
+        //     Age++;
+        //     if (Age > MaxAge)
+        //     {
+        //         Die();
+        //         return;
+        //     }
+        //     if(this.GetSystem<GameSystem>().IsMainCharacter(this))
+        //         this.SendEvent(new AgeChangeEvent(){Age = Age});
+        //     this.GetSystem<GameEventSystem>().DrawEvent(this);
+        //    
+        // }
+        
+        public void IncreaseAge(int k)
         {
-            Age++;
+            Age+= k;
             if (Age > MaxAge)
             {
                 Die();
                 return;
             }
+            if(this.GetSystem<GameSystem>().IsMainCharacter(this))
+                this.SendEvent(new AgeChangeEvent(){Age = Age});
             this.GetSystem<GameEventSystem>().DrawEvent(this);
            
         }

@@ -27,13 +27,13 @@ public sealed partial class Event :  Bright.Config.BeanBase
         { if(!_json["IsAllUnique"].IsBoolean) { throw new SerializationException(); }  IsAllUnique = _json["IsAllUnique"]; }
         { if(!_json["IsInteractive"].IsBoolean) { throw new SerializationException(); }  IsInteractive = _json["IsInteractive"]; }
         { var __json0 = _json["AppearCondition"]; if(!__json0.IsArray) { throw new SerializationException(); } AppearCondition = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AppearCondition.Add(__v0); }   }
-        { var __json0 = _json["Options"]; if(!__json0.IsArray) { throw new SerializationException(); } Options = new System.Collections.Generic.List<EventOption>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventOption __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventOption.DeserializeEventOption(__e0);  }  Options.Add(__v0); }   }
+        { var __json0 = _json["Options"]; if(!__json0.IsArray) { throw new SerializationException(); } Options = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Options.Add(__v0); }   }
         { var __json0 = _json["Effects"]; if(!__json0.IsArray) { throw new SerializationException(); } Effects = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  Effects.Add(__v0); }   }
         { if(!_json["IsOnBase"].IsBoolean) { throw new SerializationException(); }  IsOnBase = _json["IsOnBase"]; }
         PostInit();
     }
 
-    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<EventOption> Options, System.Collections.Generic.List<EventEffect> Effects, bool IsOnBase ) 
+    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<int> Options, System.Collections.Generic.List<EventEffect> Effects, bool IsOnBase ) 
     {
         this.EventName = EventName;
         this.Desc = Desc;
@@ -94,7 +94,8 @@ public sealed partial class Event :  Bright.Config.BeanBase
     /// <summary>
     /// 事件选项
     /// </summary>
-    public System.Collections.Generic.List<EventOption> Options { get; private set; }
+    public System.Collections.Generic.List<int> Options { get; private set; }
+    public System.Collections.Generic.List<EventOption> Options_Ref { get; private set; }
     /// <summary>
     /// 事件结果（非交互事件才需要）
     /// </summary>
@@ -110,7 +111,7 @@ public sealed partial class Event :  Bright.Config.BeanBase
     public  void Resolve(Dictionary<string, object> _tables)
     {
         foreach(var _e in AppearCondition) { _e?.Resolve(_tables); }
-        foreach(var _e in Options) { _e?.Resolve(_tables); }
+        { TbEventOption __table = (TbEventOption)_tables["TbEventOption"]; this.Options_Ref = new System.Collections.Generic.List<EventOption>(); foreach(var __e in Options) { this.Options_Ref.Add(__table.GetOrDefault(__e)); } }
         foreach(var _e in Effects) { _e?.Resolve(_tables); }
         PostResolve();
     }
@@ -118,7 +119,6 @@ public sealed partial class Event :  Bright.Config.BeanBase
     public  void TranslateText(System.Func<string, string, string> translator)
     {
         foreach(var _e in AppearCondition) { _e?.TranslateText(translator); }
-        foreach(var _e in Options) { _e?.TranslateText(translator); }
         foreach(var _e in Effects) { _e?.TranslateText(translator); }
     }
 

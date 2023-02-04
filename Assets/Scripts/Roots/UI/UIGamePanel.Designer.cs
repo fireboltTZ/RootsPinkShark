@@ -5,7 +5,7 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:d9770903-3230-4978-849e-fab21c576e20
+	// Generate Id:ec92cf1a-256b-46a1-9734-9e065f61bd99
 	public partial class UIGamePanel
 	{
 		public const string Name = "UIGamePanel";
@@ -17,8 +17,6 @@ namespace Roots
 		[SerializeField]
 		public EventCalendar EventCalender;
 		[SerializeField]
-		public ItemBar ItemBar_Old;
-		[SerializeField]
 		public ItemBar ItemBar;
 		
 		private UIGamePanelData mPrivateData = null;
@@ -28,7 +26,6 @@ namespace Roots
 			CharacterCanvas = null;
 			AgeBar = null;
 			EventCalender = null;
-			ItemBar_Old = null;
 			ItemBar = null;
 			
 			mData = null;

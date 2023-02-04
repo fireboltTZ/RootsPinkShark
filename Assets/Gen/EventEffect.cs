@@ -18,15 +18,15 @@ public sealed partial class EventEffect :  Bright.Config.BeanBase
 {
     public EventEffect(JSONNode _json) 
     {
-        { if(!_json["EventEffectType"].IsNumber) { throw new SerializationException(); }  EventEffectType = (EffectType)_json["EventEffectType"].AsInt; }
+        { if(!_json["EffectType"].IsNumber) { throw new SerializationException(); }  EffectType = (EffectType)_json["EffectType"].AsInt; }
         { if(!_json["Para1"].IsNumber) { throw new SerializationException(); }  Para1 = _json["Para1"]; }
         { if(!_json["Para2"].IsNumber) { throw new SerializationException(); }  Para2 = _json["Para2"]; }
         PostInit();
     }
 
-    public EventEffect(EffectType EventEffectType, int Para1, int Para2 ) 
+    public EventEffect(EffectType EffectType, int Para1, int Para2 ) 
     {
-        this.EventEffectType = EventEffectType;
+        this.EffectType = EffectType;
         this.Para1 = Para1;
         this.Para2 = Para2;
         PostInit();
@@ -37,17 +37,8 @@ public sealed partial class EventEffect :  Bright.Config.BeanBase
         return new EventEffect(_json);
     }
 
-    /// <summary>
-    /// 效果类型
-    /// </summary>
-    public EffectType EventEffectType { get; private set; }
-    /// <summary>
-    /// 参数1
-    /// </summary>
+    public EffectType EffectType { get; private set; }
     public int Para1 { get; private set; }
-    /// <summary>
-    /// 参数2
-    /// </summary>
     public int Para2 { get; private set; }
 
     public const int __ID__ = 1360913579;
@@ -65,7 +56,7 @@ public sealed partial class EventEffect :  Bright.Config.BeanBase
     public override string ToString()
     {
         return "{ "
-        + "EventEffectType:" + EventEffectType + ","
+        + "EffectType:" + EffectType + ","
         + "Para1:" + Para1 + ","
         + "Para2:" + Para2 + ","
         + "}";

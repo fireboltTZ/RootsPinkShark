@@ -111,7 +111,7 @@ namespace MatchThree.System
             {
                 if (characterList[i].CharacterState != CharacterState.Die)
                 {
-                    characterList[i].IncreaseAge();
+                    characterList[i].IncreaseAge(1);
                 }
             }
 

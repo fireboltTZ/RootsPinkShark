@@ -43,6 +43,34 @@ namespace cfg
         /// 下一代获得新的事件
         /// </summary>
         ADD_NEXT_EVENT = 7,
+        /// <summary>
+        /// 当代曾触发过事件
+        /// </summary>
+        THIS_HAVEDONE = 8,
+        /// <summary>
+        /// 历史曾触发过事件
+        /// </summary>
+        ALL_HAVEDONE = 9,
+        /// <summary>
+        /// 道心属性成长
+        /// </summary>
+        HEARTGROWTH = 10,
+        /// <summary>
+        /// 激活tag
+        /// </summary>
+        TAGACTIVE = 11,
+        /// <summary>
+        /// 年龄变化
+        /// </summary>
+        AGECHANGE = 12,
+        /// <summary>
+        /// 从掉落组中抽取物品
+        /// </summary>
+        DROP = 13,
+        /// <summary>
+        /// 临时属性
+        /// </summary>
+        TATTRI = 14,
     }
 
 } 

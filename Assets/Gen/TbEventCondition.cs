@@ -16,12 +16,12 @@ namespace cfg
 
 public sealed partial class TbEventCondition
 {
-    private readonly Dictionary<string, EventCondition> _dataMap;
+    private readonly Dictionary<EffectCondition, EventCondition> _dataMap;
     private readonly List<EventCondition> _dataList;
     
     public TbEventCondition(JSONNode _json)
     {
-        _dataMap = new Dictionary<string, EventCondition>();
+        _dataMap = new Dictionary<EffectCondition, EventCondition>();
         _dataList = new List<EventCondition>();
         
         foreach(JSONNode _row in _json.Children)
@@ -33,12 +33,12 @@ public sealed partial class TbEventCondition
         PostInit();
     }
 
-    public Dictionary<string, EventCondition> DataMap => _dataMap;
+    public Dictionary<EffectCondition, EventCondition> DataMap => _dataMap;
     public List<EventCondition> DataList => _dataList;
 
-    public EventCondition GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public EventCondition Get(string key) => _dataMap[key];
-    public EventCondition this[string key] => _dataMap[key];
+    public EventCondition GetOrDefault(EffectCondition key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public EventCondition Get(EffectCondition key) => _dataMap[key];
+    public EventCondition this[EffectCondition key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

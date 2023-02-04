@@ -19,7 +19,6 @@ public sealed partial class Tables
     public TbEvent TbEvent {get; }
     public TbEventCondition TbEventCondition {get; }
     public TbEventOption TbEventOption {get; }
-    public TbEventEffect TbEventEffect {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -34,8 +33,6 @@ public sealed partial class Tables
         tables.Add("TbEventCondition", TbEventCondition);
         TbEventOption = new TbEventOption(loader("tbeventoption")); 
         tables.Add("TbEventOption", TbEventOption);
-        TbEventEffect = new TbEventEffect(loader("tbeventeffect")); 
-        tables.Add("TbEventEffect", TbEventEffect);
         PostInit();
 
         TbResource.Resolve(tables); 
@@ -43,7 +40,6 @@ public sealed partial class Tables
         TbEvent.Resolve(tables); 
         TbEventCondition.Resolve(tables); 
         TbEventOption.Resolve(tables); 
-        TbEventEffect.Resolve(tables); 
         PostResolve();
     }
 
@@ -54,7 +50,6 @@ public sealed partial class Tables
         TbEvent.TranslateText(translator); 
         TbEventCondition.TranslateText(translator); 
         TbEventOption.TranslateText(translator); 
-        TbEventEffect.TranslateText(translator); 
     }
     
     partial void PostInit();
