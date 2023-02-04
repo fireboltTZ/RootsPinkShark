@@ -30,7 +30,7 @@ namespace MatchThree.System
         public void StartGame()
         {
             //Create New Character
-            
+            CreateFirstCharacter();
             //Start New UIPanel
             UIKit.OpenPanel<UIGamePanel>();
             //Character 
@@ -57,10 +57,33 @@ namespace MatchThree.System
 #endif
         }
 
+
+        /// <summary>
+        /// 创建角色
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="Age"></param>
+        /// <param name="MaxAge"></param>
+        /// <param name="Sex"></param>
+        /// <param name="MainParent"></param>
+        /// <param name="SubParent"></param>
         public void CreateCharacter(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
         {
             Character character = new Character(name, Age, MaxAge, Sex, MainParent, SubParent);
             characterList.Add(character);
+        }
+
+
+
+        /// <summary>
+        /// 创建游戏开始时第一个主角
+        /// </summary>
+        public void CreateFirstCharacter()
+        {
+            Character firstCharacter = new Character("", 18, 80, true);
+            mainCharacter = firstCharacter;
+            characterList.Add(firstCharacter);
+            firstMainCharacter = firstCharacter;
         }
 
 
