@@ -11,6 +11,10 @@ namespace cfg
 { 
     public enum EventType
     {
+        /// <summary>
+        /// 非交互事件
+        /// </summary>
+        Normal = 0,
     }
 
 } 

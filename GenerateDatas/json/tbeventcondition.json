@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "EventConditionName": "Age",
+    "Para1": 10,
+    "Para2": 20
+  }
+]

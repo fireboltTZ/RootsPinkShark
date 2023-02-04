@@ -11,6 +11,8 @@ namespace cfg
 { 
     public enum EffectType
     {
+        GROWTH = 0,
+        MARRY = 1,
     }
 
 } 
