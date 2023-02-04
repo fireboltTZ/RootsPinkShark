@@ -58,7 +58,13 @@ namespace Roots.Game
             this.Sex = Sex;
             this.MainParent = MainParent;
             this.SubParent = SubParent;
-            //TODO:三项属性的随机生成（未知取值范围）
+            Strength = UnityEngine.Random.Range(1, 6);
+            Agility = UnityEngine.Random.Range(1, 6);
+            Intelligence = 10 - Strength - Agility;
+            if (Intelligence < 0)
+            {
+                Intelligence = 0;
+            }
 
 
             this.CharacterState = CharacterState.Live;
@@ -111,11 +117,18 @@ namespace Roots.Game
         {
             return null;
         }
-        public void UseResource()
+
+
+        public void UseResource(GameResource resource)
         {
-            
+            ResourceExecutor.Instance.ResourceEffect(this, resource);
         }
 
+
+        /// <summary>
+        /// 获得Tag
+        /// </summary>
+        /// <param name="tag"></param>
         public void GetTag(GameTag tag)
         {
             if (Tags == null)
