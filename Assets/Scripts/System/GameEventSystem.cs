@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using QFramework;
+using Roots.Event;
 using Roots.Game;
 using UnityEditor;
 using UnityEngine;
@@ -16,9 +18,9 @@ namespace MatchThree.System
             
         }
 
-        public cfg.Event DrawEvent(Character character)
+        public List<cfg.Event> DrawEvent(Character character)
         {
-            cfg.Event evt;
+            List<cfg.Event> evt;
             if (this.GetSystem<GameSystem>().IsMainCharacter(character))
             {
                 evt = ChooseEventFromAll(character);
@@ -27,21 +29,23 @@ namespace MatchThree.System
             { 
                 evt = ChooseEventFromNormal(character);
             }
+            
+            this.SendEvent(new GetNewEvent(){Events = evt});
             return evt;
         }
 
-        public Event DrawChildrenEvent(Character character)
+        public List<Event> DrawChildrenEvent(Character character)
         {
             return null;
         }
 
 
-        private Event ChooseEventFromAll(Character character)
+        private List<Event> ChooseEventFromAll(Character character)
         {
             return null;
         }
 
-        private Event ChooseEventFromNormal(Character character)
+        private List<Event> ChooseEventFromNormal(Character character)
         {
             return null;
         }
