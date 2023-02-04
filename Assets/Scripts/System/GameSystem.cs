@@ -105,7 +105,7 @@ namespace MatchThree.System
 
             if(mainCharacter.CharacterState != CharacterState.Live)
             {
-                //TODO:打开选择继承人Panel
+                UIKit.OpenPanel<UIInheritPanel>();
             }
         }
 
