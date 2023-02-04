@@ -93,7 +93,8 @@ namespace MatchThree.System
         /// </summary>
         public Character CreateFirstCharacter()
         {
-            Character firstCharacter = new Character("", 18, 80, true);
+            int sex = Random.Range(0, 2);
+            Character firstCharacter = new Character(NameGenerator.Instance.GenerateName(sex == 0), 18, 80, sex == 0);
             mainCharacter = firstCharacter;
             characterList.Add(firstCharacter);
             firstMainCharacter = firstCharacter;
