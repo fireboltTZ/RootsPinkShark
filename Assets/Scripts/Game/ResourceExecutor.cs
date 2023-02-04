@@ -11,7 +11,7 @@ namespace Roots.Game
 {
     public class ResourceExecutor : Singleton<ResourceExecutor>
     {
-        public void ResourceEffect(Character character, List<Effect> effects)
+        public void ResourceEffect(Character character, List<EventEffect> effects)
         {
 
         }

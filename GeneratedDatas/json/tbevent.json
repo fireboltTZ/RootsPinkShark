@@ -1,0 +1,57 @@
+[
+  {
+    "EventName": "成长k",
+    "Desc": "你获得了成长",
+    "EventType": 0,
+    "EventId": 1,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [
+      {
+        "EventConditionName": "young",
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 0,
+        "Para1": 1,
+        "Para2": 0
+      },
+      {
+        "EventEffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ]
+  },
+  {
+    "EventName": "结婚",
+    "Desc": "你找到了配偶",
+    "EventType": 0,
+    "EventId": 2,
+    "GroupId": 1,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [
+      {
+        "EventConditionName": "Adult",
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EventEffectType": 1,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ]
+  }
+]
