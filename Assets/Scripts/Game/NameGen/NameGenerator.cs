@@ -6,7 +6,8 @@ using Random = UnityEngine.Random;
 
 public class NameGenerator : MonoSingleton<NameGenerator>
 {
-    public NameObject NameObject;
+    private NameObject nameObject;
+    private InheritedNameObject inheritedNameObject;
     private bool noNameLoaded;
     private List<string> lastName = new List<string>();
     private List<string> mFirstName = new List<string>();
@@ -15,8 +16,8 @@ public class NameGenerator : MonoSingleton<NameGenerator>
     public override void OnSingletonInit()
     {
         base.OnSingletonInit();
-        NameObject = Resources.Load<NameObject>("name");
-        if (NameObject == null)
+        nameObject = Resources.Load<NameObject>("name");
+        if (nameObject == null)
         {
             Debug.LogError("null exp");
             return;
@@ -27,9 +28,9 @@ public class NameGenerator : MonoSingleton<NameGenerator>
 
     private void ImportNames()
     {
-        lastName = NameObject.LastName;
-        mFirstName = NameObject.MFirstName;
-        fFirstName = NameObject.FFirstName;
+        lastName = nameObject.LastName;
+        mFirstName = nameObject.MFirstName;
+        fFirstName = nameObject.FFirstName;
         if (lastName.Count == 0 || mFirstName.Count == 0 || fFirstName.Count == 0)
         {
             noNameLoaded = true;
@@ -38,7 +39,7 @@ public class NameGenerator : MonoSingleton<NameGenerator>
 
     public string GenerateName(bool isMale)
     {
-        if (!NameObject || noNameLoaded)
+        if (!nameObject || noNameLoaded)
         {
             return "狗蛋儿";
         }
