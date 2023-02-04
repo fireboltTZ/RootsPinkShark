@@ -10,32 +10,35 @@ using static UnityEditor.PlayerSettings;
 using System;
 using System.Net;
 using Unity.Mathematics;
+using UnityEngine.UI.Extensions;
+using MatchThree.System;
 
 namespace Roots
 {	public class UIRootPanelData : UIPanelData
 	{
-        public List<Character> CharacterList;
-        public GameObject FamilyCardPrefab;
-		public Vector3 Origin;
-        public Vector3 End;
-		public float Angle;
-        public float Height;
-        
+
     }
-	public partial class UIRootPanel : UIPanel //家族图谱
+	public partial class UIRootPanel : MyUIPanel //家族图谱
 	{
-		public RectTransform Start;
-		public RectTransform End;
+        public Character FirstMainChracter;
+        public List<Character> CharacterList;
+		public RectTransform OriginRect;
 		public float Angle = 30f;
         public GameObject lineRenderer;
         public GameObject FamilyCardPrefab;
+        public float Height = 400f;
+        public GameObject Content; 
 
-        public float MaxAngle = 180f;
+
+        public float MaxAngle; //branch max Angles
         protected override void OnInit(IUIData uiData = null)
 		{
-			mData = uiData as UIRootPanelData ?? new UIRootPanelData();
-			// please add init code here
-			DrawTree(End.anchoredPosition, MaxAngle);
+            
+            mData = uiData as UIRootPanelData ?? new UIRootPanelData();
+            // please add init code here
+            FirstMainChracter = GameSystem.firstMainCharacter;
+            DrawTree(OriginRect.anchoredPosition, MaxAngle, FirstMainChracter);
+            
 		}
 		
 		protected override void OnOpen(IUIData uiData = null)
@@ -53,25 +56,26 @@ namespace Roots
 		{
 		}
         
-        public void DrawTree(Vector2 origin, float maxAngle)
+        public void DrawTree(Vector2 origin, float maxAngle, Character person)
 		{
-            float growthRate = 0.9f;
+            float growthRate = 1f; //MaxAngle Decline Rate
+
             maxAngle = maxAngle * growthRate;
             IEnumerator enumerator()
             {
-                var currentBranch = Instantiate(FamilyCardPrefab,this.transform,false);
+                var currentBranch = Instantiate(FamilyCardPrefab, Content.transform,false);
                 currentBranch.GetComponent<RectTransform>().anchoredPosition = origin;
                 yield return new WaitForSeconds(1f);
 
-                int numOfBranches = UnityEngine.Random.Range(1, 4);
+                int numOfBranches = person.Children.Count;  //UnityEngine.Random.Range(1, 5); //
                 //if (numOfBranches == 0)
-                 //   yield return null;
+                //   yield return null;
                 for (int i = 0; i < numOfBranches; i++)
                 {
 
                     var branchPoint = CaculateEndPoint(origin, 300, numOfBranches, i, maxAngle);
                     DrawLine(origin, branchPoint);
-                    DrawTree(branchPoint, maxAngle);
+                    DrawTree(branchPoint, maxAngle, person);
                     //yield return new WaitForSeconds(1f);
 
                 }
@@ -86,30 +90,31 @@ namespace Roots
         //private void 
         void DrawLine(Vector2 from, Vector2 to)
         {
-            var lineprefab = Instantiate(lineRenderer, this.transform, false);
-            lineRenderer.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,0);
-            var branchRenderer = lineprefab.GetComponent<LineRenderer>();
+            var lineprefab = Instantiate(lineRenderer, Content.transform, false);
+            lineRenderer.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+            var branchRenderer = lineprefab.GetComponent<UILineRenderer>();
 
-            branchRenderer.startColor = Color.red;
-            branchRenderer.endColor = Color.red;
-            branchRenderer.startWidth = 0.1f;
-            branchRenderer.endWidth = 0.1f;
-            branchRenderer.positionCount = 2;
-            branchRenderer.useWorldSpace = false;
-
-            branchRenderer.SetPosition(0, from); //x,y and z position of the starting point of the line
-            branchRenderer.SetPosition(1, to); //x,y and z position of the end point of the line
-
+            Vector2 direction = to - from;
             
-            Debug.DrawLine(from, to, Color.green);
+            Vector2 newFrom = from + direction.normalized * direction.magnitude*0.3f; 
+            Vector2 newTo = from + direction.normalized * direction.magnitude * 0.85f;
+
+
+            //branchRenderer.color = Color.red;
+            branchRenderer.lineThickness = 70f;
+            Vector2[] points= new Vector2[2];
+            points[0]= newFrom; points[1]= newTo;
+            branchRenderer.Points = points;
+
         }
 
 
         private Vector2 CaculateEndPoint(Vector2 startPoint, float length, int countOfbranches,int count, float maxAngle)
         {
             Debug.Log("CountofBranches: " + countOfbranches);
+            //maxAngle = 120f;
             //Use Y Axis as
-            maxAngle = 120;
+
             float angleBetweenBranch = 0;
             if (countOfbranches <= 2)
                 angleBetweenBranch = maxAngle;
@@ -125,26 +130,26 @@ namespace Roots
             if (currentAngle > 0 && currentAngle < 90f)
             {
 
-                float offset_X = Mathf.Sin(Mathf.Deg2Rad * currentAngle) * length;
-                float offset_Y = MathF.Cos(Mathf.Deg2Rad * currentAngle) * length;
+                float offset_X = Mathf.Tan(Mathf.Deg2Rad * currentAngle) * Height;
+                //float offset_Y = MathF.Cos(Mathf.Deg2Rad * currentAngle) * length;
                 endPoint.x = endPoint.x + offset_X;
-                endPoint.y = endPoint.y + offset_Y;
+                endPoint.y = endPoint.y - Height;
 
             }
             else if (currentAngle == 0)
             {
-                float offset_X = Mathf.Sin(Mathf.Deg2Rad * currentAngle) * length;
-                float offset_Y = MathF.Cos(Mathf.Deg2Rad * currentAngle) * length;
+                float offset_X = Mathf.Tan(Mathf.Deg2Rad * currentAngle) * Height;
+                //float offset_Y = MathF.Cos(Mathf.Deg2Rad * currentAngle) * length;
                 endPoint.x = endPoint.x + offset_X;
-                endPoint.y = endPoint.y + offset_Y;
+                endPoint.y = endPoint.y - Height; 
             }
 
             else if (currentAngle < 0 && currentAngle > -90f)
             {
-                float offset_X = Mathf.Sin(Mathf.Deg2Rad * -currentAngle) * length;
-                float offset_Y = Mathf.Cos(Mathf.Deg2Rad * -currentAngle) * length;
+                float offset_X = Mathf.Tan(Mathf.Deg2Rad * -currentAngle) * Height;
+                //float offset_Y = Mathf.Cos(Mathf.Deg2Rad * -currentAngle) * length;
                 endPoint.x = endPoint.x - offset_X;
-                endPoint.y = endPoint.y + offset_Y;
+                endPoint.y = endPoint.y - Height;
             }
 
             else

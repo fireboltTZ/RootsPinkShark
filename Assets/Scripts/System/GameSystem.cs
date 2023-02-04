@@ -22,7 +22,7 @@ namespace MatchThree.System
         
         private ResLoader _resLoader = ResLoader.Allocate();
         private Character mainCharacter;
-        private Character firstMainCharacter;
+        public Character firstMainCharacter;
         private List<Character> characterList = new List<Character>();
         private float yearLength;
         public Tables Table;
