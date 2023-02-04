@@ -17,23 +17,35 @@ namespace Roots.Game
             throw new System.NotImplementedException();
         }
 
+
+        //TODO:从掉落组中掉落物品
+        public GameResource DropResourceFromGroup(int groupId)
+        {
+            return null;
+        }
+
+
+
         public void ResourceEffect(Character character, List<EventEffect> effects)
         {
             for(int i = 0; i < effects.Count; i++)
             {
-                switch(effects[i].EventEffectType)
+                switch(effects[i].EffectType)
                 {
                     case EffectType.GROWTH:
                         switch (effects[i].Para1)
                         {
-                            case 0:
-                                character.Strength += effects[i].Para2;
+                            case (int) AttriType.LINGLI:
+                                character.LINGLI += effects[i].Para2;
                                 break;
-                            case 1:
-                                character.Agility += effects[i].Para2;
+                            case (int) AttriType.SHENSHI:
+                                character.SHENSHI += effects[i].Para2;
                                 break;
-                            case 2:
-                                character.Intelligence += effects[i].Para2;
+                            case (int) AttriType.BOWEN:
+                                character.BOWEN += effects[i].Para2;
+                                break;
+                            case (int)AttriType.XINGYUN:
+                                character.XINGYUN += effects[i].Para2;
                                 break;
                         }
                         break;
@@ -41,21 +53,56 @@ namespace Roots.Game
                         Character another = this.GetSystem<GameSystem>().CreateCharacter("", 18, 80, !character.Sex);
                         character.Marry(another);
                         break;
-                    case EffectType.GetResource:
+                    case EffectType.DIE:
+                        character.Die();
+                        break;
+                    case EffectType.DIE_SON:
+                        character.Children[effects[i].Para1].Die();
+                        break;
+                    case EffectType.ADD_RESOURCE:
                         character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[effects[i].Para1]);
                         break;
-                    case EffectType.LostResource:
-                        character.Resources.Remove(this.GetSystem<GameSystem>().Table.TbResource[effects[i].Para1]);
+                    case EffectType.ADD_MONEY:
+                        for (int j = 0; j < effects[i].Para1; j++)
+                        {
+                            character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[0000]);//Need Money ID
+                        }
                         break;
-                    case EffectType.GetTag:
+
+
+
+                    case EffectType.ADD_CURR_EVENT:
+                        break;
+                    case EffectType.ADD_NEXT_EVENT:
+                        break;
+                    case EffectType.THIS_HAVEDONE:
+                        break;
+                    case EffectType.ALL_HAVEDONE:
+                        break;
+                    case EffectType.HEARTGROWTH:
+                        break;
+
+
+
+                    case EffectType.TAGACTIVE:
                         character.GetTag(this.GetSystem<GameSystem>().Table.TbTag[effects[i].Para1]);
                         break;
-                    case EffectType.LostTag:
-                        character.Tags.Remove(this.GetSystem<GameSystem>().Table.TbTag[effects[i].Para1]);
+                    case EffectType.AGECHANGE:
+                        character.Age += effects[i].Para1;
                         break;
-                    case EffectType.Bear:
-                        int sex = Random.Range(0, 2);
-                        Character child = this.GetSystem<GameSystem>().CreateCharacter(NameGenerator.Instance.GenerateName(sex == 1), 1, 80, sex == 1, character, character.Spouse);
+                    case EffectType.DROP:
+                        character.Resources.Add(DropResourceFromGroup(effects[i].Para1));
+                        break;
+                    case EffectType.TATTRI:
+                        if (character.TempAttr.ContainsKey(effects[i].Para1))
+                        {
+                            character.TempAttr[effects[i].Para1] += effects[i].Para1;
+                        }
+                        else
+                        {
+                            character.TempAttr.Add(effects[i].Para1, effects[i].Para2);
+                        }
+                        character.SetTempAttribute();
                         break;
                 }
             }

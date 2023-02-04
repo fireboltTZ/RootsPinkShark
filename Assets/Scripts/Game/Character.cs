@@ -23,15 +23,18 @@ namespace Roots.Game
         private int MaxAge;
         public bool Sex;
         public CharacterState CharacterState;
-        
+
         #endregion
-        
+
         #region ChooseAttribute
 
-        public int Strength;
-        public int Agility;
-        public int Intelligence;
-        
+        public int LINGLI;
+        public int SHENSHI;
+        public int BOWEN;
+        public int XINGYUN;
+
+        public Dictionary<int, int> TempAttr = new Dictionary<int, int>();
+
         #endregion
 
         #region Staff
@@ -54,29 +57,22 @@ namespace Roots.Game
 
         public Character(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
         {
-            this.Name= name;
+            this.Name = name;
             this.Age = Age;
-            this.MaxAge= MaxAge;
-            this.Sex = Sex;  
+            this.MaxAge = MaxAge;
+            this.Sex = Sex;
             this.MainParent = MainParent;
             this.SubParent = SubParent;
-            Strength = UnityEngine.Random.Range(1, 6);
-            Agility = UnityEngine.Random.Range(1, 6);
-            Intelligence = 10 - Strength - Agility;
-            if (Intelligence < 0)
-            {
-                Intelligence = 0;
-            }
 
             AgeBind.Register(e =>
             {
                 if (this.GetSystem<GameSystem>().IsMainCharacter(this))
                 {
-                    
+
                 }
             });
             AgeBind.Value = Age;
-            
+
             this.CharacterState = CharacterState.Live;
             this.Birth();
         }
@@ -124,22 +120,22 @@ namespace Roots.Game
         //     this.GetSystem<GameEventSystem>().DrawEvent(this);
         //    
         // }
-        
+
         public void IncreaseAge(int k)
         {
-            Age+= k;
+            ResetTempAttribute();
+            Age += k;
             if (Age > MaxAge)
             {
                 Die();
                 return;
             }
-            if(this.GetSystem<GameSystem>().IsMainCharacter(this))
-                this.SendEvent(new AgeChangeEvent(){Age = Age});
+            if (this.GetSystem<GameSystem>().IsMainCharacter(this))
+                this.SendEvent(new AgeChangeEvent() { Age = Age });
             this.GetSystem<GameEventSystem>().DrawEvent(this);
-           
         }
 
-//TODO
+        //TODO
         private List<Character> GetAllChildren()
         {
             return null;
@@ -162,7 +158,7 @@ namespace Roots.Game
             {
                 Tags = new List<GameTag>();
             }
-            for(int i = 0; i < Tags.Count; i++)
+            for (int i = 0; i < Tags.Count; i++)
             {
                 if (Tags[i].TagGroupId == tag.TagGroupId)
                 {
@@ -170,6 +166,57 @@ namespace Roots.Game
                 }
             }
             Tags.Add(tag);
+        }
+
+
+        /// <summary>
+        /// 临时属性生效
+        /// </summary>
+        /// <returns></returns>
+        public void SetTempAttribute()
+        {
+            foreach (KeyValuePair<int, int> pair in TempAttr)
+            {
+                switch (pair.Key)
+                {
+                    case (int)AttriType.LINGLI:
+                        LINGLI += pair.Value;
+                        break;
+                    case (int)AttriType.SHENSHI:
+                        SHENSHI += pair.Value;
+                        break;
+                    case (int)AttriType.BOWEN:
+                        BOWEN += pair.Value;
+                        break;
+                    case (int)AttriType.XINGYUN:
+                        XINGYUN += pair.Value;
+                        break;
+                }
+            }
+        }
+
+
+        public void ResetTempAttribute()
+        {
+            foreach (KeyValuePair<int, int> pair in TempAttr)
+            {
+                switch (pair.Key)
+                {
+                    case (int)AttriType.LINGLI:
+                        LINGLI -= pair.Value;
+                        break;
+                    case (int)AttriType.SHENSHI:
+                        SHENSHI -= pair.Value;
+                        break;
+                    case (int)AttriType.BOWEN:
+                        BOWEN -= pair.Value;
+                        break;
+                    case (int)AttriType.XINGYUN:
+                        XINGYUN -= pair.Value;
+                        break;
+                }
+            }
+            TempAttr.Clear();
         }
 
 
