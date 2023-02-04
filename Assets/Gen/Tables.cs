@@ -16,7 +16,7 @@ public sealed partial class Tables
 {
     public TbResource TbResource {get; }
     public TbTag TbTag {get; }
-    public TbEffect TbEffect {get; }
+    public TbEvent TbEvent {get; }
     public TbEventCondition TbEventCondition {get; }
     public TbEventOption TbEventOption {get; }
     public TbEventEffect TbEventEffect {get; }
@@ -28,8 +28,8 @@ public sealed partial class Tables
         tables.Add("TbResource", TbResource);
         TbTag = new TbTag(loader("tbtag")); 
         tables.Add("TbTag", TbTag);
-        TbEffect = new TbEffect(loader("tbeffect")); 
-        tables.Add("TbEffect", TbEffect);
+        TbEvent = new TbEvent(loader("tbevent")); 
+        tables.Add("TbEvent", TbEvent);
         TbEventCondition = new TbEventCondition(loader("tbeventcondition")); 
         tables.Add("TbEventCondition", TbEventCondition);
         TbEventOption = new TbEventOption(loader("tbeventoption")); 
@@ -40,7 +40,7 @@ public sealed partial class Tables
 
         TbResource.Resolve(tables); 
         TbTag.Resolve(tables); 
-        TbEffect.Resolve(tables); 
+        TbEvent.Resolve(tables); 
         TbEventCondition.Resolve(tables); 
         TbEventOption.Resolve(tables); 
         TbEventEffect.Resolve(tables); 
@@ -51,7 +51,7 @@ public sealed partial class Tables
     {
         TbResource.TranslateText(translator); 
         TbTag.TranslateText(translator); 
-        TbEffect.TranslateText(translator); 
+        TbEvent.TranslateText(translator); 
         TbEventCondition.TranslateText(translator); 
         TbEventOption.TranslateText(translator); 
         TbEventEffect.TranslateText(translator); 

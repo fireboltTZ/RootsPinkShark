@@ -6,6 +6,8 @@ using Roots.Event;
 using Roots.Game;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using SimpleJSON;
 using UnityEditor;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
@@ -22,11 +24,16 @@ namespace MatchThree.System
         private Character firstMainCharacter;
         private List<Character> characterList = new List<Character>();
         private float yearLength;
+        public Tables Table;
+
+        public List<int> GenUnique = new List<int>();
+        public List<int> HistUnique = new List<int>();
 
         protected override void OnInit()
         {
             ResKit.Init();
             _resLoader = ResLoader.Allocate();
+            Table = new Tables(Loader);
         }
         
         
@@ -121,6 +128,7 @@ namespace MatchThree.System
             mainCharacter = character;
             character.Resources.AddRange(resources);
             character.GetTag(tag);
+            GenUnique.Clear();
             this.SendEvent(new ChooseNewCharacterEvent() { Character = character });
         }
 
@@ -128,6 +136,12 @@ namespace MatchThree.System
         public bool IsMainCharacter(Character character)
         {
             return mainCharacter == character;
+        }
+        
+        private JSONNode Loader(string fileName)
+        {
+            return JSON.Parse(
+                File.ReadAllText((Application.dataPath + "/../GeneratedDatas/json/" + fileName + ".json")));
         }
     }
 }
