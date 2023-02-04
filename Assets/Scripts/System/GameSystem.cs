@@ -18,6 +18,7 @@ namespace MatchThree.System
         
         private ResLoader _resLoader = ResLoader.Allocate();
         private Character mainCharacter;
+        private Character firstMainCharacter;
         private List<Character> characterList;
 
         protected override void OnInit()
@@ -56,6 +57,14 @@ namespace MatchThree.System
 #endif
         }
 
+        public void CreateCharacter(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
+        {
+            Character character = new Character(name, Age, MaxAge, Sex, MainParent, SubParent);
+            characterList.Add(character);
+        }
+
+
+
         /// <summary>
         /// 游戏时间推进，所有角色年龄增长一岁
         /// </summary>
@@ -63,7 +72,10 @@ namespace MatchThree.System
         {
             for(int i = 0; i < characterList.Count; i++)
             {
-                characterList[i].IncreaseAge();
+                if (!(characterList[i].CharacterState == CharacterState.Die))
+                {
+                    characterList[i].IncreaseAge();
+                }
             }
 
             if(mainCharacter.CharacterState != CharacterState.Live)
