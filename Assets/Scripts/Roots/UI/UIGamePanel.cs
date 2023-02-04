@@ -1,7 +1,11 @@
+using System.Collections.Generic;
+using cfg;
+using ModelShark;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
 using Roots.Event;
+using Roots.Game;
 
 namespace Roots
 {
@@ -23,7 +27,7 @@ namespace Roots
             //DragAndDrop
             //
 			//Item.GetComponent<DragAndDrop>().OnBeginDrag.AddListener(() => { })
-
+			this.GetComponent<TooltipManager>().guiCamera = UIKit.Root.Camera;
 			this.RegisterEvent<AgeChangeEvent>(e =>
 			{
 				AgeBar.AgeNum.text = e.Age.ToString();
@@ -35,22 +39,53 @@ namespace Roots
 				{
 					GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
 					gl.Text.text = gameEvent.Desc;
+					EventExecutor.Instance.EventExecute(e.Character,gameEvent);
 				}
 			});
 
 			this.RegisterEvent<GetNewTagEvent>(e =>
 			{
-				
+				SetNewTag(e.Tags);
 			});
 
 			this.RegisterEvent<GetNewResourcesEvent>(e =>
+			{
+				SetNewResources(e.Resources);
+			});
+
+			this.RegisterEvent<TimeStopEvent>(e =>
+			{
+				
+			});
+
+			this.RegisterEvent<TimeContinueEvent>(E =>
 			{
 
 			});
 
 
 		}
+
+
+		private void SetNewTag(List<GameTag> list)
+		{
+			TagBar.transform.DestroyChildren();
+			foreach (var gameTag in list)
+			{
+				GameTagObject gto = Instantiate(GameTagObjectPrefab, TagBar.transform);
+				gto.Init(gameTag);
+			}
+		}
 		
+		private void SetNewResources(List<GameResource> list)
+		{
+			TagBar.transform.DestroyChildren();
+			foreach (var gameResource in list)
+			{
+				GameItem gto = Instantiate(GameItemPrefab, ItemBar.transform);
+				gto.Init(gameResource);
+			}
+		}
 		protected override void OnOpen(IUIData uiData = null)
 		{
 		}

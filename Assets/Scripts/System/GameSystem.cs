@@ -29,6 +29,7 @@ namespace MatchThree.System
 
         public List<int> GenUnique = new List<int>();
         public List<int> HistUnique = new List<int>();
+        public List<int> HisDoneEvents = new List<int>();
         public Character MainCharacter => mainCharacter;
 
         protected override void OnInit()

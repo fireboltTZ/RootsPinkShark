@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "ResourceId": 1,
+    "IsInherit": false,
+    "Desc": "haobaobei",
+    "Name": "beibaobao",
+    "ResourceType": 1,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": "Resource_1"
+  }
+]

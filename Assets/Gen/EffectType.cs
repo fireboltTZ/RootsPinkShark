@@ -19,7 +19,6 @@ namespace cfg
         /// 结婚
         /// </summary>
         MARRY = 1,
-
         /// <summary>
         /// 死亡
         /// </summary>
@@ -72,7 +71,14 @@ namespace cfg
         /// 临时属性
         /// </summary>
         TATTRI = 14,
-
+        /// <summary>
+        /// 生小孩
+        /// </summary>
+        GIVE_BIRTH = 15,
+        /// <summary>
+        /// 加TAG
+        /// </summary>
+        ADD_TAG = 16,
     }
 
 } 

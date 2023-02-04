@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 2300436680867397273}
   - component: {fileID: 8858805345800387829}
   - component: {fileID: 6355608149863375773}
+  - component: {fileID: 8683890856411485203}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -166,4 +167,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d57c8310ef2d1344be039e1f503b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemImage: {fileID: 0}
+  ItemImage: {fileID: 8728937382547037484}
+--- !u!114 &8683890856411485203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665972846891491067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99a9e0f405bff84884c4884261df263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipStyle: {fileID: 1092114572127450089, guid: 1ba50948f2eda8043982888becdd57dc, type: 3}
+  parameterizedTextFields:
+  - name: Title
+    placeholder: '%Title%'
+    value: 
+  - name: BodyText
+    placeholder: '%BodyText%'
+    value: 
+  dynamicImageFields: []
+  dynamicSectionFields: []
+  isRemotelyActivated: 0
+  backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+  shouldOverridePosition: 0
+  overridePositionType: 0
+  overridePositionVector: {x: 0, y: 0, z: 0}
+  overridePositionTransform: {fileID: 0}
+  tipPosition: 0
+  minTextWidth: 100
+  maxTextWidth: 200
+  staysOpen: 0
+  neverRotate: 0
+  isBlocking: 0

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "TagId": 1,
+    "TagName": "天生丽质",
+    "Desc": "好漂亮的姐姐~",
+    "TagGroupId": 0,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  }
+]

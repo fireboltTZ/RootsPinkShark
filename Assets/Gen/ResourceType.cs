@@ -11,7 +11,6 @@ namespace cfg
 { 
     public enum ResourceType
     {
-
         /// <summary>
         /// 无
         /// </summary>
@@ -19,7 +18,6 @@ namespace cfg
         ONE = 1,
         TWO = 2,
         THREE = 3,
-
     }
 
 } 

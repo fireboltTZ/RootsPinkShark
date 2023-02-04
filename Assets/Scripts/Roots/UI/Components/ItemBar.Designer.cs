@@ -10,9 +10,11 @@ namespace Roots
 {
 	public partial class ItemBar
 	{
+		[SerializeField] public RectTransform Content;
 
 		public void Clear()
 		{
+			Content = null;
 		}
 
 		public override string ComponentName

@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using cfg;
+using TMPro;
 using UnityEngine;
 
+using ModelShark;
 public class GameTagObject : MonoBehaviour
 {
     private GameTag GameTag;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI text;
+    public TooltipTrigger TooltipTrigger => this.GetComponent<TooltipTrigger>();
 
-    // Update is called once per frame
-    void Update()
+    public void Init(GameTag gameTag)
     {
-        
+        GameTag = gameTag;
+        text.text = gameTag.TagName;
+        TooltipTrigger.SetText("Title", gameTag.TagName);
+        TooltipTrigger.SetText("BodyText", gameTag.Desc);
+
     }
 }

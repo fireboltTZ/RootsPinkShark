@@ -5,7 +5,7 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:ec92cf1a-256b-46a1-9734-9e065f61bd99
+	// Generate Id:9fda7409-b6a8-439d-bfd0-d71f95128efd
 	public partial class UIGamePanel
 	{
 		public const string Name = "UIGamePanel";
@@ -14,6 +14,8 @@ namespace Roots
 		public ChasracterCanvas CharacterCanvas;
 		[SerializeField]
 		public AgeCanvas AgeBar;
+		[SerializeField]
+		public UnityEngine.UI.Image TagBar;
 		[SerializeField]
 		public EventCalendar EventCalender;
 		[SerializeField]
@@ -25,6 +27,7 @@ namespace Roots
 		{
 			CharacterCanvas = null;
 			AgeBar = null;
+			TagBar = null;
 			EventCalender = null;
 			ItemBar = null;
 			

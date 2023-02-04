@@ -8,13 +8,7 @@
     "IsGenUnique": false,
     "IsAllUnique": false,
     "IsInteractive": false,
-    "AppearCondition": [
-      {
-        "EventConditionName": 0,
-        "Para1": 0,
-        "Para2": 0
-      }
-    ],
+    "AppearCondition": [],
     "Options": [],
     "Effects": [
       {
@@ -39,18 +33,17 @@
     "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
-    "AppearCondition": [
-      {
-        "EventConditionName": 0,
-        "Para1": 0,
-        "Para2": 0
-      }
-    ],
+    "AppearCondition": [],
     "Options": [],
     "Effects": [
       {
         "EffectType": 1,
         "Para1": 0,
+        "Para2": 0
+      },
+      {
+        "EffectType": 11,
+        "Para1": 1,
         "Para2": 0
       }
     ],
@@ -58,7 +51,7 @@
   },
   {
     "EventName": "佳偶天成",
-    "Desc": "你找到了配偶",
+    "Desc": "你找到了很棒的配偶",
     "EventType": 0,
     "EventId": 3,
     "GroupId": 1,
@@ -84,7 +77,7 @@
   },
   {
     "EventName": "意外身故",
-    "Desc": "你找到了配偶",
+    "Desc": "你死了",
     "EventType": 0,
     "EventId": 4,
     "GroupId": 0,
@@ -104,11 +97,11 @@
   },
   {
     "EventName": "痛失爱子",
-    "Desc": "你找到了配偶",
+    "Desc": "你儿子死了",
     "EventType": 0,
     "EventId": 5,
     "GroupId": 0,
-    "IsGenUnique": false,
+    "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
     "AppearCondition": [],
@@ -124,7 +117,7 @@
   },
   {
     "EventName": "明镜高悬",
-    "Desc": "你找到了配偶",
+    "Desc": "你白了",
     "EventType": 0,
     "EventId": 6,
     "GroupId": 0,
@@ -144,7 +137,7 @@
   },
   {
     "EventName": "偶得机缘",
-    "Desc": "你找到了配偶",
+    "Desc": "你得到了机缘",
     "EventType": 0,
     "EventId": 7,
     "GroupId": 0,
@@ -184,7 +177,7 @@
   },
   {
     "EventName": "登堂入室",
-    "Desc": "你找到了配偶",
+    "Desc": "你读书很厉害",
     "EventType": 0,
     "EventId": 9,
     "GroupId": 0,
@@ -204,7 +197,7 @@
   },
   {
     "EventName": "小有进财",
-    "Desc": "你找到了配偶",
+    "Desc": "你赚了点小钱",
     "EventType": 0,
     "EventId": 10,
     "GroupId": 0,
@@ -224,7 +217,7 @@
   },
   {
     "EventName": "富甲一方",
-    "Desc": "你找到了配偶",
+    "Desc": "你赚了很多",
     "EventType": 0,
     "EventId": 11,
     "GroupId": 0,
@@ -284,5 +277,25 @@
       }
     ],
     "IsOnBase": false
+  },
+  {
+    "EventName": "获得",
+    "Desc": "你获得了一个宝贝~",
+    "EventType": 0,
+    "EventId": 14,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 1,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true
   }
 ]

@@ -1,20 +1,26 @@
+using System;
 using cfg;
 using MatchThree.System;
 using QFramework;
 using Roots.Game;
 using System.Collections;
 using System.Collections.Generic;
+using Roots.Event;
 using UnityEngine;
 
 
 
 namespace Roots.Game
 {
-    public class ResourceExecutor : Singleton<ResourceExecutor>, ICanGetSystem
+    public class ResourceExecutor : Singleton<ResourceExecutor>, ICanGetSystem, ICanSendEvent
     {
+        private ResourceExecutor()
+        {
+            
+        }
         public IArchitecture GetArchitecture()
         {
-            throw new System.NotImplementedException();
+            return Roots.Interface;
         }
 
 
@@ -24,10 +30,26 @@ namespace Roots.Game
             return null;
         }
 
-
-
-        public void ResourceEffect(Character character, List<EventEffect> effects)
+        public void ResourceEffect(Character character, GameResource gameResource)
         {
+            EffectExecute(character, gameResource.Effects);
+        }
+        
+        public void EventEffect(Character character, cfg.Event gameEvent)
+        {
+            if(gameEvent.IsGenUnique)
+            {this.GetSystem<GameSystem>().GenUnique.Add(gameEvent.EventId);}
+
+            if (gameEvent.IsAllUnique)
+            {
+                this.GetSystem<GameSystem>().HistUnique.Add(gameEvent.EventId);
+            }
+            EffectExecute(character, gameEvent.Effects);
+        }
+
+        public void EffectExecute(Character character, List<EventEffect> effects)
+        {
+            Debug.Log("出发了啥效果呢！~");
             for(int i = 0; i < effects.Count; i++)
             {
                 switch(effects[i].EffectType)
@@ -61,11 +83,12 @@ namespace Roots.Game
                         break;
                     case EffectType.ADD_RESOURCE:
                         character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[effects[i].Para1]);
+                        this.SendEvent(new GetNewResourcesEvent() { Resources = character.Resources });
                         break;
                     case EffectType.ADD_MONEY:
                         for (int j = 0; j < effects[i].Para1; j++)
                         {
-                            character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[0000]);//Need Money ID
+                            //character.Resources.Add(this.GetSystem<GameSystem>().Table.TbResource[0000]);//TODO Need Money ID
                         }
                         break;
 
@@ -76,10 +99,12 @@ namespace Roots.Game
                     case EffectType.ADD_NEXT_EVENT:
                         break;
                     case EffectType.THIS_HAVEDONE:
+                        //TODO 不确定放在effect什么效果欸
                         break;
                     case EffectType.ALL_HAVEDONE:
                         break;
                     case EffectType.HEARTGROWTH:
+                        //TODO 如何获得道心
                         break;
 
 
@@ -103,6 +128,9 @@ namespace Roots.Game
                             character.TempAttr.Add(effects[i].Para1, effects[i].Para2);
                         }
                         character.SetTempAttribute();
+                        break;
+                    case EffectType.GIVE_BIRTH:
+                        //TODO
                         break;
                 }
             }

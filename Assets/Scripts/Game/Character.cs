@@ -52,6 +52,8 @@ namespace Roots.Game
         public Character SubParent;
         public List<Character> Children;
 
+        public List<int> DoneEvents = new List<int>(); 
+
         #endregion
 
 
@@ -63,15 +65,9 @@ namespace Roots.Game
             this.Sex = Sex;
             this.MainParent = MainParent;
             this.SubParent = SubParent;
+            Resources = new List<GameResource>();
+            Tags = new List<GameTag>();
 
-            AgeBind.Register(e =>
-            {
-                if (this.GetSystem<GameSystem>().IsMainCharacter(this))
-                {
-
-                }
-            });
-            AgeBind.Value = Age;
 
             this.CharacterState = CharacterState.Live;
             this.Birth();
@@ -144,7 +140,7 @@ namespace Roots.Game
 
         public void UseResource(GameResource resource)
         {
-            ResourceExecutor.Instance.ResourceEffect(this, resource.Effects);
+            ResourceExecutor.Instance.ResourceEffect(this, resource);
         }
 
 
@@ -170,7 +166,7 @@ namespace Roots.Game
 
 
         /// <summary>
-        /// 临时属性生效
+        /// ?????????Ч
         /// </summary>
         /// <returns></returns>
         public void SetTempAttribute()

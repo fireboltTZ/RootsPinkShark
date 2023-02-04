@@ -52,50 +52,15 @@ namespace MatchThree.System
                 evt = ChooseEventFromNormal(character);
             }
             
-            this.SendEvent(new GetNewEvent(){Events = evt});
+            this.SendEvent(new GetNewEvent(){Events = evt, Character = character});
             return evt;
         }
         
 
         private List<Event> ChooseEventFromAll(Character character)
         {
-            List<Event> Evts = new List<Event>();
-            Evts.Add(NormalEventBase[0]);
-            return Evts;
-            if (character.Age >= 18)
-            {
-                for (int i = 0; i < AdultInteractiveEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, AdultInteractiveEvents[i]))
-                    {
-                        Evts.Add(AdultInteractiveEvents[i]);
-                    }
-                }
-                for (int i = 0; i < AdultNormalEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, AdultNormalEvents[i]))
-                    {
-                        Evts.Add(AdultNormalEvents[i]);
-                    }
-                }
-            }
-            else
-            {
-                for (int i = 0; i < ChildInteractiveEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, ChildInteractiveEvents[i]))
-                    {
-                        Evts.Add(ChildInteractiveEvents[i]);
-                    }
-                }
-                for (int i = 0; i < ChildNormalEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, ChildNormalEvents[i]))
-                    {
-                        Evts.Add(ChildNormalEvents[i]);
-                    }
-                }
-            }
+            List<Event> Evts = GameSystem.Table.TbEvent.DataList.Where(e => EventExecutor.Instance.EventAvailable(character, e)).ToList();
+
             int eventIndex = Random.Range(0, Evts.Count);
             List<Event> events = new List<Event>();
             events.Add(Evts[eventIndex]);
@@ -104,27 +69,7 @@ namespace MatchThree.System
 
         private List<Event> ChooseEventFromNormal(Character character)
         {
-            List<Event> Evts = new List<Event>();
-            if (character.Age >= 18)
-            {
-                for (int i = 0; i < AdultNormalEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, AdultNormalEvents[i]))
-                    {
-                        Evts.Add(AdultNormalEvents[i]);
-                    }
-                }
-            }
-            else
-            {
-                for (int i = 0; i < ChildNormalEvents.Count; i++)
-                {
-                    if (EventExecutor.Instance.EventAvailable(character, ChildNormalEvents[i]))
-                    {
-                        Evts.Add(ChildNormalEvents[i]);
-                    }
-                }
-            }
+            List<Event> Evts = GameSystem.Table.TbEvent.DataList.Where(e => e.EventType == EventType.Normal && EventExecutor.Instance.EventAvailable(character, e)).ToList();
             int eventIndex = Random.Range(0, Evts.Count);
             List<Event> events = new List<Event>();
             events.Add(Evts[eventIndex]);

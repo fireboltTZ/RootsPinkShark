@@ -15,6 +15,7 @@ namespace Roots.Event
     public struct GetNewEvent
     {
         public List<cfg.Event> Events;
+        public Character Character;
     }
     //获得新道具
     public struct GetResourceEvent
@@ -35,6 +36,16 @@ namespace Roots.Event
     public struct GetNewResourcesEvent
     {
         public List<cfg.GameResource> Resources;
+    }
+
+    public struct TimeStopEvent
+    {
+        
+    }
+
+    public struct TimeContinueEvent
+    {
+        
     }
     
     
