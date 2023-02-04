@@ -68,11 +68,11 @@ namespace Roots.Game
         {
             if (MainParent != null)
             {
-                MainParent.AddToChildren(this);
+                MainParent.Children.Add(this);
             }
             if (SubParent != null)
             {
-                SubParent.AddToChildren(this);
+                SubParent.Children.Add(this);
             }
         }
 
@@ -108,7 +108,7 @@ namespace Roots.Game
 //TODO
         private List<Character> GetAllChildren()
         {
-            return Children;
+            return null;
         }
         public void UseResource()
         {
@@ -118,26 +118,6 @@ namespace Roots.Game
         public IArchitecture GetArchitecture()
         {
             return Roots.Interface;
-        }
-
-        public void AddToChildren(Character character)
-        {
-            if (Children == null)
-            { 
-                Children= new List<Character>();
-            }
-            if (!Children.Contains(character))
-            {
-                Children.Add(character);
-            }
-            if(MainParent!= null)
-            {
-                MainParent.AddToChildren(character);
-            }
-            if(SubParent!= null)
-            {
-                SubParent.AddToChildren(character);
-            }
         }
     }
 }
