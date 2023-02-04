@@ -2,6 +2,7 @@
 using cfg;
 using QFramework;
 using Roots;
+using Roots.Event;
 using Roots.Game;
 using System.Collections;
 using System.Collections.Generic;
@@ -117,6 +118,7 @@ namespace MatchThree.System
             mainCharacter = character;
             character.Resources.AddRange(resources);
             character.GetTag(tag);
+            this.SendEvent(new ChooseNewCharacterEvent() { Character = character });
         }
 
 
