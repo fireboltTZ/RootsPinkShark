@@ -70,10 +70,11 @@ namespace MatchThree.System
         /// <param name="Sex"></param>
         /// <param name="MainParent"></param>
         /// <param name="SubParent"></param>
-        public void CreateCharacter(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
+        public Character CreateCharacter(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
         {
             Character character = new Character(name, Age, MaxAge, Sex, MainParent, SubParent);
             characterList.Add(character);
+            return character;
         }
 
 
@@ -81,12 +82,13 @@ namespace MatchThree.System
         /// <summary>
         /// 创建游戏开始时第一个主角
         /// </summary>
-        public void CreateFirstCharacter()
+        public Character CreateFirstCharacter()
         {
             Character firstCharacter = new Character("", 18, 80, true);
             mainCharacter = firstCharacter;
             characterList.Add(firstCharacter);
             firstMainCharacter = firstCharacter;
+            return firstMainCharacter;
         }
 
 
