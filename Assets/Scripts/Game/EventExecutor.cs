@@ -5,6 +5,5 @@ namespace Roots.Game
 {
     public class EventExecutor : Singleton<EventExecutor>
     {
-        
     }
 }
