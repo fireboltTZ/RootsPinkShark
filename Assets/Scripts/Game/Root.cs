@@ -17,7 +17,7 @@ namespace Roots.Game
         // Start is called before the first frame update
         void Start()
         {
-            var tables = new Tables(Loader);
+            //var tables = new Tables(Loader);
             
             this.GetSystem<GameSystem>().StartGame();
         }

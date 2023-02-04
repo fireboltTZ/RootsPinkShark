@@ -28,10 +28,11 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         { var __json0 = _json["UsedEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } UsedEffect = new System.Collections.Generic.List<Effect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { Effect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = Effect.DeserializeEffect(__e0);  }  UsedEffect.Add(__v0); }   }
         { var __json0 = _json["EndingPara"]; if(!__json0.IsArray) { throw new SerializationException(); } EndingPara = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  EndingPara.Add(__v0); }   }
         { var __json0 = _json["ResourceTags"]; if(!__json0.IsArray) { throw new SerializationException(); } ResourceTags = new System.Collections.Generic.List<ResourceTag>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { ResourceTag __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = (ResourceTag)__e0.AsInt; }  ResourceTags.Add(__v0); }   }
+        { if(!_json["ResourceImage"].IsString) { throw new SerializationException(); }  ResourceImage = _json["ResourceImage"]; }
         PostInit();
     }
 
-    public GameResource(int ResourceId, bool IsInherit, string Desc, string Name, ResourceType ResourceType, System.Collections.Generic.List<Effect> Effects, bool IsUsable, System.Collections.Generic.List<Effect> UsedEffect, System.Collections.Generic.List<int> EndingPara, System.Collections.Generic.List<ResourceTag> ResourceTags ) 
+    public GameResource(int ResourceId, bool IsInherit, string Desc, string Name, ResourceType ResourceType, System.Collections.Generic.List<Effect> Effects, bool IsUsable, System.Collections.Generic.List<Effect> UsedEffect, System.Collections.Generic.List<int> EndingPara, System.Collections.Generic.List<ResourceTag> ResourceTags, string ResourceImage ) 
     {
         this.ResourceId = ResourceId;
         this.IsInherit = IsInherit;
@@ -43,6 +44,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         this.UsedEffect = UsedEffect;
         this.EndingPara = EndingPara;
         this.ResourceTags = ResourceTags;
+        this.ResourceImage = ResourceImage;
         PostInit();
     }
 
@@ -91,6 +93,10 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
     /// 资源特性
     /// </summary>
     public System.Collections.Generic.List<ResourceTag> ResourceTags { get; private set; }
+    /// <summary>
+    /// 资源图片名
+    /// </summary>
+    public string ResourceImage { get; private set; }
 
     public const int __ID__ = -21514688;
     public override int GetTypeId() => __ID__;
@@ -121,6 +127,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
         + "UsedEffect:" + Bright.Common.StringUtil.CollectionToString(UsedEffect) + ","
         + "EndingPara:" + Bright.Common.StringUtil.CollectionToString(EndingPara) + ","
         + "ResourceTags:" + Bright.Common.StringUtil.CollectionToString(ResourceTags) + ","
+        + "ResourceImage:" + ResourceImage + ","
         + "}";
     }
     

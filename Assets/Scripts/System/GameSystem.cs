@@ -20,11 +20,12 @@ namespace MatchThree.System
         private ResLoader _resLoader = ResLoader.Allocate();
         private Character mainCharacter;
         private Character firstMainCharacter;
-        private List<Character> characterList;
+        private List<Character> characterList = new List<Character>();
         private float yearLength;
 
         protected override void OnInit()
         {
+            ResKit.Init();
             _resLoader = ResLoader.Allocate();
         }
         
