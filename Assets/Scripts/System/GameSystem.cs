@@ -2,7 +2,6 @@
 using cfg;
 using QFramework;
 using Roots;
-using Roots.Event;
 using Roots.Game;
 using System.Collections;
 using System.Collections.Generic;
@@ -97,7 +96,7 @@ namespace MatchThree.System
         {
             for(int i = 0; i < characterList.Count; i++)
             {
-                if (!(characterList[i].CharacterState == CharacterState.Die))
+                if (characterList[i].CharacterState != CharacterState.Die)
                 {
                     characterList[i].IncreaseAge();
                 }
