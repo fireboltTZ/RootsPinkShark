@@ -3,6 +3,7 @@ using cfg;
 using QFramework;
 using Roots;
 using Roots.Game;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace MatchThree.System
         private Character mainCharacter;
         private Character firstMainCharacter;
         private List<Character> characterList;
+        private float yearLength;
 
         protected override void OnInit()
         {
@@ -110,9 +112,11 @@ namespace MatchThree.System
         /// <summary>
         /// 角色死亡或隐退，触发更换主角
         /// </summary>
-        public void ChangeMainCharacter(Character character)
+        public void ChangeMainCharacter(Character character, List<GameResource> resources, GameTag tag)
         {
             mainCharacter = character;
+            character.Resources.AddRange(resources);
+            character.GetTag(tag);
         }
 
 

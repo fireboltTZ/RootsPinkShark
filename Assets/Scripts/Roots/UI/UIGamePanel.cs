@@ -12,8 +12,17 @@ namespace Roots
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
-			// please add init code here
-		}
+            // please add init code here
+            //±³°ü
+            //
+            //µ¯´°
+            //DragAndDrop
+            //
+			//Item.GetComponent<DragAndDrop>().OnBeginDrag.AddListener(() => { })
+			
+			
+
+        }
 		
 		protected override void OnOpen(IUIData uiData = null)
 		{

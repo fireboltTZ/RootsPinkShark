@@ -49,6 +49,7 @@ namespace Roots.Game
 
         #endregion
 
+
         public Character(string name, int Age, int MaxAge, bool Sex, Character MainParent = null, Character SubParent = null)
         {
             this.Name= name;
@@ -114,6 +115,24 @@ namespace Roots.Game
         {
             
         }
+
+        public void GetTag(GameTag tag)
+        {
+            if (Tags == null)
+            {
+                Tags = new List<GameTag>();
+            }
+            for(int i = 0; i < Tags.Count; i++)
+            {
+                if (Tags[i].TagGroupId == tag.TagGroupId)
+                {
+                    Tags.Remove(Tags[i]);
+                }
+            }
+            Tags.Add(tag);
+        }
+
+
 
         public IArchitecture GetArchitecture()
         {

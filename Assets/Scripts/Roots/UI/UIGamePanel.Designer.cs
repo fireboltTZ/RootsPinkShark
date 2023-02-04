@@ -5,16 +5,19 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:092dd665-f35d-40b2-af39-31e6434648dd
+	// Generate Id:f159d711-1d93-45cf-83a1-93df519a9bdd
 	public partial class UIGamePanel
 	{
 		public const string Name = "UIGamePanel";
 		
+		[SerializeField]
+		public UnityEngine.UI.Button Item;
 		
 		private UIGamePanelData mPrivateData = null;
 		
 		protected override void ClearUIComponents()
 		{
+			Item = null;
 			
 			mData = null;
 		}
