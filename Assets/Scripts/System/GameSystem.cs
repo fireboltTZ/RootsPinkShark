@@ -4,6 +4,7 @@ using QFramework;
 using Roots;
 using Roots.Event;
 using Roots.Game;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
@@ -17,6 +18,7 @@ namespace MatchThree.System
         
         private ResLoader _resLoader = ResLoader.Allocate();
         private Character mainCharacter;
+        private List<Character> characterList;
 
         protected override void OnInit()
         {
@@ -52,6 +54,31 @@ namespace MatchThree.System
 #else
             Application.Quit();
 #endif
+        }
+
+        /// <summary>
+        /// 游戏时间推进，所有角色年龄增长一岁
+        /// </summary>
+        public void GameTimePass()
+        {
+            for(int i = 0; i < characterList.Count; i++)
+            {
+                characterList[i].IncreaseAge();
+            }
+
+            if(mainCharacter.CharacterState != CharacterState.Live)
+            {
+                ChangeMainCharacter();
+            }
+        }
+
+
+        /// <summary>
+        /// 角色死亡或隐退，触发更换主角
+        /// </summary>
+        public void ChangeMainCharacter()
+        {
+            
         }
     }
 }

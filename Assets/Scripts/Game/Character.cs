@@ -43,22 +43,29 @@ namespace Roots.Game
         public Character MainParent;
         public Character SubParent;
         public List<Character> Children;
-        
+
         #endregion
+
 
         public void Die()
         {
-            
+            CharacterState = CharacterState.Die;
         }
+
 
         public void Retired()
         {
-            
+            CharacterState = CharacterState.Retired;
         }
 
         public void IncreaseAge()
         {
             Age++;
+            if (Age > MaxAge)
+            {
+                Die();
+                return;
+            }
             this.GetSystem<GameEventSystem>().DrawEvent(this);
             
         }
@@ -66,7 +73,7 @@ namespace Roots.Game
 //TODO
         private List<Character> GetAllChildren()
         {
-            return null;
+            return Children;
         }
         public void UseResource()
         {
@@ -76,6 +83,19 @@ namespace Roots.Game
         public IArchitecture GetArchitecture()
         {
             return Roots.Interface;
+        }
+
+        public void AddToChildren(Character character)
+        {
+            Children.Add(character);
+            if(MainParent!= null)
+            {
+                MainParent.AddToChildren(character);
+            }
+            if(SubParent!= null)
+            {
+                SubParent.AddToChildren(character);
+            }
         }
     }
 }
