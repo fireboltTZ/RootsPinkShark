@@ -30,6 +30,7 @@ namespace Roots
 		
 		public UIStartPanelData Data
 		{
+			
 			get
 			{
 				return mData;
