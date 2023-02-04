@@ -14,12 +14,12 @@ using SimpleJSON;
 namespace cfg
 { 
 
-public sealed partial class TbEffect
+public sealed partial class TbEvent
 {
     private readonly Dictionary<string, Event> _dataMap;
     private readonly List<Event> _dataList;
     
-    public TbEffect(JSONNode _json)
+    public TbEvent(JSONNode _json)
     {
         _dataMap = new Dictionary<string, Event>();
         _dataList = new List<Event>();

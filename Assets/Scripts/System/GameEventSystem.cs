@@ -13,6 +13,7 @@ namespace MatchThree.System
     //你好
     public class GameEventSystem : AbstractSystem
     {
+        public GameSystem GameSystem => this.GetSystem<GameSystem>();
         protected override void OnInit()
         {
             
@@ -21,7 +22,8 @@ namespace MatchThree.System
         public List<cfg.Event> DrawEvent(Character character)
         {
             List<cfg.Event> evt;
-            if (this.GetSystem<GameSystem>().IsMainCharacter(character))
+            List<Event> EventBase = GameSystem.Table.TbEvent.DataList;
+            if (GameSystem.IsMainCharacter(character))
             {
                 evt = ChooseEventFromAll(character);
             }
