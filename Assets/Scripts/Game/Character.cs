@@ -65,8 +65,6 @@ namespace Roots.Game
             {
                 Intelligence = 0;
             }
-
-
             this.CharacterState = CharacterState.Live;
             this.Birth();
         }
@@ -121,7 +119,7 @@ namespace Roots.Game
 
         public void UseResource(GameResource resource)
         {
-            ResourceExecutor.Instance.ResourceEffect(this, resource);
+            ResourceExecutor.Instance.ResourceEffect(this, resource.Effects);
         }
 
 
