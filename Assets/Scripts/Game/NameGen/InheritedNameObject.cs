@@ -9,6 +9,7 @@ public class InheritedNameObject : ScriptableObject
     public List<string> Xing = new List<string>();
     public List<string> Bei = new List<string>();
     public List<string> Ming = new List<string>();
+    public List<string> NvMing = new List<string>();
     public List<string> Hao = new List<string>();
 
 #if UNITY_EDITOR
