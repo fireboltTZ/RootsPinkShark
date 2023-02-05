@@ -67,7 +67,18 @@ namespace Roots
 			{
 				NormalGameLog(e.content);
 			});
-		}
+
+
+			this.RegisterEvent<ShowResourceTagEvent>(e =>
+			{
+
+			});
+
+            this.RegisterEvent<ShowInfoTagEvent>(e =>
+            {
+
+            });
+        }
 
 
 		private void NormalGameLog(string content)

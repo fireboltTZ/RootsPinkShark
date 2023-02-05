@@ -52,4 +52,14 @@ namespace Roots.Event
     {
         public string content;
     }
+
+    public struct ShowResourceTagEvent
+    {
+        public string content;
+    }
+
+    public struct ShowInfoTagEvent
+    {
+        public string content;
+    }
 }
