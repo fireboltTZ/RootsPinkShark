@@ -30,10 +30,11 @@ public sealed partial class Event :  Bright.Config.BeanBase
         { var __json0 = _json["Options"]; if(!__json0.IsArray) { throw new SerializationException(); } Options = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Options.Add(__v0); }   }
         { var __json0 = _json["Effects"]; if(!__json0.IsArray) { throw new SerializationException(); } Effects = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  Effects.Add(__v0); }   }
         { if(!_json["IsOnBase"].IsBoolean) { throw new SerializationException(); }  IsOnBase = _json["IsOnBase"]; }
+        { if(!_json["DrawPri"].IsNumber) { throw new SerializationException(); }  DrawPri = _json["DrawPri"]; }
         PostInit();
     }
 
-    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<int> Options, System.Collections.Generic.List<EventEffect> Effects, bool IsOnBase ) 
+    public Event(string EventName, string Desc, EventType EventType, int EventId, int GroupId, bool IsGenUnique, bool IsAllUnique, bool IsInteractive, System.Collections.Generic.List<EventCondition> AppearCondition, System.Collections.Generic.List<int> Options, System.Collections.Generic.List<EventEffect> Effects, bool IsOnBase, int DrawPri ) 
     {
         this.EventName = EventName;
         this.Desc = Desc;
@@ -47,6 +48,7 @@ public sealed partial class Event :  Bright.Config.BeanBase
         this.Options = Options;
         this.Effects = Effects;
         this.IsOnBase = IsOnBase;
+        this.DrawPri = DrawPri;
         PostInit();
     }
 
@@ -104,6 +106,10 @@ public sealed partial class Event :  Bright.Config.BeanBase
     /// 是否在初始事件库
     /// </summary>
     public bool IsOnBase { get; private set; }
+    /// <summary>
+    /// 事件优先级
+    /// </summary>
+    public int DrawPri { get; private set; }
 
     public const int __ID__ = 67338874;
     public override int GetTypeId() => __ID__;
@@ -137,6 +143,7 @@ public sealed partial class Event :  Bright.Config.BeanBase
         + "Options:" + Bright.Common.StringUtil.CollectionToString(Options) + ","
         + "Effects:" + Bright.Common.StringUtil.CollectionToString(Effects) + ","
         + "IsOnBase:" + IsOnBase + ","
+        + "DrawPri:" + DrawPri + ","
         + "}";
     }
     

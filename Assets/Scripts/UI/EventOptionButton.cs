@@ -35,7 +35,7 @@ public class EventOptionButton : MonoBehaviour, ICanGetSystem, ICanSendEvent
     public void EventOptionInit(int index)
     {
         eventOption = this.GetSystem<GameSystem>().Table.TbEventOption[index];
-        TextMeshPro text = GetComponentInChildren<TextMeshPro>();
+        TextMeshProUGUI text = GetComponentInChildren<TextMeshProUGUI>();
         text.text = eventOption.EventOptionDesc;
         button.onClick.AddListener(OptionEffect);
     }
@@ -63,6 +63,8 @@ public class EventOptionButton : MonoBehaviour, ICanGetSystem, ICanSendEvent
 
     private void OptionEffect()
     {
+        this.SendEvent<TimeContinueEvent>();
+        UIKit.ClosePanel<UIOptionPanel>();
         if(eventOption.OptionWinEffect == null || eventOption.OptionWinEffect.Count == 0)
         {
             return;
@@ -76,6 +78,6 @@ public class EventOptionButton : MonoBehaviour, ICanGetSystem, ICanSendEvent
 
     public IArchitecture GetArchitecture()
     {
-        throw new System.NotImplementedException();
+        return Roots.Roots.Interface;
     }
 }
