@@ -15,7 +15,7 @@ namespace Roots
     {
         public Character Person;
         public Button nameCardButton;
-        public GameObject nameText;
+        public TextMeshProUGUI nameText;
         
         public IArchitecture GetArchitecture()
         {
@@ -37,8 +37,7 @@ namespace Roots
         public void SetUpPerson(Character person)
         {
             Person = person;
-            var nameMeshPro = nameText.GetComponent<TextMeshPro>();
-            nameMeshPro.text = person.Name;    
+            nameText.text = person.Name;    
         }
     }
 

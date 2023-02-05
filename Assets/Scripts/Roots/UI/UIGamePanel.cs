@@ -18,6 +18,7 @@ namespace Roots
 		public GameItem GameItemPrefab;
 		public GameLog GameLogPrefab;
 		public AgeBar AgeSlider;
+		public Button InheritBtn;
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -29,6 +30,10 @@ namespace Roots
             //
 			//Item.GetComponent<DragAndDrop>().OnBeginDrag.AddListener(() => { })
 			this.GetComponent<TooltipManager>().guiCamera = UIKit.Root.Camera;
+			InheritBtn.onClick.AddListener(() =>
+			{
+				UIKit.OpenPanel<UIRootPanel>(new UIRootPanelData(){});
+			});
 			this.RegisterEvent<AgeChangeEvent>(e =>
 			{
 				AgeBar.AgeNum.text = e.Age.ToString();
