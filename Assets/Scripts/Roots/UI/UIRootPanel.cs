@@ -42,7 +42,7 @@ namespace Roots
             DrawTree(OriginRect.anchoredPosition, MaxAngle, FirstMainChracter);
 
             Inherit_button.onClick.AddListener(()=>Inherit(SelectedChracter));
-            Back_button.onClick.AddListener(()=>Back());
+            Back_button.onClick.AddListener(CloseSelf);
 
 		}
 		
@@ -119,7 +119,7 @@ namespace Roots
             {
                 //?§Ø?Person??????????
                 if (person.CharacterState != 0) //Not dead
-                    OpenInheritPanel();
+                    this.GetSystem<GameSystem>().ChangeMainCharacter(person);
                 //GameSystem.ChangeMainCharacter(person,new List<GameResource> items)
             }
         }
