@@ -45,6 +45,11 @@ namespace Roots.Event
         public List<cfg.GameResource> Resources;
     }
 
+    public struct GetNewAttrEvent
+    {
+        public AttriType Type;
+        public int f;
+    }
     public struct TimeStopEvent
     {
         

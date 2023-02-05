@@ -13,7 +13,7 @@ using Roots;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
 
-public class GameItem : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragHandler, ICanGetSystem, IPointerDownHandler
+public class GameItem : MonoBehaviour, ICanGetSystem, IPointerDownHandler
 {
     // Start is called before the first frame update
     public Image ItemImage;
@@ -27,8 +27,7 @@ public class GameItem : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
         {
             GetComponent<Shadow>().enabled = true;
         }
-        if(resource.ResourceImage != "")
-            ItemImage.sprite = _resLoader.LoadSync<Sprite>(resource.ResourceImage);
+        ItemImage.sprite = _resLoader.LoadSync<Sprite>("resource_" + gameResource.ResourceId);
         TooltipTrigger.SetText("Title", resource.Name);
         TooltipTrigger.SetText("BodyText",resource.Desc);
     }
@@ -49,23 +48,6 @@ public class GameItem : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
     }
     
 
-    private Vector2 OriginalPos;
-    private Transform OriginalParentTransform;
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        OriginalPos = GetComponent<RectTransform>().position;
-        OriginalParentTransform = transform.parent;
-        transform.parent = OriginalParentTransform.parent.parent.parent;
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-
-
-        GetComponent<RectTransform>().position = OriginalPos;
-        transform.parent = OriginalParentTransform;
-    }
-
     public IArchitecture GetArchitecture()
     {
         return Roots.Roots.Interface;
@@ -73,6 +55,10 @@ public class GameItem : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (eventData.clickCount == 1 && UIKit.GetPanel<UIOptionPanel>() != null)
+        {
+            
+        }
         if (eventData.clickCount == 2) {
             this.GetSystem<GameSystem>().MainCharacter.UseResource(gameResource);
         }

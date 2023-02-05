@@ -43,9 +43,10 @@ namespace MatchThree.System
         public void StartGame()
         {
             //Create New Character
-            CreateFirstCharacter();
+            
             //Start New UIPanel
             UIKit.OpenPanel<UIGamePanel>();
+            CreateFirstCharacter();
             //Character 
         }
         
@@ -95,10 +96,11 @@ namespace MatchThree.System
         public Character CreateFirstCharacter()
         {
             int sex = Random.Range(0, 2);
-            Character firstCharacter = new Character(NameGenerator.Instance.GenerateName(sex == 0), 18, 80, sex == 0);
+            Character firstCharacter = new Character(NameGenerator.Instance.GenerateName(sex == 0), 0, 80, sex == 0);
             mainCharacter = firstCharacter;
             characterList.Add(firstCharacter);
             firstMainCharacter = firstCharacter;
+            UIKit.GetPanel<UIGamePanel>().CController.NewCharacter(sex == 0);
             return firstMainCharacter;
         }
 
@@ -161,6 +163,7 @@ namespace MatchThree.System
             }
             mainCharacter = character;
             character.Resources.AddRange(resourceList);
+            UIKit.GetPanel<UIGamePanel>().CController.NewCharacter(mainCharacter.Sex);
             for(int i = 0; i < list.Count; i++)
             {
                 character.GetTag(list[i]);

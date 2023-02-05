@@ -189,27 +189,35 @@ namespace Roots.Game
                 {
                     case (int)AttriType.LINGLI:
                         LINGLI += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.LINGLI, f = LINGLI});
                         break;
                     case (int)AttriType.SHENSHI:
                         SHENSHI += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.SHENSHI, f = SHENSHI});
                         break;
                     case (int)AttriType.BOWEN:
                         BOWEN += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.BOWEN, f = BOWEN});
                         break;
                     case (int)AttriType.XINGYUN:
                         XINGYUN += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.XINGYUN, f = XINGYUN});
                         break;
                     case (int)AttriType.GUIQI:
                         GUI += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.GUIQI, f = GUI});
                         break;
                     case (int)AttriType.MOXI:
                         YAO += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.MOXI, f = YAO});
                         break;
                     case (int)AttriType.XIANYUN:
                         XIAN += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.XIANYUN, f = XIAN});
                         break;
                     case (int)AttriType.FOGUANG:
                         FO += pair.Value;
+                        this.SendEvent(new GetNewAttrEvent(){Type = AttriType.FOGUANG, f = FO});
                         break;
                 }
             }

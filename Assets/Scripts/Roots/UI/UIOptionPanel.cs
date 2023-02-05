@@ -27,6 +27,11 @@ namespace Roots
 				
 			}
 		}
+
+		public void TryPutStaff(GameResource resource)
+		{
+			
+		}
 		
 		protected override void OnOpen(IUIData uiData = null)
 		{

@@ -83,37 +83,51 @@ namespace Roots
                 Woman2Face.sprite = PresetWomannFaces[(int)emotion];
         }
 
-        public void ChangeCloth(int index)
+        public void NewCharacter(bool sex)
         {
-            if (person == 0)
-                ManCloth.color = PresetClothColors[index];
-            else if ((int)person == 1)
-                Woman1Cloth.color = PresetClothColors[index];
-            else if ((int)person == 2)
-                Woman2Cloth.color = PresetClothColors[index];
+            SetGender(sex);
+            RandonGenerate();
         }
-        public void ChangeSkin(int index)
+        private void RandonGenerate()
         {
-            if (person == 0)
-                ManSkin.color = PresetSkinColors[index];
-            else if ((int)person == 1)
-                Woman1Skin.color = PresetSkinColors[index];
-            else if ((int)person == 2)
-                Woman2Skin.color = PresetSkinColors[index];
+            ChangeCloth(Random.Range(0, 10));
+            ChangeSkin(Random.Range(0, 10));
+            ChangeShoes(Random.Range(0, 10));
         }
-        public void ChangeShoes(int index)
+        private void ChangeCloth(int index)
         {
+            int ind = index % 5;
             if (person == 0)
-                ManShoes.color = PresetShoesColors[index];
+                ManCloth.color = PresetClothColors[ind];
             else if ((int)person == 1)
-                Woman1Shoes.color = PresetShoesColors[index];
+                Woman1Cloth.color = PresetClothColors[ind];
             else if ((int)person == 2)
-                Woman2Shoes.color = PresetShoesColors[index];
+                Woman2Cloth.color = PresetClothColors[ind];
+        }
+        private void ChangeSkin(int index)
+        {
+            int ind = index % 4;
+            if (person == 0)
+                ManSkin.color = PresetSkinColors[ind];
+            else if ((int)person == 1)
+                Woman1Skin.color = PresetSkinColors[ind];
+            else if ((int)person == 2)
+                Woman2Skin.color = PresetSkinColors[ind];
+        }
+        private void ChangeShoes(int index)
+        {
+            int ind = index % 3;
+            if (person == 0)
+                ManShoes.color = PresetShoesColors[ind];
+            else if ((int)person == 1)
+                Woman1Shoes.color = PresetShoesColors[ind];
+            else if ((int)person == 2)
+                Woman2Shoes.color = PresetShoesColors[ind];
         }
 
-        public void SetGender(int index)
+        private void SetGender(bool index)
         {
-            if (index == 0)
+            if (!index)
             {
                 person = Person.man;
                 Man.SetActive(true);
@@ -121,7 +135,7 @@ namespace Roots
                 Woman2.SetActive(false);
             }
                 
-            else if (index == 1 || index == 2)
+            else
             {
                 int num = Random.Range(1, 3);
                 person = (Person)num;
@@ -148,37 +162,7 @@ namespace Roots
         }
 
         // Update is called once per frame
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                SetGender(2);
-                ChangeFace(Emotion.Hit);
-                ChangeCloth(3);
-                ChangeSkin(2);
-                ChangeShoes(2);
-                Hitted();
-            }
 
-            //if (Input.GetKeyDown(KeyCode.N))
-            //{
-            //    ChangeFace(Emotion.Normal);
-            //    Normal();
-            //}
-
-            //if (Input.GetKeyDown(KeyCode.F))
-            //{
-            //    ChangeFace(Emotion.Happy);
-            //    Happy();
-            //}
-
-            //if (Input.GetKeyDown(KeyCode.A))
-            //{
-            //    ChangeFace(Emotion.Angry);
-            //    Angry();
-            //}
-
-        }
     }
 
 }

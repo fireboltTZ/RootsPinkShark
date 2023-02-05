@@ -4,7 +4,6 @@
 
 using UnityEngine;
 using UnityEngine.UI;
-using Roots;
 using QFramework;
 
 namespace Roots
@@ -12,7 +11,6 @@ namespace Roots
 	public partial class AgeCanvas
 	{
 		[SerializeField] public TMPro.TextMeshProUGUI AgeNum;
-
 
 		public void Clear()
 		{

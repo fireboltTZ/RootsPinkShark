@@ -22,7 +22,7 @@ namespace Roots
 		//TODO
 		private void TryAscendence()
 		{
-			throw new System.NotImplementedException();
+			//throw new System.NotImplementedException();
 		}
 
 		protected override void OnOpen(IUIData uiData = null)

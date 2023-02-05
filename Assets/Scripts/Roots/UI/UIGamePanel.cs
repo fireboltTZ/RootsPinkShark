@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using cfg;
 using ModelShark;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 using QFramework;
 using Roots.Event;
 using Roots.Game;
+using UnityEditor;
 
 namespace Roots
 {
@@ -20,6 +22,7 @@ namespace Roots
 		public AgeBar AgeSlider;
 		public Button InheritBtn;
 		public Button AscendenceBtn;
+		public CharacterController CController;
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -50,8 +53,18 @@ namespace Roots
 			{
 				foreach (var gameEvent in e.Events)
 				{
-					GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
-					gl.Text.text = gameEvent.Desc;
+					if (e.Character == GameSystem.MainCharacter)
+					{
+						GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
+						gl.Text.text = gameEvent.Desc;
+					}
+					else
+					{
+						GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
+						gl.Text.color = Color.gray;
+						gl.Text.text = "ÄãµÄÄ³Î»×ÓËï" + gameEvent.Desc;
+					}
+
 					EventExecutor.Instance.EventExecute(e.Character,gameEvent);
 				}
 			});
@@ -98,7 +111,43 @@ namespace Roots
             {
 
             });
-        }
+
+            this.RegisterEvent<GetNewAttrEvent>(e =>
+            {
+	            switch (e.Type)
+	            {
+		            case AttriType.LINGLI:
+			            CharacterCanvas.LING.text = e.f.ToString();
+			            break;
+		            case AttriType.SHENSHI:
+			            CharacterCanvas.QIAO.text = e.f.ToString();
+			            break;
+		            case AttriType.BOWEN:
+			            CharacterCanvas.ZHI.text = e.f.ToString();
+			            break;
+		            case AttriType.XINGYUN:
+			            CharacterCanvas.YUN.text = e.f.ToString();
+			            break;
+		            case AttriType.GUIQI:
+			            CharacterCanvas.YAO.text = e.f.ToString();
+			            break;
+		            case AttriType.MOXI:
+			            CharacterCanvas.MO.text = e.f.ToString();
+			            break;
+		            case AttriType.XIANYUN:
+			            CharacterCanvas.XIAN.text = e.f.ToString();
+			            break;
+		            case AttriType.FOGUANG:
+			            CharacterCanvas.FO.text = e.f.ToString();
+			            break;
+		            case AttriType.MONEY:
+			            CharacterCanvas.QIAN.text = e.f.ToString();
+			            break;
+		            default:
+			            throw new ArgumentOutOfRangeException();
+	            }
+            });
+		}
 
 
 		private void NormalGameLog(string content)
