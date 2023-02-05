@@ -43,6 +43,13 @@ namespace Roots
 					EventExecutor.Instance.EventExecute(e.Character,gameEvent);
 				}
 			});
+			
+			this.RegisterEvent<GetNewNotificationEvent>(e =>
+			{
+				GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
+				gl.Text.text = e.s;
+				gl.Text.color = e.Color;
+			});
 
 			this.RegisterEvent<GetNewTagEvent>(e =>
 			{
@@ -63,7 +70,7 @@ namespace Roots
 			{
 				AgeSlider.Play();
 			});
-
+ 
 			this.RegisterEvent<NormalGameLogEvent>(e =>
 			{
 				NormalGameLog(e.content);

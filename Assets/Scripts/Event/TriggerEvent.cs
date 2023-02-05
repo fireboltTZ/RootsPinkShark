@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using cfg;
 using Roots.Game;
+using UnityEngine;
 
 namespace Roots.Event
 {
@@ -16,6 +17,12 @@ namespace Roots.Event
     {
         public List<cfg.Event> Events;
         public Character Character;
+    }
+
+    public struct GetNewNotificationEvent
+    {
+        public string s;
+        public Color Color;
     }
     //获得新道具
     public struct GetResourceEvent

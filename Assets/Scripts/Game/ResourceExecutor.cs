@@ -33,6 +33,7 @@ namespace Roots.Game
         public void ResourceEffect(Character character, GameResource gameResource)
         {
             EffectExecute(character, gameResource.Effects);
+            this.SendEvent(new GetNewNotificationEvent(){Color =  Color.gray, s="你使用了" + gameResource.Name});
         }
         
         public void EventEffect(Character character, cfg.Event gameEvent)
@@ -49,7 +50,6 @@ namespace Roots.Game
 
         public void EffectExecute(Character character, List<EventEffect> effects)
         {
-            Debug.Log("出发了啥效果呢！~");
             for(int i = 0; i < effects.Count; i++)
             {
                 switch(effects[i].EffectType)
