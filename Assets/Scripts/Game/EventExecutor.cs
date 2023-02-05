@@ -48,12 +48,19 @@ namespace Roots.Game
                     {
                         return true;
                     }
- 
-                    break;
+                    else
+                    {
+                        return false;
+                    }
+
                 case EffectCondition.HAS_CHILDREN:
                     if (character.Children.Count != 0 && condition.Para1 == 1 || character.Children.Count == 0 && condition.Para1 == 0)
                     {
                         return true;
+                    }
+                    else
+                    {
+                        return false;
                     }
                     break;
                 case EffectCondition.THIS_HAVEDONE:
@@ -70,25 +77,76 @@ namespace Roots.Game
                             {
                                 return true;
                             }
+                            else
+                            {
+                                return false;
+                            }
                             break;
                         case (int)AttriType.SHENSHI:
                             if(character.SHENSHI >= condition.Para2)
                             {
                                 return true;
                             }
-                            break;
+                            else
+                            {
+                                return false;
+                            }
+
                         case (int)AttriType.BOWEN:
                             if (character.BOWEN >= condition.Para2)
                             {
                                 return true;
                             }
-                            break;
+                            else
+                            {
+                                return false;
+                            }
+
                         case (int)AttriType.XINGYUN:
                             if (character.XINGYUN >= condition.Para2)
                             {
                                 return true;
                             }
-                            break;
+                            else
+                            {
+                                return false;
+                            }
+                        case (int)AttriType.GUIQI:
+                            if (character.GUI >= condition.Para2)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        case (int)AttriType.MOXI:
+                            if (character.YAO >= condition.Para2)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        case (int)AttriType.XIANYUN:
+                            if (character.XIAN >= condition.Para2)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        case (int)AttriType.FOGUANG:
+                            if (character.FO >= condition.Para2)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
                     }
                     break;
                 case EffectCondition.HAVETAG:
@@ -99,7 +157,9 @@ namespace Roots.Game
                             return true;
                         }
                     }
-                    break;
+
+                    return false;
+
                 case EffectCondition.HAVERES:
                     for (int i = 0; i < character.Resources.Count; i++)
                     {
@@ -108,8 +168,20 @@ namespace Roots.Game
                             return true;
                         }
                     }
-                    break;
 
+                    return false;
+
+
+                case EffectCondition.HAS_PARTENER:
+                    if (condition.Para1 == 0)
+                    {
+                        return character.Spouse == null || character.Spouse.CharacterState is CharacterState.Die or CharacterState.Retired;
+                    }
+                    else
+                    {
+                        return character.Spouse != null;
+                    }
+                 
                 default:
                     throw new ArgumentOutOfRangeException();
             }
