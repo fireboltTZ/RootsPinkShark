@@ -34,7 +34,7 @@ namespace cfg
         /// <summary>
         /// 道心
         /// </summary>
-        FIVE = 5,
+        DAOXIN = 5,
         /// <summary>
         /// 仙缘
         /// </summary>
