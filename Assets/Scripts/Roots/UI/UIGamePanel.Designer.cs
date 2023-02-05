@@ -5,7 +5,7 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:9fda7409-b6a8-439d-bfd0-d71f95128efd
+	// Generate Id:38df75eb-a158-4d1a-8e84-f1400c22e59a
 	public partial class UIGamePanel
 	{
 		public const string Name = "UIGamePanel";

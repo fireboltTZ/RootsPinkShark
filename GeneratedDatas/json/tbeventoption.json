@@ -18,7 +18,7 @@
     "OptionWinEffect": [
       {
         "EffectType": 4,
-        "Para1": 0,
+        "Para1": 1,
         "Para2": 1
       },
       {

@@ -1144,8 +1144,9 @@ GameObject:
   - component: {fileID: 1206326474850870521}
   - component: {fileID: 4740493066505968515}
   - component: {fileID: 2648409975612224696}
+  - component: {fileID: 4116075989549213003}
   m_Layer: 0
-  m_Name: AgeBar
+  m_Name: AgeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1223,6 +1224,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Slider: {fileID: 4740493066505968515}
   AgePassTime: 5
+--- !u!114 &4116075989549213003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3284942859623271060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: AgeBar
+  CustomComment: 
+  mComponentName: Roots.UI.AgeBar
 --- !u!1 &3400461647546469599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,6 +2477,7 @@ MonoBehaviour:
   GameTagObjectPrefab: {fileID: 8431191599756692315, guid: 3aa76918627492044be9c113c3f0c32e, type: 3}
   GameItemPrefab: {fileID: 6355608149863375773, guid: 6a6dbe01282048b4896d133f816fd88f, type: 3}
   GameLogPrefab: {fileID: 7714784510601061940, guid: bd0647810a302fc499fea5a02d40f05e, type: 3}
+  AgeSlider: {fileID: 2648409975612224696}
   CharacterCanvas: {fileID: 2411085323099918289}
   AgeBar: {fileID: -8851287307483159705}
   TagBar: {fileID: 2109468171393146413}

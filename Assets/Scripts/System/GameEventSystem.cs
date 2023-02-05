@@ -60,19 +60,31 @@ namespace MatchThree.System
         private List<Event> ChooseEventFromAll(Character character)
         {
             List<Event> Evts = GameSystem.Table.TbEvent.DataList.Where(e => EventExecutor.Instance.EventAvailable(character, e)).ToList();
-
-            int eventIndex = Random.Range(0, Evts.Count);
+            List<List<Event>> List = Evts.GroupBy(e => e.DrawPri).Select(x => x.ToList()).ToList();
+            List = List.OrderByDescending(o => o[0].DrawPri).ToList();
+            int eventIndex = Random.Range(0, List[0].Count);
+            foreach (var list in List)
+            {
+                foreach (var eEvent in list)
+                {
+                    Debug.LogFormat("EventID: {0}, EventPri: {1}, EventDesc: {2}", eEvent.EventId, eEvent.DrawPri, eEvent.Desc);
+                }
+            }
             List<Event> events = new List<Event>();
-            events.Add(Evts[eventIndex]);
+            
+            events.Add(List[0][eventIndex]);
             return events;
         }
 
         private List<Event> ChooseEventFromNormal(Character character)
         {
             List<Event> Evts = GameSystem.Table.TbEvent.DataList.Where(e => e.EventType == EventType.Normal && EventExecutor.Instance.EventAvailable(character, e)).ToList();
-            int eventIndex = Random.Range(0, Evts.Count);
+            List<List<Event>> List = Evts.GroupBy(e => e.DrawPri).Select(x => x.ToList()).ToList();
+            List = List.OrderByDescending(o => o[0].DrawPri).ToList();
+            int eventIndex = Random.Range(0, List[0].Count);
             List<Event> events = new List<Event>();
-            events.Add(Evts[eventIndex]);
+            
+            events.Add(List[0][eventIndex]);
             return events;
         }
     }
