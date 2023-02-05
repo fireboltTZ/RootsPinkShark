@@ -22,19 +22,17 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
         { if(!_json["EventOptionDesc"].IsString) { throw new SerializationException(); }  EventOptionDesc = _json["EventOptionDesc"]; }
         { var __json0 = _json["Limit"]; if(!__json0.IsArray) { throw new SerializationException(); } Limit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  Limit.Add(__v0); }   }
         { var __json0 = _json["AttrLimit"]; if(!__json0.IsArray) { throw new SerializationException(); } AttrLimit = new System.Collections.Generic.List<EventCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventCondition.DeserializeEventCondition(__e0);  }  AttrLimit.Add(__v0); }   }
-        { var __json0 = _json["InputSpace"]; if(!__json0.IsArray) { throw new SerializationException(); } InputSpace = new System.Collections.Generic.List<ResourceType>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { ResourceType __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = (ResourceType)__e0.AsInt; }  InputSpace.Add(__v0); }   }
         { var __json0 = _json["OptionWinEffect"]; if(!__json0.IsArray) { throw new SerializationException(); } OptionWinEffect = new System.Collections.Generic.List<EventEffect>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { EventEffect __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = EventEffect.DeserializeEventEffect(__e0);  }  OptionWinEffect.Add(__v0); }   }
         { if(!_json["OptionDES"].IsString) { throw new SerializationException(); }  OptionDES = _json["OptionDES"]; }
         PostInit();
     }
 
-    public EventOption(int EventOptionid, string EventOptionDesc, System.Collections.Generic.List<EventCondition> Limit, System.Collections.Generic.List<EventCondition> AttrLimit, System.Collections.Generic.List<ResourceType> InputSpace, System.Collections.Generic.List<EventEffect> OptionWinEffect, string OptionDES ) 
+    public EventOption(int EventOptionid, string EventOptionDesc, System.Collections.Generic.List<EventCondition> Limit, System.Collections.Generic.List<EventCondition> AttrLimit, System.Collections.Generic.List<EventEffect> OptionWinEffect, string OptionDES ) 
     {
         this.EventOptionid = EventOptionid;
         this.EventOptionDesc = EventOptionDesc;
         this.Limit = Limit;
         this.AttrLimit = AttrLimit;
-        this.InputSpace = InputSpace;
         this.OptionWinEffect = OptionWinEffect;
         this.OptionDES = OptionDES;
         PostInit();
@@ -61,10 +59,6 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
     /// 属性要求
     /// </summary>
     public System.Collections.Generic.List<EventCondition> AttrLimit { get; private set; }
-    /// <summary>
-    /// 投入物品栏
-    /// </summary>
-    public System.Collections.Generic.List<ResourceType> InputSpace { get; private set; }
     /// <summary>
     /// 成功效果
     /// </summary>
@@ -99,7 +93,6 @@ public sealed partial class EventOption :  Bright.Config.BeanBase
         + "EventOptionDesc:" + EventOptionDesc + ","
         + "Limit:" + Bright.Common.StringUtil.CollectionToString(Limit) + ","
         + "AttrLimit:" + Bright.Common.StringUtil.CollectionToString(AttrLimit) + ","
-        + "InputSpace:" + Bright.Common.StringUtil.CollectionToString(InputSpace) + ","
         + "OptionWinEffect:" + Bright.Common.StringUtil.CollectionToString(OptionWinEffect) + ","
         + "OptionDES:" + OptionDES + ","
         + "}";

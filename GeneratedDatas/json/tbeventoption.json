@@ -1,7 +1,49 @@
 [
   {
     "EventOptionid": 1,
-    "EventOptionDesc": "利用灵力催发冲击，破坏石头",
+    "EventOptionDesc": "激发自身灵力打散天劫",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 3
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "你成功了，天雷在你的灵力前不堪一击，天地折服于你"
+  },
+  {
+    "EventOptionid": 2,
+    "EventOptionDesc": "灵魂融于世间，尝试感化天劫",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 3
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "天雷似乎察觉到什么，转头返回了天上"
+  },
+  {
+    "EventOptionid": 3,
+    "EventOptionDesc": "运用阵法知识对抗天劫",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 3
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "你提前布置好阵法，天劫一层层败下阵来，最终消失无影"
+  },
+  {
+    "EventOptionid": 4,
+    "EventOptionDesc": "激发自身灵力打散天劫",
     "Limit": [],
     "AttrLimit": [
       {
@@ -10,41 +52,280 @@
         "Para2": 5
       }
     ],
-    "InputSpace": [
-      0,
-      0,
-      0
-    ],
-    "OptionWinEffect": [
-      {
-        "EffectType": 4,
-        "Para1": 1,
-        "Para2": 1
-      },
-      {
-        "EffectType": 4,
-        "Para1": 1,
-        "Para2": 1
-      }
-    ],
-    "OptionDES": "用灵力震碎了石头，意外获得了几块金币"
+    "OptionWinEffect": [],
+    "OptionDES": "你成功了，天雷在你的灵力前不堪一击，天地折服于你"
   },
   {
-    "EventOptionid": 2,
-    "EventOptionDesc": "浑身包裹鬼气穿过石头",
+    "EventOptionid": 5,
+    "EventOptionDesc": "灵魂融于世间，尝试感化天劫",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 5
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "天雷似乎察觉到什么，转头返回了天上"
+  },
+  {
+    "EventOptionid": 6,
+    "EventOptionDesc": "运用阵法知识对抗天劫",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 5
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "你提前布置好阵法，天劫一层层败下阵来，最终消失无影"
+  },
+  {
+    "EventOptionid": 7,
+    "EventOptionDesc": "利用鬼气假死",
     "Limit": [],
     "AttrLimit": [
       {
         "EventConditionName": 4,
         "Para1": 5,
-        "Para2": 2
+        "Para2": 3
       }
     ],
-    "InputSpace": [
-      0,
-      0,
-      0
+    "OptionWinEffect": [],
+    "OptionDES": "鬼气缠身的你没有一丝生气，竟然骗过了天雷"
+  },
+  {
+    "EventOptionid": 8,
+    "EventOptionDesc": "利用妖气替身",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 6,
+        "Para2": 3
+      }
     ],
+    "OptionWinEffect": [],
+    "OptionDES": "你替身藏于妖之中，一只大妖被你当作提升，死于天雷之下"
+  },
+  {
+    "EventOptionid": 9,
+    "EventOptionDesc": "进入仙道遗迹",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "你进入了仙道遗迹，加深了对仙道的感悟。"
+  },
+  {
+    "EventOptionid": 10,
+    "EventOptionDesc": "进入妖门遗迹",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "你进入了妖道遗迹，加深了对妖道的感悟。"
+  },
+  {
+    "EventOptionid": 11,
+    "EventOptionDesc": "刻着三昧真火标记的棺材",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "一股精纯的仙气被你吸入体内，加深了对仙道的感悟。"
+  },
+  {
+    "EventOptionid": 12,
+    "EventOptionDesc": "刻着万字标记的棺材",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "一股精纯的佛念被你吸入体内，加深了对佛道的感悟。"
+  },
+  {
+    "EventOptionid": 13,
+    "EventOptionDesc": "仙道",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "你杀死了苟延残喘的鬼道飞升者，为了报答你，仙道飞升者将仅剩的力量注入了你的体内，加深了你对仙道的感悟。"
+  },
+  {
+    "EventOptionid": 14,
+    "EventOptionDesc": "鬼道",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "你杀死了苟延残喘的仙道飞升者，为了报答你，鬼道飞升者将仅剩的力量注入了你的体内，加深了你对鬼道的感悟。"
+  },
+  {
+    "EventOptionid": 15,
+    "EventOptionDesc": "鬼道",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "鬼道"
+  },
+  {
+    "EventOptionid": 16,
+    "EventOptionDesc": "妖",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "妖"
+  },
+  {
+    "EventOptionid": 17,
+    "EventOptionDesc": "鬼道",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "鬼道"
+  },
+  {
+    "EventOptionid": 18,
+    "EventOptionDesc": "佛",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "佛"
+  },
+  {
+    "EventOptionid": 19,
+    "EventOptionDesc": "妖",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "妖"
+  },
+  {
+    "EventOptionid": 20,
+    "EventOptionDesc": "佛",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "佛"
+  },
+  {
+    "EventOptionid": 21,
+    "EventOptionDesc": "修为",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "修为"
+  },
+  {
+    "EventOptionid": 22,
+    "EventOptionDesc": "神识",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "神识"
+  },
+  {
+    "EventOptionid": 23,
+    "EventOptionDesc": "修为",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "修为"
+  },
+  {
+    "EventOptionid": 24,
+    "EventOptionDesc": "博闻",
+    "Limit": [],
+    "AttrLimit": [],
     "OptionWinEffect": [
       {
         "EffectType": 0,
@@ -52,6 +333,222 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "隐约瞧见了石头的内壁上写了文字，一股记忆传入脑海"
+    "OptionDES": "博闻"
+  },
+  {
+    "EventOptionid": 25,
+    "EventOptionDesc": "博闻",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "博闻"
+  },
+  {
+    "EventOptionid": 26,
+    "EventOptionDesc": "神识",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "神识"
+  },
+  {
+    "EventOptionid": 27,
+    "EventOptionDesc": "博闻转神识",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "博闻转神识"
+  },
+  {
+    "EventOptionid": 28,
+    "EventOptionDesc": "神识转博闻",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "神识转博闻"
+  },
+  {
+    "EventOptionid": 29,
+    "EventOptionDesc": "空",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [],
+    "OptionDES": "空"
+  },
+  {
+    "EventOptionid": 30,
+    "EventOptionDesc": "博闻转修为",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "博闻转修为"
+  },
+  {
+    "EventOptionid": 31,
+    "EventOptionDesc": "修为转博闻",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "修为转博闻"
+  },
+  {
+    "EventOptionid": 32,
+    "EventOptionDesc": "空",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [],
+    "OptionDES": "空"
+  },
+  {
+    "EventOptionid": 33,
+    "EventOptionDesc": "修为转神识",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "修为转神识"
+  },
+  {
+    "EventOptionid": 34,
+    "EventOptionDesc": "神识转修为",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -1
+      },
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "OptionDES": "神识转修为"
+  },
+  {
+    "EventOptionid": 35,
+    "EventOptionDesc": "空",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [],
+    "OptionDES": "空"
+  },
+  {
+    "EventOptionid": 71,
+    "EventOptionDesc": "来啊！我就是要肉身硬抗雷劫！",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [
+      {
+        "EffectType": 2,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "OptionDES": "一道天雷降下，你一时也想不出其他办法对付，于是大喊着我命由我不由….！于是化作了一摊黑灰。"
+  },
+  {
+    "EventOptionid": 72,
+    "EventOptionDesc": "运用仙气掌控",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 7,
+        "Para2": 3
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "天雷在你身边缠绕，你似乎并不畏惧于它，甚至感到有些亲昵"
+  },
+  {
+    "EventOptionid": 73,
+    "EventOptionDesc": "运用佛光感化",
+    "Limit": [],
+    "AttrLimit": [
+      {
+        "EventConditionName": 4,
+        "Para1": 8,
+        "Para2": 3
+      }
+    ],
+    "OptionWinEffect": [],
+    "OptionDES": "天雷在佛光下变得柔和，近乎一条柔软的缎带，缠绕在你的身上，无比虔诚恭敬"
+  },
+  {
+    "EventOptionid": 74,
+    "EventOptionDesc": "什么都不做",
+    "Limit": [],
+    "AttrLimit": [],
+    "OptionWinEffect": [],
+    "OptionDES": "什么都不做"
   }
 ]

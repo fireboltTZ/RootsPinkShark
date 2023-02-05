@@ -33,7 +33,7 @@
     "ResourceType": 5,
     "Effects": [
       {
-        "EffectType": 14,
+        "EffectType": 17,
         "Para1": 0,
         "Para2": 0
       }
@@ -826,7 +826,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 119,
         "Para2": 0
       }
     ],
@@ -853,7 +853,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 120,
         "Para2": 0
       }
     ],
@@ -880,7 +880,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 121,
         "Para2": 0
       }
     ],
@@ -907,7 +907,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 122,
         "Para2": 0
       }
     ],
@@ -934,7 +934,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 123,
         "Para2": 0
       }
     ],
@@ -961,7 +961,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 124,
         "Para2": 0
       }
     ],
@@ -988,7 +988,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 125,
         "Para2": 0
       }
     ],
@@ -1015,7 +1015,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 126,
         "Para2": 0
       }
     ],
@@ -1042,7 +1042,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 127,
         "Para2": 0
       }
     ],
@@ -1074,7 +1074,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 128,
         "Para2": 0
       }
     ],
@@ -1106,7 +1106,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 129,
         "Para2": 0
       }
     ],
@@ -1138,7 +1138,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 130,
         "Para2": 0
       }
     ],
@@ -1170,7 +1170,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 131,
         "Para2": 0
       }
     ],
@@ -1202,7 +1202,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 132,
         "Para2": 0
       }
     ],
@@ -1234,7 +1234,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 133,
         "Para2": 0
       }
     ],
@@ -1266,7 +1266,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 134,
         "Para2": 0
       }
     ],
@@ -1298,7 +1298,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 135,
         "Para2": 0
       }
     ],
@@ -1325,7 +1325,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 136,
         "Para2": 0
       }
     ],
@@ -1352,7 +1352,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 137,
         "Para2": 0
       }
     ],
@@ -1379,7 +1379,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 138,
         "Para2": 0
       }
     ],
@@ -1406,7 +1406,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 139,
         "Para2": 0
       }
     ],
@@ -1433,7 +1433,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 140,
         "Para2": 0
       }
     ],
@@ -1460,7 +1460,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 141,
         "Para2": 0
       }
     ],
@@ -1487,7 +1487,7 @@
     "UsedEffect": [
       {
         "EffectType": 18,
-        "Para1": 0,
+        "Para1": 142,
         "Para2": 0
       }
     ],

@@ -16,29 +16,29 @@ namespace cfg
 
 public sealed partial class TbEvent
 {
-    private readonly Dictionary<string, Event> _dataMap;
+    private readonly Dictionary<int, Event> _dataMap;
     private readonly List<Event> _dataList;
     
     public TbEvent(JSONNode _json)
     {
-        _dataMap = new Dictionary<string, Event>();
+        _dataMap = new Dictionary<int, Event>();
         _dataList = new List<Event>();
         
         foreach(JSONNode _row in _json.Children)
         {
             var _v = Event.DeserializeEvent(_row);
             _dataList.Add(_v);
-            _dataMap.Add(_v.EventName, _v);
+            _dataMap.Add(_v.EventId, _v);
         }
         PostInit();
     }
 
-    public Dictionary<string, Event> DataMap => _dataMap;
+    public Dictionary<int, Event> DataMap => _dataMap;
     public List<Event> DataList => _dataList;
 
-    public Event GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public Event Get(string key) => _dataMap[key];
-    public Event this[string key] => _dataMap[key];
+    public Event GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public Event Get(int key) => _dataMap[key];
+    public Event this[int key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

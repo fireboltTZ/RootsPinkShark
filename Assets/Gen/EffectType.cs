@@ -87,6 +87,10 @@ namespace cfg
         /// 触发事件
         /// </summary>
         OPENEVENT = 18,
+        /// <summary>
+        /// 继承道心的事件
+        /// </summary>
+        TAGBRITH = 19,
     }
 
 } 

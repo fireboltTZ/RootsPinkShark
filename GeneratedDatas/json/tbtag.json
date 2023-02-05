@@ -1,9 +1,69 @@
 [
   {
     "TagId": 1,
-    "TagName": "天生丽质",
-    "Desc": "好漂亮的姐姐~",
-    "TagGroupId": 0,
+    "TagName": "修炼奇才",
+    "Desc": "适合修炼",
+    "TagGroupId": 1,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 2,
+    "TagName": "七世好人",
+    "Desc": "灵魂强健",
+    "TagGroupId": 2,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 3,
+    "TagName": "天生灵眼",
+    "Desc": "知识广博",
+    "TagGroupId": 3,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 4,
+    "TagName": "妖灵附体",
+    "Desc": "妖灵亲和",
+    "TagGroupId": 4,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 5,
+    "TagName": "神仙点化",
+    "Desc": "神力亲和",
+    "TagGroupId": 5,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 6,
+    "TagName": "九阴之人",
+    "Desc": "鬼魂亲和",
+    "TagGroupId": 6,
+    "IsGoodTag": true,
+    "IsInherit": true,
+    "ifNatrual": true,
+    "ifPatnerNatrual": true
+  },
+  {
+    "TagId": 7,
+    "TagName": "七彩祥云",
+    "Desc": "佛光亲和",
+    "TagGroupId": 7,
     "IsGoodTag": true,
     "IsInherit": true,
     "ifNatrual": true,

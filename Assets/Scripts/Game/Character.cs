@@ -33,7 +33,7 @@ namespace Roots.Game
         public int SHENSHI;
         public int BOWEN;
         public int XINGYUN;
-        public GameResource DAOXIN => Resources.Where(e => e.ResourceType == ResourceType.DAOXIN).ToList()[0];
+        public GameResource DAOXIN => Resources.Where(e => e.ResourceType == ResourceType.FIVE).ToList()[0];
         
         public Dictionary<int, int> TempAttr = new Dictionary<int, int>();
 

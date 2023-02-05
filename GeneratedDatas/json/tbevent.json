@@ -1,70 +1,63 @@
 [
   {
-    "EventName": "成长k",
-    "Desc": "你获得了成长",
+    "EventName": "出生事件",
+    "Desc": "出生事件",
     "EventType": 0,
     "EventId": 1,
-    "GroupId": 0,
-    "IsGenUnique": false,
+    "GroupId": 1,
+    "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
+    "DrawPri": 99,
     "AppearCondition": [],
     "Options": [],
     "Effects": [
       {
-        "EffectType": 0,
-        "Para1": 1,
+        "EffectType": 19,
+        "Para1": 0,
         "Para2": 0
-      },
-      {
-        "EffectType": 0,
-        "Para1": 1,
-        "Para2": 1
       }
     ],
     "IsOnBase": true,
-    "DrawPri": 0
+    "WEIGHT": 0
   },
   {
-    "EventName": "结婚",
-    "Desc": "你找到了配偶",
+    "EventName": "获得道心",
+    "Desc": "获得道心",
     "EventType": 0,
     "EventId": 2,
-    "GroupId": 1,
+    "GroupId": 2,
     "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
+    "DrawPri": 99,
     "AppearCondition": [],
     "Options": [],
     "Effects": [
       {
-        "EffectType": 1,
-        "Para1": 0,
-        "Para2": 0
-      },
-      {
-        "EffectType": 11,
-        "Para1": 1,
+        "EffectType": 4,
+        "Para1": 3,
         "Para2": 0
       }
     ],
     "IsOnBase": true,
-    "DrawPri": 0
+    "WEIGHT": 0
   },
   {
-    "EventName": "佳偶天成",
-    "Desc": "你找到了很棒的配偶",
+    "EventName": "找到配偶",
+    "Desc": "找到配偶",
     "EventType": 0,
     "EventId": 3,
-    "GroupId": 1,
-    "IsGenUnique": true,
+    "GroupId": 3,
+    "IsGenUnique": false,
     "IsAllUnique": false,
     "IsInteractive": false,
+    "DrawPri": 0,
     "AppearCondition": [
       {
-        "EventConditionName": 0,
-        "Para1": 10,
-        "Para2": 20
+        "EventConditionName": 7,
+        "Para1": 0,
+        "Para2": 0
       }
     ],
     "Options": [],
@@ -76,264 +69,25 @@
       }
     ],
     "IsOnBase": true,
-    "DrawPri": 0
+    "WEIGHT": 100
   },
   {
-    "EventName": "意外身故",
-    "Desc": "你死了",
+    "EventName": "生孩子-早期",
+    "Desc": "生孩子",
     "EventType": 0,
     "EventId": 4,
-    "GroupId": -1,
+    "GroupId": 4,
     "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 2,
-        "Para1": 0,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "痛失爱子",
-    "Desc": "你儿子死了",
-    "EventType": 0,
-    "EventId": 5,
-    "GroupId": -1,
-    "IsGenUnique": true,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 3,
-        "Para1": 0,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "明镜高悬",
-    "Desc": "你白了",
-    "EventType": 0,
-    "EventId": 6,
-    "GroupId": 0,
-    "IsGenUnique": true,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "偶得机缘",
-    "Desc": "你得到了机缘",
-    "EventType": 0,
-    "EventId": 7,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 6,
-        "Para1": 11,
-        "Para2": 1
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "初窥门径",
-    "Desc": "触发了仙缘",
-    "EventType": 0,
-    "EventId": 8,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 6,
-        "Para1": 14,
-        "Para2": 1
-      }
-    ],
-    "IsOnBase": false,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "登堂入室",
-    "Desc": "你读书很厉害",
-    "EventType": 0,
-    "EventId": 9,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 5,
-        "Para1": 100,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "小有进财",
-    "Desc": "你赚了点小钱",
-    "EventType": 0,
-    "EventId": 10,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 5,
-        "Para1": 10,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "富甲一方",
-    "Desc": "你赚了很多",
-    "EventType": 0,
-    "EventId": 11,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 5,
-        "Para1": 100,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": false,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "路障",
-    "Desc": "路上遇到了一块巨石挡路",
-    "EventType": 0,
-    "EventId": 12,
-    "GroupId": 0,
-    "IsGenUnique": true,
-    "IsAllUnique": false,
-    "IsInteractive": true,
-    "AppearCondition": [],
-    "Options": [
-      1,
-      2
-    ],
-    "Effects": [],
-    "IsOnBase": true,
-    "DrawPri": 1
-  },
-  {
-    "EventName": "仙人指路",
-    "Desc": "仙人告知了你天地仅存的一处洞天福地",
-    "EventType": 0,
-    "EventId": 13,
-    "GroupId": 0,
-    "IsGenUnique": true,
-    "IsAllUnique": true,
-    "IsInteractive": false,
+    "DrawPri": 0,
     "AppearCondition": [
       {
-        "EventConditionName": 3,
-        "Para1": 11,
-        "Para2": 0
-      }
-    ],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 4,
+        "EventConditionName": 7,
         "Para1": 1,
         "Para2": 0
       }
     ],
-    "IsOnBase": false,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "获得",
-    "Desc": "你获得了一个宝贝~",
-    "EventType": 0,
-    "EventId": 14,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
-    "Options": [],
-    "Effects": [
-      {
-        "EffectType": 4,
-        "Para1": 1,
-        "Para2": 0
-      }
-    ],
-    "IsOnBase": true,
-    "DrawPri": 0
-  },
-  {
-    "EventName": "路障12",
-    "Desc": "优先级最低",
-    "EventType": 0,
-    "EventId": 15,
-    "GroupId": 0,
-    "IsGenUnique": true,
-    "IsAllUnique": false,
-    "IsInteractive": true,
-    "AppearCondition": [],
-    "Options": [
-      1,
-      2
-    ],
-    "Effects": [],
-    "IsOnBase": true,
-    "DrawPri": -1
-  },
-  {
-    "EventName": "喜得贵子",
-    "Desc": "你生孩子了",
-    "EventType": 0,
-    "EventId": 16,
-    "GroupId": 0,
-    "IsGenUnique": false,
-    "IsAllUnique": false,
-    "IsInteractive": false,
-    "AppearCondition": [],
     "Options": [],
     "Effects": [
       {
@@ -343,6 +97,3461 @@
       }
     ],
     "IsOnBase": true,
-    "DrawPri": 1
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "生孩子-中期",
+    "Desc": "生孩子",
+    "EventType": 0,
+    "EventId": 5,
+    "GroupId": 4,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 7,
+        "Para1": 1,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 15,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "生孩子-中期",
+    "Desc": "生孩子",
+    "EventType": 0,
+    "EventId": 6,
+    "GroupId": 4,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 7,
+        "Para1": 1,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 15,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "生孩子-中期",
+    "Desc": "生孩子",
+    "EventType": 0,
+    "EventId": 7,
+    "GroupId": 4,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 7,
+        "Para1": 1,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 15,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "生孩子-后期",
+    "Desc": "生孩子",
+    "EventType": 0,
+    "EventId": 8,
+    "GroupId": 4,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 7,
+        "Para1": 1,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 15,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "雷劫-初级判定",
+    "Desc": "雷劫-初级判定",
+    "EventType": 0,
+    "EventId": 9,
+    "GroupId": 5,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 30,
+        "Para2": 35
+      }
+    ],
+    "Options": [
+      1,
+      2,
+      3,
+      71
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "雷劫-高级判定",
+    "Desc": "雷劫-高级判定",
+    "EventType": 0,
+    "EventId": 10,
+    "GroupId": 5,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 50,
+        "Para2": 55
+      }
+    ],
+    "Options": [
+      4,
+      5,
+      6,
+      71
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "雷劫-属性雷",
+    "Desc": "雷劫-灭魔雷",
+    "EventType": 0,
+    "EventId": 11,
+    "GroupId": 5,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 80,
+        "Para2": 85
+      }
+    ],
+    "Options": [
+      7,
+      8,
+      71,
+      72,
+      73
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "雷劫-死雷",
+    "Desc": "雷劫-死雷",
+    "EventType": 0,
+    "EventId": 12,
+    "GroupId": 5,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 100,
+        "Para2": 101
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 2,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "道心锤炼-幼年-妖",
+    "Desc": "路边的野狗朝你狂叫，你也试着叫了回去，与野兽达成初步交流，加深了对妖道的感悟。",
+    "EventType": 0,
+    "EventId": 13,
+    "GroupId": 6,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 5,
+        "Para1": 4,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-幼年-仙",
+    "Desc": "丢失的匕首被水仙捡到，水仙问你丢的是金匕首，银匕首还是铜匕首，你如实回答，加深了对仙道的感悟。",
+    "EventType": 0,
+    "EventId": 14,
+    "GroupId": 6,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 5,
+        "Para1": 5,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-幼年-鬼",
+    "Desc": "误入墓地，与怨灵玩捉迷藏，加深了对鬼道的感悟。",
+    "EventType": 0,
+    "EventId": 15,
+    "GroupId": 6,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 5,
+        "Para1": 6,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-幼年-佛",
+    "Desc": "被熊孩子欺负，安慰自己不跟他一般见识，巧合佛道理念，加深了对佛道的感悟。",
+    "EventType": 0,
+    "EventId": 16,
+    "GroupId": 6,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 5,
+        "Para1": 7,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-鬼1",
+    "Desc": "被厉鬼附身，竟然对他生前的遭遇感同身受，加深了对鬼道的感悟。",
+    "EventType": 0,
+    "EventId": 17,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-妖1",
+    "Desc": "在林间与虎妖搏斗，不分伯仲，惺惺相惜成了好友，加深了对妖道的感悟。",
+    "EventType": 0,
+    "EventId": 18,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-仙1",
+    "Desc": "在山间发现一具腐朽的仙人骸骨，祭拜掩埋，加深了对仙道的感悟。",
+    "EventType": 0,
+    "EventId": 19,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-佛1",
+    "Desc": "在破旧的寺庙过夜，与佛像共眠，梦中与佛陀交流，加深了对佛道的感悟。",
+    "EventType": 0,
+    "EventId": 20,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-鬼2",
+    "Desc": "表白被拒，悲痛之下自杀未遂，无限接近死亡，深谙鬼道，加深了对鬼道的感悟。",
+    "EventType": 0,
+    "EventId": 21,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-妖2",
+    "Desc": "无意间救下猪妖，猪妖对你一见倾心，加深了对妖道的感悟。",
+    "EventType": 0,
+    "EventId": 22,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-仙2",
+    "Desc": "偶入仙府遗址，受仙力刺激神游太虚，加深了对仙道的感悟。",
+    "EventType": 0,
+    "EventId": 23,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-青壮年-佛2",
+    "Desc": "路遇饥寒交迫的小沙弥，将身上不多的干粮分享于他，加深了对佛道的感悟。",
+    "EventType": 0,
+    "EventId": 24,
+    "GroupId": 7,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-老年-鬼",
+    "Desc": "为游荡世间的色鬼所诱惑，进行了一段时长半个时辰的人鬼恋，加深了对鬼道的感悟。",
+    "EventType": 0,
+    "EventId": 25,
+    "GroupId": 8,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-老年-妖",
+    "Desc": "被困迷阵，食狼王血肉得以求生，加深了对妖道的感悟。",
+    "EventType": 0,
+    "EventId": 26,
+    "GroupId": 8,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-老年-仙",
+    "Desc": "在山崖边解决内急，不慎跌入崖下仙泉，侥幸逃过一劫，加深了对仙道的感悟。",
+    "EventType": 0,
+    "EventId": 27,
+    "GroupId": 8,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼-老年-佛",
+    "Desc": "在闹饥荒的村庄里，见高僧割肉喂鹰，为之动容，加深了对佛道的感悟。",
+    "EventType": 0,
+    "EventId": 28,
+    "GroupId": 8,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "道心锤炼2选1-仙/妖",
+    "Desc": "这是一座有着两扇大门的飞升者遗迹，看门的灵傀告诉你，你只能在两扇门中选择其一。左边是仙道，右边是妖道，你的选择是？",
+    "EventType": 0,
+    "EventId": 29,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      9,
+      10
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "道心锤炼2选1-仙/佛",
+    "Desc": "你进入了一座古墓之中，墓中机关精密，两座棺材并排而立。经过仔细观察，你发现只要打开其中一副棺材，另一副就会马上被毁掉。你要打开哪座棺材呢？",
+    "EventType": 0,
+    "EventId": 30,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      11,
+      12
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "道心锤炼2选1-仙/鬼",
+    "Desc": "深山之中，你发现了两具对面而立的飞升者枯骨。两道不同的声音分别从两具枯骨中传来。原来这是仙鬼两位飞升者的战场，最终两人同归于尽，只留下神念苦苦支撑。你会选择帮助哪位飞升者呢？",
+    "EventType": 0,
+    "EventId": 31,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      13,
+      14
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "道心锤炼2选1-鬼/妖",
+    "Desc": "道心锤炼2选1-鬼/妖",
+    "EventType": 0,
+    "EventId": 32,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      15,
+      16
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "道心锤炼2选1-鬼/佛",
+    "Desc": "道心锤炼2选1-鬼/佛",
+    "EventType": 0,
+    "EventId": 33,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      17,
+      18
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "道心锤炼2选1-妖/佛",
+    "Desc": "道心锤炼2选1-妖/佛",
+    "EventType": 0,
+    "EventId": 34,
+    "GroupId": 9,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      19,
+      20
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "福源提升事件1",
+    "Desc": "路上踩到狗屎，福源获得提升。",
+    "EventType": 0,
+    "EventId": 35,
+    "GroupId": 10,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 4,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "福源提升事件2",
+    "Desc": "在祈福活动中拔得头筹，获得被赐福资格，福源获得提升。",
+    "EventType": 0,
+    "EventId": 36,
+    "GroupId": 10,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 4,
+        "Para2": 2
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-修为灵力提升",
+    "Desc": "误食百年灵芝，修为灵力获得提升。",
+    "EventType": 0,
+    "EventId": 37,
+    "GroupId": 11,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-神识强度提升",
+    "Desc": "遭遇绑架，经受绑匪折磨后逃出生天，神识强度获得提升。",
+    "EventType": 0,
+    "EventId": 38,
+    "GroupId": 11,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-博闻灵智提升",
+    "Desc": "被苹果砸到脑袋，顿悟万有引力，博闻灵智获得提升。",
+    "EventType": 0,
+    "EventId": 39,
+    "GroupId": 11,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "青壮年-修为灵力提升-基础",
+    "Desc": "参加比武招亲，虽技不如人身受重伤，没想到机缘巧合打通任督二脉，修为灵力获得提升。",
+    "EventType": 0,
+    "EventId": 40,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-神识强度提升-基础",
+    "Desc": "想要偷看暗恋之人洗澡，领悟精神观察功法，神识强度获得提升。",
+    "EventType": 0,
+    "EventId": 41,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-博闻灵智提升-基础",
+    "Desc": "与东方不败一夜春风后谈古论今，博闻灵智获得提升。",
+    "EventType": 0,
+    "EventId": 42,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-修为灵力提升-鬼",
+    "Desc": "破开猪笼棋局，得高人传功，修为灵力获得提升。",
+    "EventType": 0,
+    "EventId": 43,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 5,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-神识强度提升-鬼",
+    "Desc": "雨天漫步遭遇雷击，暗合锻神之法，神识强度获得提升。",
+    "EventType": 0,
+    "EventId": 44,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 5,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-博闻灵智提升-鬼",
+    "Desc": "徒步万里，远赴傣国游历，博闻灵智获得提升。",
+    "EventType": 0,
+    "EventId": 45,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 5,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-修为灵力提升-仙",
+    "Desc": "青壮年-修为灵力提升-仙",
+    "EventType": 0,
+    "EventId": 46,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 6,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-神识强度提升-仙",
+    "Desc": "青壮年-神识强度提升-仙",
+    "EventType": 0,
+    "EventId": 47,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 6,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-博闻灵智提升-仙",
+    "Desc": "青壮年-博闻灵智提升-仙",
+    "EventType": 0,
+    "EventId": 48,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 6,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-修为灵力提升-佛",
+    "Desc": "青壮年-修为灵力提升-佛",
+    "EventType": 0,
+    "EventId": 49,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 7,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-神识强度提升-佛",
+    "Desc": "青壮年-神识强度提升-佛",
+    "EventType": 0,
+    "EventId": 50,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 7,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-博闻灵智提升-佛",
+    "Desc": "青壮年-博闻灵智提升-佛",
+    "EventType": 0,
+    "EventId": 51,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 7,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-修为灵力提升-妖",
+    "Desc": "青壮年-修为灵力提升-妖",
+    "EventType": 0,
+    "EventId": 52,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 8,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-神识强度提升-妖",
+    "Desc": "青壮年-神识强度提升-妖",
+    "EventType": 0,
+    "EventId": 53,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 8,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "青壮年-博闻灵智提升-妖",
+    "Desc": "青壮年-博闻灵智提升-妖",
+    "EventType": 0,
+    "EventId": 54,
+    "GroupId": 12,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 8,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": false,
+    "WEIGHT": 150
+  },
+  {
+    "EventName": "属性2选1-修为/神识",
+    "Desc": "属性2选1-修为/神识",
+    "EventType": 0,
+    "EventId": 55,
+    "GroupId": 13,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      21,
+      22
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "属性2选1-修为/博闻",
+    "Desc": "属性2选1-修为/博闻",
+    "EventType": 0,
+    "EventId": 56,
+    "GroupId": 13,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      23,
+      24
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "属性2选1-博闻/神识",
+    "Desc": "属性2选1-博闻/神识",
+    "EventType": 0,
+    "EventId": 57,
+    "GroupId": 13,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      25,
+      26
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "要不要属性转换-博闻神识相互转",
+    "Desc": "要不要属性转换-博闻神识相互转",
+    "EventType": 0,
+    "EventId": 58,
+    "GroupId": 15,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      27,
+      28,
+      74
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "要不要属性转换-博闻修为相互转",
+    "Desc": "要不要属性转换-博闻修为相互转",
+    "EventType": 0,
+    "EventId": 59,
+    "GroupId": 15,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      30,
+      31,
+      74
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "要不要属性转换-修为神识相互转",
+    "Desc": "要不要属性转换-修为神识相互转",
+    "EventType": 0,
+    "EventId": 60,
+    "GroupId": 15,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [
+      33,
+      34,
+      74
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "全年龄财富获取事件1",
+    "Desc": "购买“发财票”中奖，获得乾坤宝钱N。",
+    "EventType": 0,
+    "EventId": 61,
+    "GroupId": 16,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 4,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "全年龄财富获取事件2",
+    "Desc": "路遇劫匪抢劫，路见不平，获得重金酬谢N。",
+    "EventType": 0,
+    "EventId": 62,
+    "GroupId": 16,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 4,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-修为灵力下降1",
+    "Desc": "道侣精力旺盛，导致你操劳过度，修为灵力下降。",
+    "EventType": 0,
+    "EventId": 63,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -2
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-神识强度下降1",
+    "Desc": "按摩遇见天下第一圣手，精神遭重创，神识强度下降。",
+    "EventType": 0,
+    "EventId": 64,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -2
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-博闻灵智下降1",
+    "Desc": "被郎中诊断出患有痴呆症，博闻灵智下降。",
+    "EventType": 0,
+    "EventId": 65,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -2
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-修为灵力下降2",
+    "Desc": "为了修真宝物谎报年龄参加宫中选秀，被揭穿后遭到围攻，身受重伤，修为灵力下降。",
+    "EventType": 0,
+    "EventId": 66,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-神识强度下降2",
+    "Desc": "误入鸡脚邪教，被邪教主题曲“鸡你太美”洗脑，神识强度下降。",
+    "EventType": 0,
+    "EventId": 67,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "老年-博闻灵智下降2",
+    "Desc": "下五子棋输给三岁孩童，博闻灵智下降。",
+    "EventType": 0,
+    "EventId": 68,
+    "GroupId": 18,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年1",
+    "Desc": "与王小虎打架打输了。",
+    "EventType": 0,
+    "EventId": 69,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年2",
+    "Desc": "悄悄把邻居家晾晒的羊肠扎满了洞。",
+    "EventType": 0,
+    "EventId": 70,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年3",
+    "Desc": "把父亲偷看《铜瓶梅》的秘密告诉了母亲。",
+    "EventType": 0,
+    "EventId": 71,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年4",
+    "Desc": "遇见一位自称唐三的叔叔在找他的手环。",
+    "EventType": 0,
+    "EventId": 72,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年5",
+    "Desc": "发现在茶里加上牛奶还挺好喝的。",
+    "EventType": 0,
+    "EventId": 73,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年6",
+    "Desc": "从隔壁小陈那学了一首歌谣，爱你孤身走暗巷，爱你不跪的模样…...",
+    "EventType": 0,
+    "EventId": 74,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年7",
+    "Desc": "有个乞丐说你骨骼惊奇，没等他说完你就给了他一个大比兜。",
+    "EventType": 0,
+    "EventId": 75,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年8",
+    "Desc": "你的初恋还没开始就结束了。",
+    "EventType": 0,
+    "EventId": 76,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年9",
+    "Desc": "关系要好的哥哥受伤了，你好心疼哥哥。",
+    "EventType": 0,
+    "EventId": 77,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的幼年10",
+    "Desc": "你在认真考虑长大以后到底是要跟小陈成婚还是小李。",
+    "EventType": 0,
+    "EventId": 78,
+    "GroupId": 19,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的青壮年1",
+    "Desc": "被一个三百斤的胖子表白。",
+    "EventType": 0,
+    "EventId": 79,
+    "GroupId": 20,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的青壮年2",
+    "Desc": "吃到了奇怪味道的九转大肠。",
+    "EventType": 0,
+    "EventId": 80,
+    "GroupId": 20,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的青壮年3",
+    "Desc": "得了痔疮，去看郎中时却不好意思脱裤子。",
+    "EventType": 0,
+    "EventId": 81,
+    "GroupId": 20,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的青壮年4",
+    "Desc": "计划用脚在地上抠出一间房子以锻炼身法，后来发现用处不大就放弃了。",
+    "EventType": 0,
+    "EventId": 82,
+    "GroupId": 20,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的青壮年5",
+    "Desc": "喜欢上了白酒加薄荷和柠檬的味道。",
+    "EventType": 0,
+    "EventId": 83,
+    "GroupId": 20,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的老年1",
+    "Desc": "不知从什么时候开始，街道上总是有一群与你同龄的女性在跳舞，你感慨世风日下。",
+    "EventType": 0,
+    "EventId": 84,
+    "GroupId": 21,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 100
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的老年2",
+    "Desc": "小陈和小李因为你争风吃醋打了起来。",
+    "EventType": 0,
+    "EventId": 85,
+    "GroupId": 21,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 100
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的老年3",
+    "Desc": "城里开设了足底按摩的项目，你尝试过后立马狠狠爱住。",
+    "EventType": 0,
+    "EventId": 86,
+    "GroupId": 21,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 100
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的老年4",
+    "Desc": "城里有名的吴姓戏子被抓了，你非常好奇是为什么。",
+    "EventType": 0,
+    "EventId": 87,
+    "GroupId": 21,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 100
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "无事发生的老年5",
+    "Desc": "经常与你下象棋的王老头去世了，你伤心了好一阵子。",
+    "EventType": 0,
+    "EventId": 88,
+    "GroupId": 21,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 61,
+        "Para2": 100
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "利用鬼气取得物品的事件-简单",
+    "Desc": "你在一座山巅发现了一块古老的墓碑，墓碑中残存的神念不断尝试向你索取着鬼道力量。",
+    "EventType": 0,
+    "EventId": 89,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 19,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用妖气取得物品的事件-简单",
+    "Desc": "你在河边救下一名上半身是鱼，下半身是人的妖兽。妖兽声称只要你通过他的妖道考验，就能赠你一件重宝。",
+    "EventType": 0,
+    "EventId": 90,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 24,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用仙力取得物品的事件-简单",
+    "Desc": "你根据在地摊淘来的藏宝图寻到藏宝之地。这是一处仙家洞府，只有拥有足够的仙道力量才能够破门而入。",
+    "EventType": 0,
+    "EventId": 91,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 29,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用佛光取得物品的事件-简单",
+    "Desc": "你无意间在一处山洞中寻得一枚古朴的木匣子，匣子上镶嵌的宝珠黯淡无光。只有朝着宝珠全力输入佛道的力量，木匣才能打开。",
+    "EventType": 0,
+    "EventId": 92,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 34,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用鬼气取得物品的事件-较难",
+    "Desc": "鬼气缭绕的地下宫殿中，你缓缓前行。不远处的空地中央立着一个王座，你犹豫了一下便坐了上去。忽然一阵吸力传来，身下的王座竟然在向你索取鬼道的力量。",
+    "EventType": 0,
+    "EventId": 93,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 21,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用妖气取得物品的事件-较难",
+    "Desc": "这座看似平平无奇的小楼只不过是障眼法而已。你已经感受到小楼背后隐藏着的重宝。只要能使用足够强大的妖道力量，就能破除幻境。",
+    "EventType": 0,
+    "EventId": 94,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 26,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用仙力取得物品的事件-较难",
+    "Desc": "透过清澈的湖水可以看到湖底散发着宝物的光芒。可这轻轻湖水并不普通，是难得一见的重水，寻常人物根本难以撼动分毫。只有强大的仙道力量，才能开辟出一条通往湖底的通道。",
+    "EventType": 0,
+    "EventId": 95,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 31,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用佛光取得物品的事件-较难",
+    "Desc": "面前的寺庙中散发着宝物的光芒，可庙中钟鸣不止，如果贸然靠近轻则七窍流血，重则爆体而亡。只有拥有强大的佛道力量，才能抵抗住钟鸣的攻击，进入寺庙。",
+    "EventType": 0,
+    "EventId": 96,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 36,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用鬼气取得物品的事件-简单",
+    "Desc": "你在一座山巅发现了一块古老的墓碑，墓碑中残存的神念不断尝试向你索取着鬼道力量。",
+    "EventType": 0,
+    "EventId": 97,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 20,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用妖气取得物品的事件-简单",
+    "Desc": "你在河边救下一名上半身是鱼，下半身是人的妖兽。妖兽声称只要你通过他的妖道考验，就能赠你一件重宝。",
+    "EventType": 0,
+    "EventId": 98,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 25,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用仙力取得物品的事件-简单",
+    "Desc": "你根据在地摊淘来的藏宝图寻到藏宝之地。这是一处仙家洞府，只有拥有足够的仙道力量才能够破门而入。",
+    "EventType": 0,
+    "EventId": 99,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 30,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用佛光取得物品的事件-简单",
+    "Desc": "你无意间在一处山洞中寻得一枚古朴的木匣子，匣子上镶嵌的宝珠黯淡无光。只有朝着宝珠全力输入佛道的力量，木匣才能打开。",
+    "EventType": 0,
+    "EventId": 100,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 35,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用鬼气取得物品的事件-较难",
+    "Desc": "鬼气缭绕的地下宫殿中，你缓缓前行。不远处的空地中央立着一个王座，你犹豫了一下便坐了上去。忽然一阵吸力传来，身下的王座竟然在向你索取鬼道的力量。",
+    "EventType": 0,
+    "EventId": 101,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 22,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "利用妖气取得物品的事件-较难",
+    "Desc": "这座看似平平无奇的小楼只不过是障眼法而已。你已经感受到小楼背后隐藏着的重宝。只要能使用足够强大的妖道力量，就能破除幻境。",
+    "EventType": 0,
+    "EventId": 102,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 27,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用仙力取得物品的事件-较难",
+    "Desc": "透过清澈的湖水可以看到湖底散发着宝物的光芒。可这轻轻湖水并不普通，是难得一见的重水，寻常人物根本难以撼动分毫。只有强大的仙道力量，才能开辟出一条通往湖底的通道。",
+    "EventType": 0,
+    "EventId": 103,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 32,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "运用佛光取得物品的事件-较难",
+    "Desc": "面前的寺庙中散发着宝物的光芒，可庙中钟鸣不止，如果贸然靠近轻则七窍流血，重则爆体而亡。只有拥有强大的佛道力量，才能抵抗住钟鸣的攻击，进入寺庙。",
+    "EventType": 0,
+    "EventId": 104,
+    "GroupId": 22,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 37,
+        "Para2": 0
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "售卖东西的奇遇（初级随机商店",
+    "Desc": "售卖东西的奇遇（初级随机商店",
+    "EventType": 0,
+    "EventId": 105,
+    "GroupId": 24,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [
+      68,
+      69,
+      70
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 50
+  },
+  {
+    "EventName": "奇遇捡东西事件1",
+    "Desc": "奇遇捡东西事件1",
+    "EventType": 0,
+    "EventId": 106,
+    "GroupId": 25,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "奇遇捡东西事件2",
+    "Desc": "奇遇捡东西事件2",
+    "EventType": 0,
+    "EventId": 107,
+    "GroupId": 25,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "奇遇捡东西事件3",
+    "Desc": "奇遇捡东西事件3",
+    "EventType": 0,
+    "EventId": 108,
+    "GroupId": 25,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 80
+      }
+    ],
+    "Options": [],
+    "Effects": [],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-修为灵力下降",
+    "Desc": "幼年-修为灵力下降",
+    "EventType": 0,
+    "EventId": 109,
+    "GroupId": 26,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-神识强度下降",
+    "Desc": "幼年-神识强度下降",
+    "EventType": 0,
+    "EventId": 110,
+    "GroupId": 26,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "幼年-博闻灵智下降",
+    "Desc": "幼年-博闻灵智下降",
+    "EventType": 0,
+    "EventId": 111,
+    "GroupId": 26,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 1,
+        "Para2": 18
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "青壮年-修为灵力下降",
+    "Desc": "青壮年-修为灵力下降",
+    "EventType": 0,
+    "EventId": 112,
+    "GroupId": 27,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 1,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "青壮年-神识强度下降",
+    "Desc": "青壮年-神识强度下降",
+    "EventType": 0,
+    "EventId": 113,
+    "GroupId": 27,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 2,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "青壮年-博闻灵智下降",
+    "Desc": "青壮年-博闻灵智下降",
+    "EventType": 0,
+    "EventId": 114,
+    "GroupId": 27,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [
+      {
+        "EventConditionName": 0,
+        "Para1": 19,
+        "Para2": 60
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 0,
+        "Para1": 3,
+        "Para2": -1
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 100
+  },
+  {
+    "EventName": "四道初始事件1",
+    "Desc": "四道初始事件1",
+    "EventType": 0,
+    "EventId": 115,
+    "GroupId": 28,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 5,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 43,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 44,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "四道初始事件2",
+    "Desc": "四道初始事件2",
+    "EventType": 0,
+    "EventId": 116,
+    "GroupId": 28,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 6,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 45,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 46,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "四道初始事件3",
+    "Desc": "四道初始事件3",
+    "EventType": 0,
+    "EventId": 117,
+    "GroupId": 28,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 7,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 47,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 48,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "四道初始事件4",
+    "Desc": "四道初始事件4",
+    "EventType": 0,
+    "EventId": 118,
+    "GroupId": 28,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 99,
+    "AppearCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 8,
+        "Para2": 3
+      }
+    ],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 49,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 45,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "鬼道初级事件1",
+    "Desc": "鬼道初级事件1",
+    "EventType": 0,
+    "EventId": 119,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 19,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 51,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "鬼道初级事件2",
+    "Desc": "鬼道初级事件2",
+    "EventType": 0,
+    "EventId": 120,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 20,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 52,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "仙道初级事件1",
+    "Desc": "仙道初级事件1",
+    "EventType": 0,
+    "EventId": 121,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 29,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 53,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "仙道初级事件2",
+    "Desc": "仙道初级事件2",
+    "EventType": 0,
+    "EventId": 122,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 30,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 54,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "妖道初级事件1",
+    "Desc": "妖道初级事件1",
+    "EventType": 0,
+    "EventId": 123,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 24,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 55,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "妖道初级事件2",
+    "Desc": "妖道初级事件2",
+    "EventType": 0,
+    "EventId": 124,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 25,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 56,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "佛道初级事件1",
+    "Desc": "佛道初级事件1",
+    "EventType": 0,
+    "EventId": 125,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 34,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 57,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "佛道初级事件2",
+    "Desc": "佛道初级事件2",
+    "EventType": 0,
+    "EventId": 126,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 35,
+        "Para2": 0
+      },
+      {
+        "EffectType": 4,
+        "Para1": 58,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "鬼道中级事件1",
+    "Desc": "鬼道中级事件1",
+    "EventType": 0,
+    "EventId": 127,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 21,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "鬼道中级事件2",
+    "Desc": "鬼道中级事件2",
+    "EventType": 0,
+    "EventId": 128,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 22,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "仙道中级事件1",
+    "Desc": "仙道中级事件1",
+    "EventType": 0,
+    "EventId": 129,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 31,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "仙道中级事件2",
+    "Desc": "仙道中级事件2",
+    "EventType": 0,
+    "EventId": 130,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 32,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "妖道中级事件1",
+    "Desc": "妖道中级事件1",
+    "EventType": 0,
+    "EventId": 131,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 26,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "妖道中级事件2",
+    "Desc": "妖道中级事件2",
+    "EventType": 0,
+    "EventId": 132,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 27,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "佛道中级事件1",
+    "Desc": "佛道中级事件1",
+    "EventType": 0,
+    "EventId": 133,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 36,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "佛道中级事件2",
+    "Desc": "佛道中级事件2",
+    "EventType": 0,
+    "EventId": 134,
+    "GroupId": 29,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 37,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级鬼道物品获得事件-阶段1，需要中级仙属性辅助",
+    "Desc": "高级鬼道物品获得事件-阶段1，需要中级仙属性辅助",
+    "EventType": 0,
+    "EventId": 135,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 23,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级鬼道物品获得事件-阶段2，需要中级妖属性辅助",
+    "Desc": "高级鬼道物品获得事件-阶段2，需要中级妖属性辅助",
+    "EventType": 0,
+    "EventId": 136,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 23,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级仙道物品获得事件-阶段1，需要中级妖属性辅助",
+    "Desc": "高级仙道物品获得事件-阶段1，需要中级妖属性辅助",
+    "EventType": 0,
+    "EventId": 137,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 28,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级仙道物品获得事件-阶段2，需要中级佛属性辅助",
+    "Desc": "高级仙道物品获得事件-阶段2，需要中级佛属性辅助",
+    "EventType": 0,
+    "EventId": 138,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 28,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级妖道物品获得事件-阶段1，需要中级佛属性辅助",
+    "Desc": "高级妖道物品获得事件-阶段1，需要中级佛属性辅助",
+    "EventType": 0,
+    "EventId": 139,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 33,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级妖道物品获得事件-阶段2，需要中级鬼属性辅助",
+    "Desc": "高级妖道物品获得事件-阶段2，需要中级鬼属性辅助",
+    "EventType": 0,
+    "EventId": 140,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 33,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级佛道物品获得事件-阶段1，需要中级鬼属性辅助",
+    "Desc": "高级佛道物品获得事件-阶段1，需要中级鬼属性辅助",
+    "EventType": 0,
+    "EventId": 141,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 38,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
+  },
+  {
+    "EventName": "高级佛道物品获得事件-阶段2，需要中级仙属性辅助",
+    "Desc": "高级佛道物品获得事件-阶段2，需要中级仙属性辅助",
+    "EventType": 0,
+    "EventId": 142,
+    "GroupId": 30,
+    "IsGenUnique": false,
+    "IsAllUnique": true,
+    "IsInteractive": false,
+    "DrawPri": 0,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 4,
+        "Para1": 38,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": false,
+    "WEIGHT": 0
   }
 ]
