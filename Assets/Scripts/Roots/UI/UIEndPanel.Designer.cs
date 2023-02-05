@@ -5,16 +5,28 @@ using QFramework;
 
 namespace Roots
 {
-	// Generate Id:7d621571-1b7c-48c5-9181-0a58c620ca92
+	// Generate Id:d3adb21f-2d79-4694-b0ed-275d276f7603
 	public partial class UIEndPanel
 	{
 		public const string Name = "UIEndPanel";
 		
+		[SerializeField]
+		public UnityEngine.UI.Button Image;
+		[SerializeField]
+		public UnityEngine.UI.Image EndImage;
+		[SerializeField]
+		public TMPro.TextMeshProUGUI EndTitle;
+		[SerializeField]
+		public TMPro.TextMeshProUGUI EndDesc;
 		
 		private UIEndPanelData mPrivateData = null;
 		
 		protected override void ClearUIComponents()
 		{
+			Image = null;
+			EndImage = null;
+			EndTitle = null;
+			EndDesc = null;
 			
 			mData = null;
 		}

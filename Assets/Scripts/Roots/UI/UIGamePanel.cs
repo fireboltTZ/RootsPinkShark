@@ -12,13 +12,14 @@ namespace Roots
 	public class UIGamePanelData : UIPanelData
 	{
 	}
-	public partial class UIGamePanel : MyUIPanel
+	public partial class UIGamePanel : MyUIPanel, ICanSendEvent
 	{
 		public GameTagObject GameTagObjectPrefab;
 		public GameItem GameItemPrefab;
 		public GameLog GameLogPrefab;
 		public AgeBar AgeSlider;
 		public Button InheritBtn;
+		public Button AscendenceBtn;
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -33,6 +34,11 @@ namespace Roots
 			InheritBtn.onClick.AddListener(() =>
 			{
 				UIKit.OpenPanel<UIRootPanel>(new UIRootPanelData(){});
+			});
+			AscendenceBtn.onClick.AddListener(() =>
+			{
+				this.SendEvent<TimeStopEvent>();
+				UIKit.OpenPanel<UIAscendencePanel>();
 			});
 			this.RegisterEvent<AgeChangeEvent>(e =>
 			{
