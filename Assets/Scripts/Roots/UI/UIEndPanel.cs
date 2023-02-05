@@ -6,13 +6,21 @@ namespace Roots
 {
 	public class UIEndPanelData : UIPanelData
 	{
+		
 	}
-	public partial class UIEndPanel : UIPanel
+	public partial class UIEndPanel : MyUIPanel
 	{
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIEndPanelData ?? new UIEndPanelData();
 			// please add init code here
+			
+			Image.onClick.AddListener(() =>
+			{
+				GameSystem.QuitGame();
+			});
+			
+			
 		}
 		
 		protected override void OnOpen(IUIData uiData = null)

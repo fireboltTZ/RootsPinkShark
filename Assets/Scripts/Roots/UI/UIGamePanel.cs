@@ -19,6 +19,7 @@ namespace Roots
 		public GameLog GameLogPrefab;
 		public AgeBar AgeSlider;
 		public Button InheritBtn;
+		public Button AscendenceBtn;
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -34,6 +35,11 @@ namespace Roots
 			{
 				UIKit.OpenPanel<UIRootPanel>(new UIRootPanelData(){});
 				this.SendEvent<TimeStopEvent>();
+			});
+			AscendenceBtn.onClick.AddListener(() =>
+			{
+				this.SendEvent<TimeStopEvent>();
+				UIKit.OpenPanel<UIAscendencePanel>();
 			});
 			this.RegisterEvent<AgeChangeEvent>(e =>
 			{
