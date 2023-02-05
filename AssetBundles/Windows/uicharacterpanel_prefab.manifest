@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 964904132
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e57816e4431dd404961ed8b83d87dc14
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43ba7abf091963d6e964820558b3d0d0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca1a093439b460f4a85186df0bf324f4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/UIPrefab/UICharacterPanel.prefab
+Dependencies: []

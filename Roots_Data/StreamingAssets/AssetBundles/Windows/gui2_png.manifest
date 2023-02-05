@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2288480375
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17b6ef0c0cecc76cab5a5394197142e0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Art/\u6E38\u620F\u7ED3\u5C40PNG 1/GUI2.png"
+Dependencies: []

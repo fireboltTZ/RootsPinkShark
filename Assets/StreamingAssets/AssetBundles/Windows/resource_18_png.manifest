@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3764543307
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f01851637db518139ab19eb0c550b908
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Art/resource1-4\uFF0C39-42/resource_18.png"
+Dependencies: []

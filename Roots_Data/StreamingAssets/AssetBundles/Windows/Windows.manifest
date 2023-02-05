@@ -1,0 +1,238 @@
+ManifestFileVersion: 0
+CRC: 607930916
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: uipanelwithimageprefab_prefab
+      Dependencies: {}
+    Info_1:
+      Name: b_png
+      Dependencies: {}
+    Info_2:
+      Name: assetobj 2_prefab
+      Dependencies: {}
+    Info_3:
+      Name: uistackpanel2_prefab
+      Dependencies: {}
+    Info_4:
+      Name: textureexample1_png
+      Dependencies: {}
+    Info_5:
+      Name: uimultipanel_prefab
+      Dependencies: {}
+    Info_6:
+      Name: spriteatlas_spriteatlas
+      Dependencies: {}
+    Info_7:
+      Name: uiendpanel_prefab
+      Dependencies: {}
+    Info_8:
+      Name: imageprefabc_prefab
+      Dependencies:
+        Dependency_0: c_png
+    Info_9:
+      Name: sceneres_unity
+      Dependencies: {}
+    Info_10:
+      Name: a_png
+      Dependencies: {}
+    Info_11:
+      Name: assetobj 1_prefab
+      Dependencies: {}
+    Info_12:
+      Name: uistackpanel1_prefab
+      Dependencies: {}
+    Info_13:
+      Name: assetobj_prefab
+      Dependencies: {}
+    Info_14:
+      Name: imageprefabb_prefab
+      Dependencies:
+        Dependency_0: b_png
+    Info_15:
+      Name: uibasicpanel_prefab
+      Dependencies: {}
+    Info_16:
+      Name: uistartpanel_prefab
+      Dependencies: {}
+    Info_17:
+      Name: c_png
+      Dependencies: {}
+    Info_18:
+      Name: assetobj 3_prefab
+      Dependencies: {}
+    Info_19:
+      Name: imageprefaba_prefab
+      Dependencies:
+        Dependency_0: a_png
+    Info_20:
+      Name: uirootpanel_prefab
+      Dependencies: {}
+    Info_21:
+      Name: uicharacterpanel_prefab
+      Dependencies: {}
+    Info_22:
+      Name: uiinheritpanel_prefab
+      Dependencies: {}
+    Info_23:
+      Name: uigamepanel_prefab
+      Dependencies: {}
+    Info_24:
+      Name: resource_1_png
+      Dependencies: {}
+    Info_25:
+      Name: uioptionpanel_prefab
+      Dependencies: {}
+    Info_26:
+      Name: uiascendencepanel_prefab
+      Dependencies: {}
+    Info_27:
+      Name: resource_2_png
+      Dependencies: {}
+    Info_28:
+      Name: resource_3_png
+      Dependencies: {}
+    Info_29:
+      Name: resource_4_png
+      Dependencies: {}
+    Info_30:
+      Name: resource_5_png
+      Dependencies: {}
+    Info_31:
+      Name: resource_6_png
+      Dependencies: {}
+    Info_32:
+      Name: resource_7_png
+      Dependencies: {}
+    Info_33:
+      Name: resource_8_png
+      Dependencies: {}
+    Info_34:
+      Name: resource_9_png
+      Dependencies: {}
+    Info_35:
+      Name: resource_10_png
+      Dependencies: {}
+    Info_36:
+      Name: resource_11_png
+      Dependencies: {}
+    Info_37:
+      Name: resource_12_png
+      Dependencies: {}
+    Info_38:
+      Name: resource_13_png
+      Dependencies: {}
+    Info_39:
+      Name: resource_14_png
+      Dependencies: {}
+    Info_40:
+      Name: resource_15_png
+      Dependencies: {}
+    Info_41:
+      Name: resource_16_png
+      Dependencies: {}
+    Info_42:
+      Name: resource_17_png
+      Dependencies: {}
+    Info_43:
+      Name: resource_18_png
+      Dependencies: {}
+    Info_44:
+      Name: resource_19_png
+      Dependencies: {}
+    Info_45:
+      Name: resource_20_png
+      Dependencies: {}
+    Info_46:
+      Name: resource_21_png
+      Dependencies: {}
+    Info_47:
+      Name: resource_22_png
+      Dependencies: {}
+    Info_48:
+      Name: resource_23_png
+      Dependencies: {}
+    Info_49:
+      Name: resource_24_png
+      Dependencies: {}
+    Info_50:
+      Name: resource_25_png
+      Dependencies: {}
+    Info_51:
+      Name: resource_26_png
+      Dependencies: {}
+    Info_52:
+      Name: resource_27_png
+      Dependencies: {}
+    Info_53:
+      Name: resource_28_png
+      Dependencies: {}
+    Info_54:
+      Name: resource_29_png
+      Dependencies: {}
+    Info_55:
+      Name: resource_30_png
+      Dependencies: {}
+    Info_56:
+      Name: resource_31_png
+      Dependencies: {}
+    Info_57:
+      Name: resource_32_png
+      Dependencies: {}
+    Info_58:
+      Name: resource_33_png
+      Dependencies: {}
+    Info_59:
+      Name: resource_34_png
+      Dependencies: {}
+    Info_60:
+      Name: resource_35_png
+      Dependencies: {}
+    Info_61:
+      Name: resource_36_png
+      Dependencies: {}
+    Info_62:
+      Name: resource_37_png
+      Dependencies: {}
+    Info_63:
+      Name: resource_38_png
+      Dependencies: {}
+    Info_64:
+      Name: resource_39_png
+      Dependencies: {}
+    Info_65:
+      Name: resource_40_png
+      Dependencies: {}
+    Info_66:
+      Name: resource_42_png
+      Dependencies: {}
+    Info_67:
+      Name: resource_41_png
+      Dependencies: {}
+    Info_68:
+      Name: fo1_png
+      Dependencies: {}
+    Info_69:
+      Name: fo2_png
+      Dependencies: {}
+    Info_70:
+      Name: gui1_png
+      Dependencies: {}
+    Info_71:
+      Name: gui2_png
+      Dependencies: {}
+    Info_72:
+      Name: xian1_png
+      Dependencies: {}
+    Info_73:
+      Name: putong_png
+      Dependencies: {}
+    Info_74:
+      Name: xian2_png
+      Dependencies: {}
+    Info_75:
+      Name: yao1_png
+      Dependencies: {}
+    Info_76:
+      Name: yao2_png
+      Dependencies: {}

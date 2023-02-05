@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3649711800
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d26bb2c2a8809044a9b79381380eb1da
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 19f5e6f01006cbe0d7a51d052f197a66
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f29d8abf514c3b4fb82f868d7030bad, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/UIPrefab/UIInheritPanel.prefab
+Dependencies: []

@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Collections;
 using static PixelCrushers.DialogueSystem.UnityGUI.GUIProgressBar;
 using Unity.VisualScripting;
-using static UnityEditor.PlayerSettings;
 using System;
 using System.Net;
 using Unity.Mathematics;

@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3462485224
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 126b3356d1cd39a4a816e458a4fc5cb8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Art/resource1-4\uFF0C39-42/resource_21.png"
+Dependencies: []

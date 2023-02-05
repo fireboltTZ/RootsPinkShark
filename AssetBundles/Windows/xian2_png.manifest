@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3383864840
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b9bea382642ec0e2208ab86cf62baca7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Art/\u6E38\u620F\u7ED3\u5C40PNG 1/Xian2.png"
+Dependencies: []

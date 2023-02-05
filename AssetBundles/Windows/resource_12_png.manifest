@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 1572667353
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b5b8188b114d32ecf59c73dc2501a2a1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Art/resource1-4\uFF0C39-42/resource_12.png"
+Dependencies: []
