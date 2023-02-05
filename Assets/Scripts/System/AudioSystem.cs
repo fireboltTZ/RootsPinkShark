@@ -15,9 +15,9 @@ namespace MatchThree.System
             AudioKit.VoicePlayer.SetVolume(PlayerPrefs.GetInt("Volume"));
         }
 
-        public void PlayMusic()
+        public void PlayMusic(string s)
         {
-            AudioKit.PlayMusic("Music_Splash");
+            AudioKit.PlayMusic(s);
         }
         
         

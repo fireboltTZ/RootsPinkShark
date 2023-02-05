@@ -49,6 +49,25 @@ namespace Roots
             Normal,Happy,Hit,Angry
         }
 
+        public void RandomEmotion()
+        {
+            int i = UnityEngine.Random.Range(0, 4);
+            switch (i)
+            {
+                case 0:
+                    Hitted();
+                    break;
+                case 1:
+                    Happy();
+                    break;
+                case 2:
+                    Normal();
+                    break;
+                case 3:
+                    Angry();
+                    break;
+            }
+        }
         public void Hitted()
         {
             ChangeFace(Emotion.Hit);

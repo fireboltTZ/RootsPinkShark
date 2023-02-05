@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1083390057
+CRC: 941193826
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: caf39942a8e2762e51ef77a4e953b9e0
+    Hash: 04976a8a8dfdd885fbaa75a1b9d5fece
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- "Assets/Art/\u6E38\u620F\u7ED3\u5C40PNG 1/Yao2.png"
+- Assets/Res/ending/Yao2.png
 Dependencies: []

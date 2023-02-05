@@ -17,9 +17,11 @@ namespace Roots.Game
         // Start is called before the first frame update
         void Start()
         {
+            ResKit.Init();
             //var tables = new Tables(Loader);
-            
             this.GetSystem<GameSystem>().StartGame();
+            //UIKit.OpenPanel<UIStartPanel>();
+            
         }
 
         private JSONNode Loader(string fileName)

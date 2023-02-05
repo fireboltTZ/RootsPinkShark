@@ -45,8 +45,8 @@ namespace MatchThree.System
             //Create New Character
             
             //Start New UIPanel
-            UIKit.OpenPanel<UIGamePanel>();
-            CreateFirstCharacter();
+            UIKit.OpenPanel<UIStartPanel>();
+            
             //Character 
         }
         
@@ -58,7 +58,8 @@ namespace MatchThree.System
         
         public void StartBattle()
         {
-            //UIKit.OpenPanel<UIBattlePanel>();
+            UIKit.OpenPanel<UIGamePanel>();
+            CreateFirstCharacter();
         }
 
         

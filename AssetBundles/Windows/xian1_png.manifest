@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2568799951
+CRC: 3831184021
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8435d9ecdb6504bfa39968c4076702c7
+    Hash: 07a0522a91e67df6631008196ff4fca0
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- "Assets/Art/\u6E38\u620F\u7ED3\u5C40PNG 1/Xian1.png"
+- Assets/Res/ending/Xian1.png
 Dependencies: []

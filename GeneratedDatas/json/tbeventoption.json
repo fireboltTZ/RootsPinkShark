@@ -281,7 +281,7 @@
   },
   {
     "EventOptionid": 21,
-    "EventOptionDesc": "修为",
+    "EventOptionDesc": "A.将灵气转为修为：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -291,11 +291,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "修为"
+    "OptionDES": "你的修为增加了。"
   },
   {
     "EventOptionid": 22,
-    "EventOptionDesc": "神识",
+    "EventOptionDesc": "B.将灵气转为神识：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -305,11 +305,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "神识"
+    "OptionDES": "你的神识增强了。"
   },
   {
     "EventOptionid": 23,
-    "EventOptionDesc": "修为",
+    "EventOptionDesc": "A.选择灵石：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -319,11 +319,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "修为"
+    "OptionDES": "你的修为增加了。"
   },
   {
     "EventOptionid": 24,
-    "EventOptionDesc": "博闻",
+    "EventOptionDesc": "B.选择大秘密：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -333,11 +333,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "博闻"
+    "OptionDES": "奇怪的知识增加了，博闻也增强了。"
   },
   {
     "EventOptionid": 25,
-    "EventOptionDesc": "博闻",
+    "EventOptionDesc": "A.选择博闻丹：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -347,11 +347,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "博闻"
+    "OptionDES": "服下丹药后你的博闻增加了。"
   },
   {
     "EventOptionid": 26,
-    "EventOptionDesc": "神识",
+    "EventOptionDesc": "B.选择神识丹：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -361,11 +361,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "神识"
+    "OptionDES": "服下丹药后你的神识增强了。"
   },
   {
     "EventOptionid": 27,
-    "EventOptionDesc": "博闻转神识",
+    "EventOptionDesc": "A.将博闻转为神识：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -380,11 +380,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "博闻转神识"
+    "OptionDES": "你的部分博闻转换为了神识。"
   },
   {
     "EventOptionid": 28,
-    "EventOptionDesc": "神识转博闻",
+    "EventOptionDesc": "B.将神识转为博闻：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -399,7 +399,7 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "神识转博闻"
+    "OptionDES": "你的部分神识转化为了博闻。"
   },
   {
     "EventOptionid": 29,
@@ -411,7 +411,7 @@
   },
   {
     "EventOptionid": 30,
-    "EventOptionDesc": "博闻转修为",
+    "EventOptionDesc": "A.将博闻转为修为：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -426,11 +426,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "博闻转修为"
+    "OptionDES": "你的部分博闻转换为了修为。"
   },
   {
     "EventOptionid": 31,
-    "EventOptionDesc": "修为转博闻",
+    "EventOptionDesc": "B.将修为转为博闻：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -445,7 +445,7 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "修为转博闻"
+    "OptionDES": "你的部分修为转换为了博闻。"
   },
   {
     "EventOptionid": 32,
@@ -457,7 +457,7 @@
   },
   {
     "EventOptionid": 33,
-    "EventOptionDesc": "修为转神识",
+    "EventOptionDesc": "A.将神识转为修为：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -472,11 +472,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "修为转神识"
+    "OptionDES": "你的部分甚至转换为了修为。"
   },
   {
     "EventOptionid": 34,
-    "EventOptionDesc": "神识转修为",
+    "EventOptionDesc": "B.将修为转为神识：",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [
@@ -491,11 +491,11 @@
         "Para2": 1
       }
     ],
-    "OptionDES": "神识转修为"
+    "OptionDES": "你的部分修为转换为了神识。"
   },
   {
     "EventOptionid": 35,
-    "EventOptionDesc": "空",
+    "EventOptionDesc": " ",
     "Limit": [],
     "AttrLimit": [],
     "OptionWinEffect": [],

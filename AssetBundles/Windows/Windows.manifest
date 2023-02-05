@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 607930916
+CRC: 2639345992
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -235,4 +235,10 @@ AssetBundleManifest:
       Dependencies: {}
     Info_76:
       Name: yao2_png
+      Dependencies: {}
+    Info_77:
+      Name: bg1_mp3
+      Dependencies: {}
+    Info_78:
+      Name: bg2_mp3
       Dependencies: {}

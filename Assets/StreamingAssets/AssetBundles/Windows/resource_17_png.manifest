@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1310569178
+CRC: 307951260
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 83cbc2c20eb19423ebc0641087c58326
+    Hash: 56e9052746f5c8f2ee37890083fcd621
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- "Assets/Art/resource1-4\uFF0C39-42/resource_17.png"
+- Assets/Res/resource/resource_17.png
 Dependencies: []

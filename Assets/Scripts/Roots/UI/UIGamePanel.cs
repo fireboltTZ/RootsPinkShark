@@ -57,6 +57,7 @@ namespace Roots
 					{
 						GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
 						gl.Text.text = e.Character.Name + gameEvent.Desc;
+						CController.RandomEmotion();
 					}
 					else
 					{

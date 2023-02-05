@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2552239408
+CRC: 1867636220
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 37674a901ad071fbd36f2ff5ab6609af
+    Hash: d6c39006373df14f7264b274cb06900e
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- "Assets/Art/\u6E38\u620F\u7ED3\u5C40PNG 1/PuTong.png"
+- Assets/Res/ending/PuTong.png
 Dependencies: []

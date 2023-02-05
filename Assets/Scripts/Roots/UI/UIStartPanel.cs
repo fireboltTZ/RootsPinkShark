@@ -12,21 +12,23 @@ namespace Roots
 	{
 		protected override void OnInit(IUIData uiData = null)
 		{
+			AudioSystem.PlayMusic("bg1");
 			mData = uiData as UIStartPanelData ?? new UIStartPanelData();
 			// please add init code here
-		}
-		
-		protected override void OnOpen(IUIData uiData = null)
-		{
 			StartBtn.onClick.AddListener(() =>
 			{
-				GameSystem.StartGame();
-				this.GetSystem<GameSystem>().QuitGame();
+				AudioSystem.PlayMusic("bg2");
+				GameSystem.StartBattle();
 			});
 			QuitBtn.onClick.AddListener(() =>
 			{
 				GameSystem.QuitGame();
 			});
+		}
+		
+		protected override void OnOpen(IUIData uiData = null)
+		{
+			
 		}
 		
 		protected override void OnShow()
