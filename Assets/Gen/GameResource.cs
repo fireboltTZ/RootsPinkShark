@@ -54,7 +54,7 @@ public sealed partial class GameResource :  Bright.Config.BeanBase
     }
 
     /// <summary>
-    /// 资源类型
+    /// 资源id
     /// </summary>
     public int ResourceId { get; private set; }
     /// <summary>

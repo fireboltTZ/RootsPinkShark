@@ -5,6 +5,7 @@ using QFramework;
 using Roots.Game;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Roots.Event;
 using UnityEngine;
 
@@ -104,6 +105,7 @@ namespace Roots.Game
                     case EffectType.ALL_HAVEDONE:
                         break;
                     case EffectType.HEARTGROWTH:
+                        character.DAOXIN.Effects.Add(new cfg.EventEffect(EffectType.TATTRI,effects[i].Para1, effects[i].Para2));
                         //TODO 如何获得道心
                         break;
 

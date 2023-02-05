@@ -39,6 +39,10 @@ namespace cfg
         /// 拥有资源
         /// </summary>
         HAVERES = 6,
+        /// <summary>
+        /// 伴侣情况
+        /// </summary>
+        HAS_PARTENER = 7,
     }
 
 } 
