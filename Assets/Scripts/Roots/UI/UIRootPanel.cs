@@ -12,6 +12,7 @@ using System.Net;
 using Unity.Mathematics;
 using UnityEngine.UI.Extensions;
 using MatchThree.System;
+using cfg;
 
 namespace Roots
 {	public class UIRootPanelData : UIPanelData
@@ -27,7 +28,8 @@ namespace Roots
         public GameObject lineRenderer;
         public GameObject FamilyCardPrefab;
         public float Height = 400f;
-        public GameObject Content; 
+        public GameObject Content;
+        public Character SelectedChracter;
 
 
         public float MaxAngle; //branch max Angles
@@ -38,9 +40,14 @@ namespace Roots
             // please add init code here
             FirstMainChracter = GameSystem.firstMainCharacter;
             DrawTree(OriginRect.anchoredPosition, MaxAngle, FirstMainChracter);
-            
+
+            Inherit_button.onClick.AddListener(()=>Inherit(SelectedChracter));
+            Back_button.onClick.AddListener(()=>Back());
+
 		}
 		
+        
+
 		protected override void OnOpen(IUIData uiData = null)
 		{
 		}
@@ -54,7 +61,13 @@ namespace Roots
 		}
 		protected override void OnClose()
 		{
+
 		}
+
+        public void SetSelectedCharacter(Character person)
+        {
+            SelectedChracter = person;        
+        }
         
         public void DrawTree(Vector2 origin, float maxAngle, Character person)
 		{
@@ -63,22 +76,30 @@ namespace Roots
             maxAngle = maxAngle * growthRate;
             IEnumerator enumerator()
             {
-                var currentBranch = Instantiate(FamilyCardPrefab, Content.transform,false);
-                currentBranch.GetComponent<RectTransform>().anchoredPosition = origin;
+                var currentNode = Instantiate(FamilyCardPrefab, Content.transform,false);
+                currentNode.GetComponent<RectTransform>().anchoredPosition = origin;
+                //currentNode.GetComponent<UINameCard>().SelectCard()
+                currentNode.GetComponent<UINameCard>().SetUpPerson(person);
+
+
                 yield return new WaitForSeconds(1f);
 
-                int numOfBranches = person.Children.Count;  //UnityEngine.Random.Range(1, 5); //
-                //if (numOfBranches == 0)
-                //   yield return null;
-                for (int i = 0; i < numOfBranches; i++)
+                int numOfBranches = person.Children.Count; //UnityEngine.Random.Range(1, 5); 
+                if (numOfBranches == 0) //Don't have child
+                    yield return null;
+                else 
                 {
+                    for (int i = 0; i < numOfBranches; i++)
+                    {
 
-                    var branchPoint = CaculateEndPoint(origin, 300, numOfBranches, i, maxAngle);
-                    DrawLine(origin, branchPoint);
-                    DrawTree(branchPoint, maxAngle, person);
-                    //yield return new WaitForSeconds(1f);
+                        var branchPoint = CaculateEndPoint(origin, 300, numOfBranches, i, maxAngle);
+                        DrawLine(origin, branchPoint);
+                        DrawTree(branchPoint, maxAngle, person.Children[i]);
+                        //yield return new WaitForSeconds(1f);
 
+                    }
                 }
+                
 
 
             }
@@ -87,6 +108,27 @@ namespace Roots
 
         }
 
+        public void Inherit(Character person) 
+        {
+            if (person == null)
+            {
+                Debug.Log("Selected person is null!");
+                return;
+            }
+            else
+            {
+                //判断Person是否可以被继承
+                if (person.CharacterState != 0) //Not dead
+                    OpenInheritPanel();
+                //GameSystem.ChangeMainCharacter(person,new List<GameResource> items)
+            }
+        }
+
+
+        void OpenInheritPanel()
+        {
+            
+        }
         //private void 
         void DrawLine(Vector2 from, Vector2 to)
         {

@@ -50,7 +50,7 @@ namespace Roots.Game
         public Character Spouse;
         public Character MainParent;
         public Character SubParent;
-        public List<Character> Children;
+        public List<Character> Children = new List<Character>();
 
         public List<int> DoneEvents = new List<int>(); 
 
