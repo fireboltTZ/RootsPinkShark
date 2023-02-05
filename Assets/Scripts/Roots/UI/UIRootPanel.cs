@@ -13,13 +13,14 @@ using Unity.Mathematics;
 using UnityEngine.UI.Extensions;
 using MatchThree.System;
 using cfg;
+using Roots.Event;
 
 namespace Roots
 {	public class UIRootPanelData : UIPanelData
 	{
 
     }
-	public partial class UIRootPanel : MyUIPanel //???????
+	public partial class UIRootPanel : MyUIPanel,ICanSendEvent
 	{
         public Character FirstMainChracter;
         public List<Character> CharacterList;
@@ -61,8 +62,8 @@ namespace Roots
 		}
 		protected override void OnClose()
 		{
-
-		}
+            this.SendEvent<TimeContinueEvent>();
+        }
 
         public void SetSelectedCharacter(Character person)
         {
@@ -86,7 +87,11 @@ namespace Roots
 
                 int numOfBranches = person.Children.Count; //UnityEngine.Random.Range(1, 5); 
                 if (numOfBranches == 0) //Don't have child
-                    yield return null;
+                {
+                    Debug.Log("No child!");
+                    yield return null; 
+                }
+                    
                 else 
                 {
                     for (int i = 0; i < numOfBranches; i++)
@@ -117,9 +122,14 @@ namespace Roots
             }
             else
             {
+                Debug.LogFormat("Selectedf Person is {0} State is {1}", person.Name, person.CharacterState);
                 //?ж?Person??????????
-                if (person.CharacterState != 0) //Not dead
+                if ((int)person.CharacterState == 2 && person != this.GetSystem<GameSystem>().MainCharacter) //Not dead
+                {
                     this.GetSystem<GameSystem>().ChangeMainCharacter(person);
+                    this.SendEvent(new GetNewNotificationEvent() {s = "你已经传承给了" + person.Name, Color = Color.red });
+                    this.CloseSelf();
+                }
                 //GameSystem.ChangeMainCharacter(person,new List<GameResource> items)
             }
         }
