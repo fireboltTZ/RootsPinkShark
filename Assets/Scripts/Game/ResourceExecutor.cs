@@ -130,7 +130,8 @@ namespace Roots.Game
                         character.SetTempAttribute();
                         break;
                     case EffectType.GIVE_BIRTH:
-                        //TODO
+                        int sex = UnityEngine.Random.Range(0, 2);
+                        Character child = this.GetSystem<GameSystem>().CreateCharacter(NameGenerator.Instance.GenerateChild(sex == 1), 0, 80, sex == 1, character, character.Spouse);
                         break;
                 }
             }

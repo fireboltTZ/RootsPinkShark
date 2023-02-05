@@ -63,9 +63,18 @@ namespace Roots
 
 			});
 
-
+			this.RegisterEvent<NormalGameLogEvent>(e =>
+			{
+				NormalGameLog(e.content);
+			});
 		}
 
+
+		private void NormalGameLog(string content)
+		{
+			GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
+			gl.Text.text = content;
+        }
 
 		private void SetNewTag(List<GameTag> list)
 		{

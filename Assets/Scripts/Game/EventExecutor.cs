@@ -16,28 +16,27 @@ namespace Roots.Game
         }
         public bool EventAvailable(Character character, cfg.Event evt)
         {
-            if (evt.IsGenUnique && this.GetSystem<GameSystem>().GenUnique.Contains(evt.EventId))
+            if (evt.IsGenUnique && character.DoneEvents.Contains(evt.EventId))
             {
                 return false;
             }
-            if (evt.IsAllUnique && this.GetSystem<GameSystem>().HistUnique.Contains(evt.EventId))
+            if (evt.IsAllUnique && this.GetSystem<GameSystem>().HisDoneEvents.Contains(evt.EventId))
             {
                 return false;
             }
             bool available = true;
             for (int i = 0; i < evt.AppearCondition.Count; i++)
             {
-                available &= ConditionAvailable(character, evt.AppearCondition[i], ref available, evt);
+                available &= ConditionAvailable(character, evt.AppearCondition[i]);
             }
             return available;
         }
 
 
-        public bool ConditionAvailable(Character character, cfg.EventCondition condition, ref bool available, cfg.Event gameEvent)
+        public bool ConditionAvailable(Character character, cfg.EventCondition condition)
         {
             if (condition == null)
             {
-                //available = true;
                 return true;
             }
             switch (condition.EventConditionName)
@@ -46,7 +45,6 @@ namespace Roots.Game
                 case EffectCondition.AGEBETWEEN:
                     if(character.Age>condition.Para1 && character.Age<condition.Para2)
                     {
-                        //available = true;
                         return true;
                     }
  
@@ -54,7 +52,6 @@ namespace Roots.Game
                 case EffectCondition.HAS_CHILDREN:
                     if (character.Children.Count != 0 && condition.Para1 == 1 || character.Children.Count == 0 && condition.Para1 == 0)
                     {
-                        //available= true;
                         return true;
                     }
                     break;
@@ -70,28 +67,24 @@ namespace Roots.Game
                         case (int)AttriType.LINGLI:
                             if(character.LINGLI >= condition.Para2)
                             {
-                                //available = true;
                                 return true;
                             }
                             break;
                         case (int)AttriType.SHENSHI:
                             if(character.SHENSHI >= condition.Para2)
                             {
-                                //available = true;
                                 return true;
                             }
                             break;
                         case (int)AttriType.BOWEN:
                             if (character.BOWEN >= condition.Para2)
                             {
-                                //available = true;
                                 return true;
                             }
                             break;
                         case (int)AttriType.XINGYUN:
                             if (character.XINGYUN >= condition.Para2)
                             {
-                                //available = true;
                                 return true;
                             }
                             break;
@@ -102,7 +95,6 @@ namespace Roots.Game
                     {
                         if (character.Tags[i].TagId == condition.Para2)
                         {
-                            //available = true;
                             return true;
                         }
                     }
@@ -112,7 +104,6 @@ namespace Roots.Game
                     {
                         if (character.Resources[i].ResourceId == condition.Para2)
                         {
-                            //available = true;
                             return true;
                         }
                     }

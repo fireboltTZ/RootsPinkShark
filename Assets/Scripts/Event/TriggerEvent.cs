@@ -47,6 +47,9 @@ namespace Roots.Event
     {
         
     }
-    
-    
+
+    public struct NormalGameLogEvent
+    {
+        public string content;
+    }
 }
