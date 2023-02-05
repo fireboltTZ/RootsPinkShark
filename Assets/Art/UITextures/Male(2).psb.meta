@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb89ea8634d9ffc4ea8242bbf9972a73
+guid: 55f4e4e02024126459dd616495893109
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -91,163 +91,9 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
-  mosaicSpriteImportData:
-  - name: Male_stand_type1_hairline2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 328
-      y: 765
-      width: 169
-      height: 231
-    spriteID: b9f298b5f31c80a41a69a998429a111c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 328, y: 765}
-    spritePosition: {x: 514, y: 1057}
-  - name: Male_stand_type1_hair2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 328
-      y: 1004
-      width: 168
-      height: 212
-    spriteID: 186996d3f45e8684697bceb042af9ff1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 328, y: 1004}
-    spritePosition: {x: 515, y: 1073}
-  - name: Male_stand_type2_line
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 316
-      height: 1029
-    spriteID: 978b7b624968de74bb32c95f4e76d39c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 471, y: 229}
-  - name: Male_stand_type2_skin
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 328
-      y: 4
-      width: 260
-      height: 531
-    spriteID: a4e916ca4a0068d4e927849efa758c4f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 328, y: 4}
-    spritePosition: {x: 493, y: 684}
-  - name: Male_stand_type2_cloth
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1041
-      width: 304
-      height: 538
-    spriteID: e73e1da603cf95a4da1a894b8ad98011
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1041}
-    spritePosition: {x: 483, y: 552}
-  - name: Male_stand_type2_pants
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 328
-      y: 543
-      width: 227
-      height: 214
-    spriteID: 2201d8d20a1412246b882a674425b1ff
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 328, y: 543}
-    spritePosition: {x: 508, y: 493}
-  - name: Male_stand_type2_boots
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1587
-      width: 289
-      height: 303
-    spriteID: 758a238ea5292124abad129b8b515091
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1587}
-    spritePosition: {x: 474, y: 230}
+  mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Male_stand_type1_hairline2
+  - name: "\u53D7\u51FB"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -255,10 +101,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 328
-      y: 765
-      width: 169
-      height: 231
-    spriteID: 3a9d24f05caa38d45b141ff89697abcf
+      y: 1272
+      width: 67
+      height: 58
+    spriteID: 7d75232552cf11347b8ee003ccfb3937
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -267,7 +113,95 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 328, y: 765}
+    uvTransform: {x: 328, y: 1272}
+    spritePosition: {x: 552, y: 1118}
+  - name: "\u6124\u6012"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 813
+      width: 74
+      height: 64
+    spriteID: b6c4a62813f27c24489e47ea3cdfbc44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 505, y: 813}
+    spritePosition: {x: 547, y: 1113}
+  - name: "\u5F00\u5FC3"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 885
+      width: 71
+      height: 66
+    spriteID: 80b9b74808389144ca744e4214349480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 505, y: 885}
+    spritePosition: {x: 548, y: 1113}
+  - name: "\u666E\u901A"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 959
+      width: 71
+      height: 59
+    spriteID: 400fdddebfe9392418d62919e576ca4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 505, y: 959}
+    spritePosition: {x: 548, y: 1119}
+  - name: Male_stand_type1_hairline2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 813
+      width: 169
+      height: 231
+    spriteID: f3371712528c7fb498d4786500c26c3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 328, y: 813}
     spritePosition: {x: 514, y: 1057}
   - name: Male_stand_type1_hair2
     originalName: 
@@ -277,10 +211,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 328
-      y: 1004
+      y: 1052
       width: 168
       height: 212
-    spriteID: d8525761703cf1b44a85138144f3c315
+    spriteID: a0569eac7123db547814f9d6ad8a160d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -289,7 +223,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 328, y: 1004}
+    uvTransform: {x: 328, y: 1052}
     spritePosition: {x: 515, y: 1073}
   - name: Male_stand_type2_line
     originalName: 
@@ -302,7 +236,7 @@ ScriptedImporter:
       y: 4
       width: 316
       height: 1029
-    spriteID: f88511dbae6bca24897469b1c4704f3d
+    spriteID: 06296843fd08d364796429f1562a7908
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -322,9 +256,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 328
       y: 4
-      width: 260
+      width: 262
       height: 531
-    spriteID: 8976d429e4ea1e14792d04d51e143350
+    spriteID: 3826f4c02ed39a4459d688d4dfe7f627
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -344,9 +278,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 1041
-      width: 304
-      height: 538
-    spriteID: 685ecf77d33133f4695b39c3a55c567f
+      width: 306
+      height: 683
+    spriteID: 1cb8e07cd2e2120429d005f39745e831
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -356,7 +290,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 1041}
-    spritePosition: {x: 483, y: 552}
+    spritePosition: {x: 481, y: 411}
   - name: Male_stand_type2_pants
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -366,9 +300,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 328
       y: 543
-      width: 227
-      height: 214
-    spriteID: a8310467df4b5d5448b1b1637d3e1e38
+      width: 228
+      height: 262
+    spriteID: ecc6ca7f957e6bf478e776843929467c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -378,7 +312,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 328, y: 543}
-    spritePosition: {x: 508, y: 493}
+    spritePosition: {x: 507, y: 445}
   - name: Male_stand_type2_boots
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -387,10 +321,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1587
-      width: 289
-      height: 303
-    spriteID: 3d74067a6558b944a896e8ca40250585
+      y: 1732
+      width: 292
+      height: 305
+    spriteID: 81e495bc5b8c6b44994cf35750ede824
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -399,8 +333,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1587}
-    spritePosition: {x: 474, y: 230}
+    uvTransform: {x: 4, y: 1732}
+    spritePosition: {x: 473, y: 230}
   characterData:
     bones: []
     parts: []
@@ -414,42 +348,9 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
     boneReadOnly: 0
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   mosaicLayers: 1
-  characterMode: 0
+  characterMode: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
@@ -462,288 +363,218 @@ ScriptedImporter:
     categories: []
   spritePackingTag: 
   resliceFromLayer: 0
-  mosaicPSDLayers:
-  - name: Male_stand_type1_hairline2
-    spriteName: Male_stand_type1_hairline2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b9f298b5f31c80a41a69a998429a111c
-    layerID: 0
-    mosaicPosition: {x: 328, y: 765}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_hair2
-    spriteName: Male_stand_type1_hair2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 186996d3f45e8684697bceb042af9ff1
-    layerID: -1813366173
-    mosaicPosition: {x: 328, y: 1004}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_hairline1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: bfead38b936678c41a1d7c9182ed23a4
-    layerID: -622807022
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type1_hair1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 7c0cd967f84592f4c8e0926b46f3acc5
-    layerID: -247282232
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_line
-    spriteName: Male_stand_type2_line
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 978b7b624968de74bb32c95f4e76d39c
-    layerID: -714929632
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_line
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8599696cf38aaf74c916d6710dc8ca79
-    layerID: -987506447
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_skin
-    spriteName: Male_stand_type2_skin
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a4e916ca4a0068d4e927849efa758c4f
-    layerID: -1763417537
-    mosaicPosition: {x: 328, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_skin
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 079138ace1d22ee47bc4e1598d80d099
-    layerID: -590869936
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_cloth
-    spriteName: Male_stand_type2_cloth
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e73e1da603cf95a4da1a894b8ad98011
-    layerID: 1780635550
-    mosaicPosition: {x: 4, y: 1041}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_cloth
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0ad7e1758918c8c43ab2f5676dca8ffd
-    layerID: -465192157
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_pants
-    spriteName: Male_stand_type2_pants
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2201d8d20a1412246b882a674425b1ff
-    layerID: 907653156
-    mosaicPosition: {x: 328, y: 543}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_pants
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a8cc4ae08a7ad50499d8eef21716e9a1
-    layerID: -136002509
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_boots
-    spriteName: Male_stand_type2_boots
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 758a238ea5292124abad129b8b515091
-    layerID: -652884479
-    mosaicPosition: {x: 4, y: 1587}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Male_stand_type1_boots
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 066ade3233fba184fb065f3020b3ab01
-    layerID: -1946915726
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
+  mosaicPSDLayers: []
   rigPSDLayers:
+  - name: face
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 8d5f24b7539397440855e23ad9fa543d
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "\u53D7\u51FB"
+    spriteName: "\u53D7\u51FB"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7d75232552cf11347b8ee003ccfb3937
+    layerID: 964037000
+    mosaicPosition: {x: 328, y: 1272}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\u6124\u6012"
+    spriteName: "\u6124\u6012"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b6c4a62813f27c24489e47ea3cdfbc44
+    layerID: 2098430644
+    mosaicPosition: {x: 505, y: 813}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\u5F00\u5FC3"
+    spriteName: "\u5F00\u5FC3"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 80b9b74808389144ca744e4214349480
+    layerID: 931055331
+    mosaicPosition: {x: 505, y: 885}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\u666E\u901A"
+    spriteName: "\u666E\u901A"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 400fdddebfe9392418d62919e576ca4f
+    layerID: -2013106906
+    mosaicPosition: {x: 505, y: 959}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: type2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 75381681e634e2a4ab23ff7de8a8a400
+    layerID: 1608711696
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: Male_stand_type1_hairline2
     spriteName: Male_stand_type1_hairline2
     isGroup: 0
-    parentIndex: -1
-    spriteID: 3a9d24f05caa38d45b141ff89697abcf
-    layerID: 0
-    mosaicPosition: {x: 328, y: 765}
+    parentIndex: 5
+    spriteID: f3371712528c7fb498d4786500c26c3e
+    layerID: -219522495
+    mosaicPosition: {x: 328, y: 813}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Male_stand_type1_hair2
     spriteName: Male_stand_type1_hair2
     isGroup: 0
-    parentIndex: -1
-    spriteID: d8525761703cf1b44a85138144f3c315
+    parentIndex: 5
+    spriteID: a0569eac7123db547814f9d6ad8a160d
     layerID: -1813366173
-    mosaicPosition: {x: 328, y: 1004}
+    mosaicPosition: {x: 328, y: 1052}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Male_stand_type1_hairline1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 80b94b8722c7014488b1d93332d876c7
-    layerID: -622807022
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Male_stand_type1_hair1
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 4f4c4c6d0f794a546b07e343ab1c1df5
-    layerID: -247282232
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Male_stand_type2_line
     spriteName: Male_stand_type2_line
     isGroup: 0
-    parentIndex: -1
-    spriteID: f88511dbae6bca24897469b1c4704f3d
+    parentIndex: 5
+    spriteID: 06296843fd08d364796429f1562a7908
     layerID: -714929632
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Male_stand_type1_line
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a595cebd2ca75eb4ca531765519468e6
-    layerID: -987506447
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Male_stand_type2_skin
     spriteName: Male_stand_type2_skin
     isGroup: 0
-    parentIndex: -1
-    spriteID: 8976d429e4ea1e14792d04d51e143350
+    parentIndex: 5
+    spriteID: 3826f4c02ed39a4459d688d4dfe7f627
     layerID: -1763417537
     mosaicPosition: {x: 328, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Male_stand_type1_skin
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: abdeb8f9e0b42524c814a0b93c5cbffa
-    layerID: -590869936
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Male_stand_type2_cloth
     spriteName: Male_stand_type2_cloth
     isGroup: 0
-    parentIndex: -1
-    spriteID: 685ecf77d33133f4695b39c3a55c567f
+    parentIndex: 5
+    spriteID: 1cb8e07cd2e2120429d005f39745e831
     layerID: 1780635550
     mosaicPosition: {x: 4, y: 1041}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Male_stand_type1_cloth
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: bdf854a50171c954d9b250c297b45034
-    layerID: -465192157
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Male_stand_type2_pants
     spriteName: Male_stand_type2_pants
     isGroup: 0
-    parentIndex: -1
-    spriteID: a8310467df4b5d5448b1b1637d3e1e38
+    parentIndex: 5
+    spriteID: ecc6ca7f957e6bf478e776843929467c
     layerID: 907653156
     mosaicPosition: {x: 328, y: 543}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Male_stand_type2_boots
+    spriteName: Male_stand_type2_boots
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 81e495bc5b8c6b44994cf35750ede824
+    layerID: -652884479
+    mosaicPosition: {x: 4, y: 1732}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: type1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 10ffae9bb9092e54a81a5004606c8070
+    layerID: 1608711693
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Male_stand_type1_hairline1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 13
+    spriteID: cc312cca61d763940af5060c70c462bd
+    layerID: -622807022
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Male_stand_type1_hair1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 4df1179a98eba344e96c517101796c6c
+    layerID: -247282232
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Male_stand_type1_line
+    spriteName: 
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 2de4b78dcd33d4e478ef0e537243875a
+    layerID: -987506447
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Male_stand_type1_skin
+    spriteName: 
+    isGroup: 0
+    parentIndex: 13
+    spriteID: b5fa2bcb10e6b0340aed86b880582fd3
+    layerID: -590869936
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Male_stand_type1_cloth
+    spriteName: 
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 806b4d296b02b75468e552cea4535140
+    layerID: -465192157
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: Male_stand_type1_pants
     spriteName: 
     isGroup: 0
-    parentIndex: -1
-    spriteID: ef2c87576684d05449a37dde5e56aba1
+    parentIndex: 13
+    spriteID: 3ee67d71f86910846b83ae29dbbb254e
     layerID: -136002509
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 0
-  - name: Male_stand_type2_boots
-    spriteName: Male_stand_type2_boots
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 3d74067a6558b944a896e8ca40250585
-    layerID: -652884479
-    mosaicPosition: {x: 4, y: 1587}
-    flatten: 0
-    isImported: 1
     isVisible: 1
   - name: Male_stand_type1_boots
     spriteName: 
     isGroup: 0
-    parentIndex: -1
-    spriteID: 6131c95726614a44e8c1277f7cd6518e
+    parentIndex: 13
+    spriteID: df12792e3a0856848aa276c2b6cc2132
     layerID: -1946915726
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 0
+    isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   generateGOHierarchy: 0
