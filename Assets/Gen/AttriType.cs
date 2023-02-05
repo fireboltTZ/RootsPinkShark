@@ -32,7 +32,7 @@ namespace cfg
         /// </summary>
         GUIQI = 5,
         /// <summary>
-        /// 魔息
+        /// 妖力
         /// </summary>
         MOXI = 6,
         /// <summary>
@@ -43,6 +43,10 @@ namespace cfg
         /// 佛光
         /// </summary>
         FOGUANG = 8,
+        /// <summary>
+        /// 钱财
+        /// </summary>
+        MONEY = 9,
     }
 
 } 

@@ -79,6 +79,14 @@ namespace cfg
         /// 加TAG
         /// </summary>
         ADD_TAG = 16,
+        /// <summary>
+        /// 读取道心的属性用作临时属性
+        /// </summary>
+        USEHEART = 17,
+        /// <summary>
+        /// 触发事件
+        /// </summary>
+        OPENEVENT = 18,
     }
 
 } 

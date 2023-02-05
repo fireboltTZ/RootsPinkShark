@@ -11,6 +11,10 @@ namespace cfg
 { 
     public enum ResourceTag
     {
+        /// <summary>
+        /// 消耗
+        /// </summary>
+        CONSUME = 1,
     }
 
 } 

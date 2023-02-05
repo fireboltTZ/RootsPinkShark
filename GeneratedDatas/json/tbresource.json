@@ -1,15 +1,1506 @@
 [
   {
     "ResourceId": 1,
-    "IsInherit": false,
-    "Desc": "haobaobei",
-    "Name": "beibaobao",
-    "ResourceType": 1,
+    "IsInherit": true,
+    "Desc": "白道种",
+    "Name": "白道种",
+    "ResourceType": 4,
     "Effects": [],
-    "IsUsable": true,
+    "IsUsable": false,
     "UsedEffect": [],
     "UseCondition": [],
     "ResourceTags": [],
-    "ResourceImage": "Resource_1"
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 2,
+    "IsInherit": true,
+    "Desc": "黑道种",
+    "Name": "黑道种",
+    "ResourceType": 4,
+    "Effects": [],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 3,
+    "IsInherit": false,
+    "Desc": "道心",
+    "Name": "道心",
+    "ResourceType": 5,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 4,
+    "IsInherit": true,
+    "Desc": "财力基础物品",
+    "Name": "财力基础物品",
+    "ResourceType": 0,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 9,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 5,
+    "IsInherit": true,
+    "Desc": "临时修为灵力-初级",
+    "Name": "临时修为灵力-初级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 1,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 6,
+    "IsInherit": true,
+    "Desc": "临时修为灵力-中级",
+    "Name": "临时修为灵力-中级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 1,
+        "Para2": 3
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 7,
+    "IsInherit": true,
+    "Desc": "临时修为灵力-高级",
+    "Name": "临时修为灵力-高级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 1,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 8,
+    "IsInherit": true,
+    "Desc": "临时神识强度-初级",
+    "Name": "临时神识强度-初级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 2,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 9,
+    "IsInherit": true,
+    "Desc": "临时神识强度-中级",
+    "Name": "临时神识强度-中级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 2,
+        "Para2": 3
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 10,
+    "IsInherit": true,
+    "Desc": "临时神识强度-高级",
+    "Name": "临时神识强度-高级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 2,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 11,
+    "IsInherit": true,
+    "Desc": "临时博闻灵智-初级",
+    "Name": "临时博闻灵智-初级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 3,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 12,
+    "IsInherit": true,
+    "Desc": "临时博闻灵智-中级",
+    "Name": "临时博闻灵智-中级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 3,
+        "Para2": 3
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 13,
+    "IsInherit": true,
+    "Desc": "临时博闻灵智-高级",
+    "Name": "临时博闻灵智-高级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 3,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 14,
+    "IsInherit": true,
+    "Desc": "临时修为灵力-非消耗的永久物品",
+    "Name": "临时修为灵力-非消耗的永久物品",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 1,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 15,
+    "IsInherit": true,
+    "Desc": "临时神识强度-非消耗的永久物品",
+    "Name": "临时神识强度-非消耗的永久物品",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 2,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 16,
+    "IsInherit": true,
+    "Desc": "临时博闻灵智-非消耗的永久物品",
+    "Name": "临时博闻灵智-非消耗的永久物品",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 3,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 17,
+    "IsInherit": true,
+    "Desc": "临时福源-初级",
+    "Name": "临时福源-初级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 4,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 18,
+    "IsInherit": true,
+    "Desc": "临时福源-中级",
+    "Name": "临时福源-中级",
+    "ResourceType": 1,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 4,
+        "Para2": 1
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 19,
+    "IsInherit": true,
+    "Desc": "鬼气物品初级",
+    "Name": "鬼气物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 5,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 20,
+    "IsInherit": true,
+    "Desc": "鬼气物品初级",
+    "Name": "鬼气物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 5,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 21,
+    "IsInherit": true,
+    "Desc": "鬼气物品中级",
+    "Name": "鬼气物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 5,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 22,
+    "IsInherit": true,
+    "Desc": "鬼气物品中级",
+    "Name": "鬼气物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 5,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 23,
+    "IsInherit": true,
+    "Desc": "鬼气物品高级",
+    "Name": "鬼气物品高级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 5,
+        "Para2": 10
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 24,
+    "IsInherit": true,
+    "Desc": "妖气物品初级",
+    "Name": "妖气物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 6,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 25,
+    "IsInherit": true,
+    "Desc": "妖气物品初级",
+    "Name": "妖气物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 6,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 26,
+    "IsInherit": true,
+    "Desc": "妖气物品中级",
+    "Name": "妖气物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 6,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 27,
+    "IsInherit": true,
+    "Desc": "妖气物品中级",
+    "Name": "妖气物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 6,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 28,
+    "IsInherit": true,
+    "Desc": "妖气物品高级",
+    "Name": "妖气物品高级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 6,
+        "Para2": 10
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 29,
+    "IsInherit": true,
+    "Desc": "仙力物品初级",
+    "Name": "仙力物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 7,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 30,
+    "IsInherit": true,
+    "Desc": "仙力物品初级",
+    "Name": "仙力物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 7,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 31,
+    "IsInherit": true,
+    "Desc": "仙力物品中级",
+    "Name": "仙力物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 7,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 32,
+    "IsInherit": true,
+    "Desc": "仙力物品中级",
+    "Name": "仙力物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 7,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 33,
+    "IsInherit": true,
+    "Desc": "仙力物品高级",
+    "Name": "仙力物品高级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 7,
+        "Para2": 10
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 34,
+    "IsInherit": true,
+    "Desc": "佛光物品初级",
+    "Name": "佛光物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 8,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 35,
+    "IsInherit": true,
+    "Desc": "佛光物品初级",
+    "Name": "佛光物品初级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 8,
+        "Para2": 2
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 36,
+    "IsInherit": true,
+    "Desc": "佛光物品中级",
+    "Name": "佛光物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 8,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 37,
+    "IsInherit": true,
+    "Desc": "佛光物品中级",
+    "Name": "佛光物品中级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 8,
+        "Para2": 5
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 38,
+    "IsInherit": true,
+    "Desc": "佛光物品高级",
+    "Name": "佛光物品高级",
+    "ResourceType": 2,
+    "Effects": [
+      {
+        "EffectType": 14,
+        "Para1": 8,
+        "Para2": 10
+      }
+    ],
+    "IsUsable": false,
+    "UsedEffect": [],
+    "UseCondition": [],
+    "ResourceTags": [],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 39,
+    "IsInherit": true,
+    "Desc": "道心养成-鬼气",
+    "Name": "道心养成-鬼气",
+    "ResourceType": 3,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 5,
+        "Para2": 1
+      }
+    ],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 40,
+    "IsInherit": true,
+    "Desc": "道心养成-妖气",
+    "Name": "道心养成-妖气",
+    "ResourceType": 3,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 6,
+        "Para2": 1
+      }
+    ],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 41,
+    "IsInherit": true,
+    "Desc": "道心养成-仙力",
+    "Name": "道心养成-仙力",
+    "ResourceType": 3,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 7,
+        "Para2": 1
+      }
+    ],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 42,
+    "IsInherit": true,
+    "Desc": "道心养成-佛光",
+    "Name": "道心养成-佛光",
+    "ResourceType": 3,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 10,
+        "Para1": 8,
+        "Para2": 1
+      }
+    ],
+    "UseCondition": [],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 43,
+    "IsInherit": true,
+    "Desc": "地图1",
+    "Name": "地图1",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 44,
+    "IsInherit": true,
+    "Desc": "地图2",
+    "Name": "地图2",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 45,
+    "IsInherit": true,
+    "Desc": "地图3",
+    "Name": "地图3",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 46,
+    "IsInherit": true,
+    "Desc": "地图4",
+    "Name": "地图4",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 47,
+    "IsInherit": true,
+    "Desc": "地图5",
+    "Name": "地图5",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 48,
+    "IsInherit": true,
+    "Desc": "地图6",
+    "Name": "地图6",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 49,
+    "IsInherit": true,
+    "Desc": "地图7",
+    "Name": "地图7",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 50,
+    "IsInherit": true,
+    "Desc": "地图8",
+    "Name": "地图8",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 3
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 51,
+    "IsInherit": true,
+    "Desc": "地图pro1",
+    "Name": "地图pro1",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 52,
+    "IsInherit": true,
+    "Desc": "地图pro2",
+    "Name": "地图pro2",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 53,
+    "IsInherit": true,
+    "Desc": "地图pro3",
+    "Name": "地图pro3",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 54,
+    "IsInherit": true,
+    "Desc": "地图pro4",
+    "Name": "地图pro4",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 55,
+    "IsInherit": true,
+    "Desc": "地图pro5",
+    "Name": "地图pro5",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 56,
+    "IsInherit": true,
+    "Desc": "地图pro6",
+    "Name": "地图pro6",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 1,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 57,
+    "IsInherit": true,
+    "Desc": "地图pro7",
+    "Name": "地图pro7",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 58,
+    "IsInherit": true,
+    "Desc": "地图pro8",
+    "Name": "地图pro8",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 4,
+        "Para1": 2,
+        "Para2": 5
+      },
+      {
+        "EventConditionName": 4,
+        "Para1": 3,
+        "Para2": 8
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 59,
+    "IsInherit": true,
+    "Desc": "地图promax1",
+    "Name": "地图promax1",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 21,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 60,
+    "IsInherit": true,
+    "Desc": "地图promax2",
+    "Name": "地图promax2",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 22,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 61,
+    "IsInherit": true,
+    "Desc": "地图promax3",
+    "Name": "地图promax3",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 26,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 62,
+    "IsInherit": true,
+    "Desc": "地图promax4",
+    "Name": "地图promax4",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 27,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 63,
+    "IsInherit": true,
+    "Desc": "地图promax5",
+    "Name": "地图promax5",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 31,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 64,
+    "IsInherit": true,
+    "Desc": "地图promax6",
+    "Name": "地图promax6",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 32,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 65,
+    "IsInherit": true,
+    "Desc": "地图promax7",
+    "Name": "地图promax7",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 36,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
+  },
+  {
+    "ResourceId": 66,
+    "IsInherit": true,
+    "Desc": "地图promax8",
+    "Name": "地图promax8",
+    "ResourceType": 6,
+    "Effects": [],
+    "IsUsable": true,
+    "UsedEffect": [
+      {
+        "EffectType": 18,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "UseCondition": [
+      {
+        "EventConditionName": 6,
+        "Para1": 37,
+        "Para2": 0
+      }
+    ],
+    "ResourceTags": [
+      1
+    ],
+    "ResourceImage": ""
   }
 ]
