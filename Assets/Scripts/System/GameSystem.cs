@@ -127,11 +127,44 @@ namespace MatchThree.System
         /// <summary>
         /// 角色死亡或隐退，触发更换主角
         /// </summary>
-        public void ChangeMainCharacter(Character character, List<GameResource> resources, GameTag tag)
+        public void ChangeMainCharacter(Character character)
         {
+            List<GameTag> tags = new List<GameTag>();
+            List<GameResource> resourceList = new List<GameResource>();
+            for(int i = 0; i <mainCharacter.Resources.Count; i++)
+            {
+                if (mainCharacter.Resources[i].IsInherit)
+                {
+                    resourceList.Add(mainCharacter.Resources[i]);
+                }
+            }
+            for (int i = 0; i < mainCharacter.Tags.Count; i++)
+            {
+                if (mainCharacter.Tags[i].IsInherit)
+                {
+                    tags.Add(mainCharacter.Tags[i]);
+                }
+            }
+            List<GameTag> list = new List<GameTag>();
+            if (tags.Count <= 2)
+            {
+                list.AddRange(tags);
+            }
+            else
+            {
+                for(int i =0; i <2; i++)
+                {
+                    int index = Random.Range(0, tags.Count);
+                    list.Add(tags[index]);
+                    tags.RemoveAt(index);
+                }
+            }
             mainCharacter = character;
-            character.Resources.AddRange(resources);
-            character.GetTag(tag);
+            character.Resources.AddRange(resourceList);
+            for(int i = 0; i < list.Count; i++)
+            {
+                character.GetTag(list[i]);
+            }
             GenUnique.Clear();
             this.SendEvent(new ChooseNewCharacterEvent() { Character = character });
         }

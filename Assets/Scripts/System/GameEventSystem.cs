@@ -63,13 +63,6 @@ namespace MatchThree.System
             List<List<Event>> List = Evts.GroupBy(e => e.DrawPri).Select(x => x.ToList()).ToList();
             List = List.OrderByDescending(o => o[0].DrawPri).ToList();
             int eventIndex = Random.Range(0, List[0].Count);
-            foreach (var list in List)
-            {
-                foreach (var eEvent in list)
-                {
-                    Debug.LogFormat("EventID: {0}, EventPri: {1}, EventDesc: {2}", eEvent.EventId, eEvent.DrawPri, eEvent.Desc);
-                }
-            }
             List<Event> events = new List<Event>();
             
             events.Add(List[0][eventIndex]);

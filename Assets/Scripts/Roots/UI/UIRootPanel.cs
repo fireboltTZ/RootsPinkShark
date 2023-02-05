@@ -19,7 +19,7 @@ namespace Roots
 	{
 
     }
-	public partial class UIRootPanel : MyUIPanel //家族图谱
+	public partial class UIRootPanel : MyUIPanel //???????
 	{
         public Character FirstMainChracter;
         public List<Character> CharacterList;
@@ -117,7 +117,7 @@ namespace Roots
             }
             else
             {
-                //判断Person是否可以被继承
+                //?ж?Person??????????
                 if (person.CharacterState != 0) //Not dead
                     OpenInheritPanel();
                 //GameSystem.ChangeMainCharacter(person,new List<GameResource> items)

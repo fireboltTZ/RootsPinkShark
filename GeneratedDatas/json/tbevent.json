@@ -83,7 +83,7 @@
     "Desc": "你死了",
     "EventType": 0,
     "EventId": 4,
-    "GroupId": 0,
+    "GroupId": -1,
     "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
@@ -104,7 +104,7 @@
     "Desc": "你儿子死了",
     "EventType": 0,
     "EventId": 5,
-    "GroupId": 0,
+    "GroupId": -1,
     "IsGenUnique": true,
     "IsAllUnique": false,
     "IsInteractive": false,
@@ -323,5 +323,26 @@
     "Effects": [],
     "IsOnBase": true,
     "DrawPri": -1
+  },
+  {
+    "EventName": "喜得贵子",
+    "Desc": "你生孩子了",
+    "EventType": 0,
+    "EventId": 16,
+    "GroupId": 0,
+    "IsGenUnique": false,
+    "IsAllUnique": false,
+    "IsInteractive": false,
+    "AppearCondition": [],
+    "Options": [],
+    "Effects": [
+      {
+        "EffectType": 15,
+        "Para1": 0,
+        "Para2": 0
+      }
+    ],
+    "IsOnBase": true,
+    "DrawPri": 1
   }
 ]

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2576754149694128055}
   - component: {fileID: 411614509778362846}
   - component: {fileID: 1121367266660554327}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2153652785808785268}
   - component: {fileID: 6634179957353509439}
   - component: {fileID: 2254469567323783140}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FamilyCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameCardButton: {fileID: 6370602106719448185}
-  nameText: {fileID: 1397256267285045447}
+  nameText: {fileID: 1121367266660554327}
 --- !u!1 &8278041118665426002
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 2300830468028622181}
   - component: {fileID: 9214151874706431439}
   - component: {fileID: 6370602106719448185}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 6151608980174681328}
   - component: {fileID: 614892558779167068}
   - component: {fileID: 2293038026232884049}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
