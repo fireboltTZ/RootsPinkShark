@@ -4,6 +4,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using Roots;
 using QFramework;
 
 namespace Roots
@@ -12,9 +13,11 @@ namespace Roots
 	{
 		[SerializeField] public TMPro.TextMeshProUGUI AgeNum;
 
+
 		public void Clear()
 		{
 			AgeNum = null;
+
 		}
 
 		public override string ComponentName

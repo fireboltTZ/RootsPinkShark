@@ -17,6 +17,7 @@ namespace Roots
 		public GameTagObject GameTagObjectPrefab;
 		public GameItem GameItemPrefab;
 		public GameLog GameLogPrefab;
+		public AgeBar AgeSlider;
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -55,12 +56,12 @@ namespace Roots
 
 			this.RegisterEvent<TimeStopEvent>(e =>
 			{
-				
+				AgeSlider.Stop();
 			});
 
-			this.RegisterEvent<TimeContinueEvent>(E =>
+			this.RegisterEvent<TimeContinueEvent>(e =>
 			{
-
+				AgeSlider.Play();
 			});
 
 			this.RegisterEvent<NormalGameLogEvent>(e =>

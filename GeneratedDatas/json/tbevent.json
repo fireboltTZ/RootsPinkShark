@@ -22,7 +22,8 @@
         "Para2": 1
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "结婚",
@@ -47,7 +48,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "佳偶天成",
@@ -73,7 +75,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "意外身故",
@@ -93,7 +96,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "痛失爱子",
@@ -113,7 +117,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "明镜高悬",
@@ -127,7 +132,8 @@
     "AppearCondition": [],
     "Options": [],
     "Effects": [],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "偶得机缘",
@@ -147,7 +153,8 @@
         "Para2": 1
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "初窥门径",
@@ -167,7 +174,8 @@
         "Para2": 1
       }
     ],
-    "IsOnBase": false
+    "IsOnBase": false,
+    "DrawPri": 0
   },
   {
     "EventName": "登堂入室",
@@ -187,7 +195,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "小有进财",
@@ -207,7 +216,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
   },
   {
     "EventName": "富甲一方",
@@ -227,7 +237,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": false
+    "IsOnBase": false,
+    "DrawPri": 0
   },
   {
     "EventName": "路障",
@@ -244,7 +255,8 @@
       2
     ],
     "Effects": [],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 1
   },
   {
     "EventName": "仙人指路",
@@ -270,7 +282,8 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": false
+    "IsOnBase": false,
+    "DrawPri": 0
   },
   {
     "EventName": "获得",
@@ -290,6 +303,25 @@
         "Para2": 0
       }
     ],
-    "IsOnBase": true
+    "IsOnBase": true,
+    "DrawPri": 0
+  },
+  {
+    "EventName": "路障12",
+    "Desc": "优先级最低",
+    "EventType": 0,
+    "EventId": 15,
+    "GroupId": 0,
+    "IsGenUnique": true,
+    "IsAllUnique": false,
+    "IsInteractive": true,
+    "AppearCondition": [],
+    "Options": [
+      1,
+      2
+    ],
+    "Effects": [],
+    "IsOnBase": true,
+    "DrawPri": -1
   }
 ]

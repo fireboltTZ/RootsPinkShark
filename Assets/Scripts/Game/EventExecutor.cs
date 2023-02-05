@@ -2,12 +2,13 @@ using System;
 using cfg;
 using MatchThree.System;
 using QFramework;
+using Roots.Event;
 using UnityEngine;
 using EventType = cfg.EventType;
 
 namespace Roots.Game
 {
-    public class EventExecutor : Singleton<EventExecutor>, ICanGetSystem
+    public class EventExecutor : Singleton<EventExecutor>, ICanGetSystem, ICanSendEvent
     {
 
         private EventExecutor()
@@ -118,7 +119,16 @@ namespace Roots.Game
 
         public void EventExecute(Character character, cfg.Event evt)
         {
-            ResourceExecutor.Instance.EventEffect(character, evt);
+            if (evt.IsInteractive)
+            {
+                this.SendEvent<TimeStopEvent>();
+                UIKit.OpenPanel<UIOptionPanel>(new UIOptionPanelData(){Event = evt});
+            }
+            else
+            {
+                ResourceExecutor.Instance.EventEffect(character, evt);
+                
+            }
             character.DoneEvents.Add(evt.EventId);
             this.GetSystem<GameSystem>().HisDoneEvents.Add(evt.EventId);
         }
