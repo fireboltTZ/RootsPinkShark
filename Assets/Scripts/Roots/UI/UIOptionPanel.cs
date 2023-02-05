@@ -24,6 +24,7 @@ namespace Roots
 			{
 				EventOptionButton btn = Instantiate(OptionPrefab, BtnGroup.transform);
 				btn.EventOptionInit(i);
+				
 			}
 		}
 		

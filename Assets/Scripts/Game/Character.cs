@@ -141,6 +141,8 @@ namespace Roots.Game
         public void UseResource(GameResource resource)
         {
             ResourceExecutor.Instance.ResourceEffect(this, resource);
+            Resources.Remove(resource);
+            this.SendEvent(new GetNewResourcesEvent(){Resources = Resources});
         }
 
 
