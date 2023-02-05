@@ -27,7 +27,13 @@ public class GameItem : MonoBehaviour, ICanGetSystem, IPointerDownHandler
         {
             GetComponent<Shadow>().enabled = true;
         }
-        ItemImage.sprite = _resLoader.LoadSync<Sprite>("resource_" + gameResource.ResourceId);
+        if(gameResource.ResourceId >= 43)
+            ItemImage.sprite= _resLoader.LoadSync<Sprite>("resource_" + 42);
+        else
+        {
+            ItemImage.sprite = _resLoader.LoadSync<Sprite>("resource_" + gameResource.ResourceId);
+        }
+        
         TooltipTrigger.SetText("Title", resource.Name);
         TooltipTrigger.SetText("BodyText",resource.Desc);
     }
@@ -57,7 +63,8 @@ public class GameItem : MonoBehaviour, ICanGetSystem, IPointerDownHandler
     {
         if (eventData.clickCount == 1 && UIKit.GetPanel<UIOptionPanel>() != null)
         {
-            
+            UIKit.GetPanel<UIOptionPanel>().TryPutStaff(gameResource);
+
         }
         if (eventData.clickCount == 2) {
             this.GetSystem<GameSystem>().MainCharacter.UseResource(gameResource);

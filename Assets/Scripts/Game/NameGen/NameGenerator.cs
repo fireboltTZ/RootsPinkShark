@@ -10,10 +10,10 @@ public class NameGenerator : MonoSingleton<NameGenerator>
     private InheritedNameObject inheritedNameObject;
     private bool noNameLoaded = false;
     private bool noInheritedNameLoaded = false;
-    private List<string> lastName = new List<string>();
-    private List<string> mFirstName = new List<string>();
+    private List<string> lastName = new List<string>(){"赵","钱","孙","张","马","贺","司马","令狐","紫","陶"};
+    private List<string> mFirstName = new List<string>(){"亦飞","豪景","而立","文举","文韬","明海","北海","药羽","盛楠","陶","武"};
 
-    private List<string> fFirstName = new List<string>();
+    private List<string> fFirstName = new List<string>(){"灵","巧","敏","蕊","熏儿","超群","听白","含雪"};
 
 // Inherited name
     private List<string> Xing = new List<string>();
@@ -23,6 +23,8 @@ public class NameGenerator : MonoSingleton<NameGenerator>
     
     private List<string> Hao = new List<string>();
 
+    
+    
     private int indexXing = -1;
     private int indexBei = -1;
 
@@ -46,8 +48,8 @@ public class NameGenerator : MonoSingleton<NameGenerator>
             return;
         }
 
-        ImportNames();
-        ImportInheritedName();
+        //ImportNames();
+        //ImportInheritedName();
     }
 
     private void ImportNames()
@@ -73,12 +75,10 @@ public class NameGenerator : MonoSingleton<NameGenerator>
         }
     }
 
+    private string XING;
     public string GenerateName(bool isMale)
     {
-        if (!nameObject || noNameLoaded)
-        {
-            return "狗蛋儿";
-        }
+
 
         List<string> firstNames;
         if (isMale)
@@ -92,7 +92,7 @@ public class NameGenerator : MonoSingleton<NameGenerator>
         int indexFirstName = Random.Range(0, firstNames.Count);
 
         generateName = lastName[indexLastName] + firstNames[indexFirstName];
-
+        XING = lastName[indexLastName];
         return generateName;
     }
 
@@ -100,10 +100,7 @@ public class NameGenerator : MonoSingleton<NameGenerator>
     {
         string firstGeneration = "";
 
-        if (!inheritedNameObject || noInheritedNameLoaded)
-        {
-            return "狗蛋儿";
-        }
+ 
 
         indexXing = Random.Range(0, Xing.Count);
         indexBei = Random.Range(0, Bei.Count);
@@ -122,24 +119,16 @@ public class NameGenerator : MonoSingleton<NameGenerator>
 
     public string GenerateChild(bool isMale)
     {
-        if (indexXing == -1)
+
+        List<string> firstNames;
+        if (isMale)
         {
-            return "狗蛋儿";
+            firstNames = mFirstName;
         }
 
-        string childGeneration = "";
-        indexBei = Random.Range(0, Bei.Count);
-        var indexMing = Random.Range(0, Ming.Count);
-        if (!isMale)
-        {
-            indexMing = Random.Range(0, NvMing.Count);
-            childGeneration = Xing[indexXing] + Bei[indexBei] + NvMing[indexMing];
-
-            return childGeneration;
-        }
-
-        childGeneration = Xing[indexXing] + Bei[indexBei] + Ming[indexMing];
-        return childGeneration;
+        firstNames = fFirstName;
+        int indexFirstName = Random.Range(0, firstNames.Count);
+        return XING + firstNames[indexFirstName];
     }
     
     public List<string> GenerateChild(List<bool> isMale)

@@ -7,7 +7,7 @@ namespace Roots
 	public class UIAscendencePanelData : UIPanelData
 	{
 	}
-	public partial class UIAscendencePanel : UIPanel
+	public partial class UIAscendencePanel : MyUIPanel
 	{
 		protected override void OnInit(IUIData uiData = null)
 		{
@@ -22,7 +22,41 @@ namespace Roots
 		//TODO
 		private void TryAscendence()
 		{
-			//throw new System.NotImplementedException();
+			if (GameSystem.MainCharacter.FO >= 10)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 1});
+			}
+			else if (GameSystem.MainCharacter.FO >= 5)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 2});
+			}
+			else if (GameSystem.MainCharacter.GUI >= 10)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 3});
+			}
+			else if (GameSystem.MainCharacter.GUI >= 5)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 4});
+			}
+			else if (GameSystem.MainCharacter.XIAN >= 10)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 5});
+			}
+			else if (GameSystem.MainCharacter.XIAN >= 5)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 6});
+			}
+			else if (GameSystem.MainCharacter.YAO >= 10)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 7});
+			}else if (GameSystem.MainCharacter.YAO >= 5)
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 8});
+			}
+			else
+			{
+				UIKit.OpenPanel<UIEndPanel>(new UIEndPanelData() {Endings = 9});
+			}
 		}
 
 		protected override void OnOpen(IUIData uiData = null)

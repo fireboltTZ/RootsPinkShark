@@ -30,7 +30,23 @@ namespace Roots
 
 		public void TryPutStaff(GameResource resource)
 		{
-			
+			if (!Slot1.GetComponent<ItemSlot>().IsFull)
+			{
+				Slot1.GetComponent<ItemSlot>().Fill(resource);
+			}
+			else if(!Slot2.GetComponent<ItemSlot>().IsFull)
+			{
+				Slot2.GetComponent<ItemSlot>().Fill(resource);
+			}
+			else if (!Slot3.GetComponent<ItemSlot>().IsFull)
+			{
+				Slot3.GetComponent<ItemSlot>().Fill(resource);
+			}
+			else
+			{
+				return;
+				
+			}
 		}
 		
 		protected override void OnOpen(IUIData uiData = null)

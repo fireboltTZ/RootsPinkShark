@@ -47,8 +47,8 @@
   {
     "ResourceId": 4,
     "IsInherit": true,
-    "Desc": "财力基础物品",
-    "Name": "财力基础物品",
+    "Desc": "凡间通用的流通货币。",
+    "Name": "乾坤宝钱",
     "ResourceType": 0,
     "Effects": [
       {
@@ -66,8 +66,8 @@
   {
     "ResourceId": 5,
     "IsInherit": true,
-    "Desc": "临时修为灵力-初级",
-    "Name": "临时修为灵力-初级",
+    "Desc": "由天地灵力凝结而成水，将身体浸入其中，可提升灵力。",
+    "Name": "聚灵水",
     "ResourceType": 1,
     "Effects": [
       {
@@ -87,8 +87,8 @@
   {
     "ResourceId": 6,
     "IsInherit": true,
-    "Desc": "临时修为灵力-中级",
-    "Name": "临时修为灵力-中级",
+    "Desc": "内涵大量灵力的天然矿石，握于手中吸收修炼，有助于灵力提升。",
+    "Name": "五彩灵石",
     "ResourceType": 1,
     "Effects": [
       {
@@ -108,8 +108,8 @@
   {
     "ResourceId": 7,
     "IsInherit": true,
-    "Desc": "临时修为灵力-高级",
-    "Name": "临时修为灵力-高级",
+    "Desc": "据说这是一枚仙家丹药，仅仅握于手中就能感受到灵力缓缓提升，食用后可提高灵力。",
+    "Name": "罗厄丹",
     "ResourceType": 1,
     "Effects": [
       {
@@ -129,8 +129,8 @@
   {
     "ResourceId": 8,
     "IsInherit": true,
-    "Desc": "临时神识强度-初级",
-    "Name": "临时神识强度-初级",
+    "Desc": "原本洁白的灵果，被一对有情人的鲜血所染红。传说这对同命鸳鸯的冤魂被困在这灵果中无法散去。食用后可提升神识强度。",
+    "Name": "绯红灵果",
     "ResourceType": 1,
     "Effects": [
       {
@@ -150,8 +150,8 @@
   {
     "ResourceId": 9,
     "IsInherit": true,
-    "Desc": "临时神识强度-中级",
-    "Name": "临时神识强度-中级",
+    "Desc": "传说中飞升者才会使用的香，点燃用于修炼，可提升神识强度。",
+    "Name": "凝神香",
     "ResourceType": 1,
     "Effects": [
       {
@@ -171,8 +171,8 @@
   {
     "ResourceId": 10,
     "IsInherit": true,
-    "Desc": "临时神识强度-高级",
-    "Name": "临时神识强度-高级",
+    "Desc": "生长在凡人界最高峰顶的花，形似百盏灯，琉璃若火。长年吸收凡人界地脉之力，脆弱的花蕊内隐藏着巨大的力量。食用后可提升神识。",
+    "Name": "百盏琉璃花",
     "ResourceType": 1,
     "Effects": [
       {
@@ -192,8 +192,8 @@
   {
     "ResourceId": 11,
     "IsInherit": true,
-    "Desc": "临时博闻灵智-初级",
-    "Name": "临时博闻灵智-初级",
+    "Desc": "罕见的石莲，具有明心见智之功效，食用后可提高灵智。",
+    "Name": "墨莲",
     "ResourceType": 1,
     "Effects": [
       {
@@ -213,8 +213,8 @@
   {
     "ResourceId": 12,
     "IsInherit": true,
-    "Desc": "临时博闻灵智-中级",
-    "Name": "临时博闻灵智-中级",
+    "Desc": "不知曾经哪位皇帝向上仙求来的仙草，磨碎敷与眼后可暂开天眼，观世间奇事，提升灵智。",
+    "Name": "观世藤",
     "ResourceType": 1,
     "Effects": [
       {
@@ -234,8 +234,8 @@
   {
     "ResourceId": 13,
     "IsInherit": true,
-    "Desc": "临时博闻灵智-高级",
-    "Name": "临时博闻灵智-高级",
+    "Desc": "曾有奇人，以肉体凡胎走遍凡间每一丈土地。后修真有成，白日飞升。无字奇闻录记载着这位奇人的所见所闻，但此书只能观看一次，看一页，少一页。待全书看完，就会沦为无字的普通书册。观此书可极大提升灵智。",
+    "Name": "无字奇闻录",
     "ResourceType": 1,
     "Effects": [
       {
@@ -255,8 +255,8 @@
   {
     "ResourceId": 14,
     "IsInherit": true,
-    "Desc": "临时修为灵力-非消耗的永久物品",
-    "Name": "临时修为灵力-非消耗的永久物品",
+    "Desc": "千年前一位大将的遗物。此大将曾在善恶之战中，以凡人之躯剑指飞升修者的将军，临死前将自己的毕生修为封入随身的护心镜中。",
+    "Name": "镇绥护心镜",
     "ResourceType": 1,
     "Effects": [
       {
@@ -274,8 +274,8 @@
   {
     "ResourceId": 15,
     "IsInherit": true,
-    "Desc": "临时神识强度-非消耗的永久物品",
-    "Name": "临时神识强度-非消耗的永久物品",
+    "Desc": "无名修真者的本命武器，刀上的裂痕与血迹宣誓着武器主人的命运。",
+    "Name": "湮灭之刃",
     "ResourceType": 1,
     "Effects": [
       {
@@ -293,8 +293,8 @@
   {
     "ResourceId": 16,
     "IsInherit": true,
-    "Desc": "临时博闻灵智-非消耗的永久物品",
-    "Name": "临时博闻灵智-非消耗的永久物品",
+    "Desc": "千年前飞升之人大战遗落的法器，据说修为高强之人戴上后灵智可通天地。",
+    "Name": "通天帽",
     "ResourceType": 1,
     "Effects": [
       {
@@ -312,8 +312,8 @@
   {
     "ResourceId": 17,
     "IsInherit": true,
-    "Desc": "临时福源-初级",
-    "Name": "临时福源-初级",
+    "Desc": "葬于帝王墓穴中的玉佩，千百年来吸收龙脉国运，具有福源加持之能。",
+    "Name": "帝王玉佩",
     "ResourceType": 1,
     "Effects": [
       {
@@ -333,8 +333,8 @@
   {
     "ResourceId": 18,
     "IsInherit": true,
-    "Desc": "临时福源-中级",
-    "Name": "临时福源-中级",
+    "Desc": "由天外陨石打造而成的钱币，曾被仙帝赐福，携带者遇事无往不利。",
+    "Name": "天宝铜钱",
     "ResourceType": 1,
     "Effects": [
       {
@@ -354,8 +354,8 @@
   {
     "ResourceId": 19,
     "IsInherit": true,
-    "Desc": "鬼气物品初级",
-    "Name": "鬼气物品初级",
+    "Desc": "至阴之地所孕育出的奇石，由阴寒之力凝结而成。",
+    "Name": "玄阴石",
     "ResourceType": 2,
     "Effects": [
       {
@@ -373,8 +373,8 @@
   {
     "ResourceId": 20,
     "IsInherit": true,
-    "Desc": "鬼气物品初级",
-    "Name": "鬼气物品初级",
+    "Desc": "凝练数千小鬼魂魄制成的符咒，传说在鬼修身上也是难得的宝物。",
+    "Name": "凝魂符咒",
     "ResourceType": 2,
     "Effects": [
       {
@@ -392,8 +392,8 @@
   {
     "ResourceId": 21,
     "IsInherit": true,
-    "Desc": "鬼气物品中级",
-    "Name": "鬼气物品中级",
+    "Desc": "风水宝地上尸变的尸体，长年吸收灵气却蕴而不发。",
+    "Name": "血尸",
     "ResourceType": 2,
     "Effects": [
       {
@@ -411,8 +411,8 @@
   {
     "ResourceId": 22,
     "IsInherit": true,
-    "Desc": "鬼气物品中级",
-    "Name": "鬼气物品中级",
+    "Desc": "含恨而死的帝王灵魂，百炼成晶。不但阴气旺盛，而且具有强盛的帝王之力。",
+    "Name": "帝王魂晶",
     "ResourceType": 2,
     "Effects": [
       {
@@ -430,8 +430,8 @@
   {
     "ResourceId": 23,
     "IsInherit": true,
-    "Desc": "鬼气物品高级",
-    "Name": "鬼气物品高级",
+    "Desc": "传说彼岸花是开放在奈何桥彼端的花朵，本是稀罕之物。而阴阳彼岸花更是只有在天地阴阳交汇之处，才有极低概率生长而出。",
+    "Name": "阴阳彼岸花",
     "ResourceType": 2,
     "Effects": [
       {
@@ -449,8 +449,8 @@
   {
     "ResourceId": 24,
     "IsInherit": true,
-    "Desc": "妖气物品初级",
-    "Name": "妖气物品初级",
+    "Desc": "在碧蓝之森深处才能采集到的灵气。",
+    "Name": "玄木灵气",
     "ResourceType": 2,
     "Effects": [
       {
@@ -468,8 +468,8 @@
   {
     "ResourceId": 25,
     "IsInherit": true,
-    "Desc": "妖气物品初级",
-    "Name": "妖气物品初级",
+    "Desc": "幻蝶是一种可以让人沉迷如梦的妖蝶，世间罕见。",
+    "Name": "幻蝶翅膀",
     "ResourceType": 2,
     "Effects": [
       {
@@ -487,8 +487,8 @@
   {
     "ResourceId": 26,
     "IsInherit": true,
-    "Desc": "妖气物品中级",
-    "Name": "妖气物品中级",
+    "Desc": "寿命超过千年的妖兽心脏。",
+    "Name": "千年兽心",
     "ResourceType": 2,
     "Effects": [
       {
@@ -506,8 +506,8 @@
   {
     "ResourceId": 27,
     "IsInherit": true,
-    "Desc": "妖气物品中级",
-    "Name": "妖气物品中级",
+    "Desc": "古代神话中的神兽獬豸之骨，此物只存在于传说中却无人见过。",
+    "Name": "獬豸妖骨",
     "ResourceType": 2,
     "Effects": [
       {
@@ -525,8 +525,8 @@
   {
     "ResourceId": 28,
     "IsInherit": true,
-    "Desc": "妖气物品高级",
-    "Name": "妖气物品高级",
+    "Desc": "神兽凤凰的精血，蕴藏着世间最高品质的妖灵之力。",
+    "Name": "凤凰精血",
     "ResourceType": 2,
     "Effects": [
       {
@@ -544,8 +544,8 @@
   {
     "ResourceId": 29,
     "IsInherit": true,
-    "Desc": "仙力物品初级",
-    "Name": "仙力物品初级",
+    "Desc": "世间唯一能让冰火共存的神水，是仙家炼制丹药梦寐以求的圣品。",
+    "Name": "冰火泉水",
     "ResourceType": 2,
     "Effects": [
       {
@@ -563,8 +563,8 @@
   {
     "ResourceId": 30,
     "IsInherit": true,
-    "Desc": "仙力物品初级",
-    "Name": "仙力物品初级",
+    "Desc": "来历不明的手环，深黑色的环体上隐约可见一只魔鲸缓缓流动。",
+    "Name": "昊天手环",
     "ResourceType": 2,
     "Effects": [
       {
@@ -582,8 +582,8 @@
   {
     "ResourceId": 31,
     "IsInherit": true,
-    "Desc": "仙力物品中级",
-    "Name": "仙力物品中级",
+    "Desc": "曾经用以镇压鬼道巨恶的上品仙器，千年前善恶之战后不知所踪。",
+    "Name": "诛邪剑",
     "ResourceType": 2,
     "Effects": [
       {
@@ -601,8 +601,8 @@
   {
     "ResourceId": 32,
     "IsInherit": true,
-    "Desc": "仙力物品中级",
-    "Name": "仙力物品中级",
+    "Desc": "蕴含雷劫之力的种子，仅仅是看着就能感受到其中散发的毁灭气息。",
+    "Name": "凌霄雷种",
     "ResourceType": 2,
     "Effects": [
       {
@@ -620,8 +620,8 @@
   {
     "ResourceId": 33,
     "IsInherit": true,
-    "Desc": "仙力物品高级",
-    "Name": "仙力物品高级",
+    "Desc": "由三清之气炼制而成，即使放在飞升之人手中也非常珍贵的修炼至宝。",
+    "Name": "混元金丹",
     "ResourceType": 2,
     "Effects": [
       {
@@ -639,8 +639,8 @@
   {
     "ResourceId": 34,
     "IsInherit": true,
-    "Desc": "佛光物品初级",
-    "Name": "佛光物品初级",
+    "Desc": "佛家密藏，菩萨宣说佛祖圆觉的妙理和观行方法。",
+    "Name": "圆觉经",
     "ResourceType": 2,
     "Effects": [
       {
@@ -658,8 +658,8 @@
   {
     "ResourceId": 35,
     "IsInherit": true,
-    "Desc": "佛光物品初级",
-    "Name": "佛光物品初级",
+    "Desc": "佛陀飞升前坐禅的蒲团，座上可悟佛家至理。",
+    "Name": "玉净蒲团",
     "ResourceType": 2,
     "Effects": [
       {
@@ -677,8 +677,8 @@
   {
     "ResourceId": 36,
     "IsInherit": true,
-    "Desc": "佛光物品中级",
-    "Name": "佛光物品中级",
+    "Desc": "传说曾是佛祖手握的念珠，每日受佛祖佛法熏陶，产生了灵性。",
+    "Name": "凝光念珠",
     "ResourceType": 2,
     "Effects": [
       {
@@ -696,8 +696,8 @@
   {
     "ResourceId": 37,
     "IsInherit": true,
-    "Desc": "佛光物品中级",
-    "Name": "佛光物品中级",
+    "Desc": "佛陀圆寂时体内留下的舍利，蕴含佛陀毕生佛法精华。",
+    "Name": "佛舍利",
     "ResourceType": 2,
     "Effects": [
       {
@@ -715,8 +715,8 @@
   {
     "ResourceId": 38,
     "IsInherit": true,
-    "Desc": "佛光物品高级",
-    "Name": "佛光物品高级",
+    "Desc": "佛道不传之秘，观此书者，可果满成佛。",
+    "Name": "无量寿经",
     "ResourceType": 2,
     "Effects": [
       {

@@ -27,9 +27,9 @@ namespace Roots
 		{
 			mData = uiData as UIGamePanelData ?? new UIGamePanelData();
             // please add init code here
-            //背包
+            //????
             //
-            //弹窗
+            //????
             //DragAndDrop
             //
 			//Item.GetComponent<DragAndDrop>().OnBeginDrag.AddListener(() => { })
@@ -56,13 +56,13 @@ namespace Roots
 					if (e.Character == GameSystem.MainCharacter)
 					{
 						GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
-						gl.Text.text = gameEvent.Desc;
+						gl.Text.text = e.Character.Name + gameEvent.Desc;
 					}
 					else
 					{
 						GameLog gl = Instantiate(GameLogPrefab, EventCalender.Content.transform);
 						gl.Text.color = Color.gray;
-						gl.Text.text = "你的某位子孙" + gameEvent.Desc;
+						gl.Text.text = e.Character.Name + gameEvent.Desc;
 					}
 
 					EventExecutor.Instance.EventExecute(e.Character,gameEvent);

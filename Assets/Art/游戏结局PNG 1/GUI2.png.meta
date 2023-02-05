@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0ad0e844141b664e907ff3aa41fb0f8
+guid: f05893b1b05124e4fb6047a02ef3bf4a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,5 +119,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: resource_42_png
+  assetBundleName: gui2_png
   assetBundleVariant: 
