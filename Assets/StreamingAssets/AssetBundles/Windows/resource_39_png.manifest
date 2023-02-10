@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2713231455
+CRC: 3064764217
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Res/resource/resource_39.png
+- Assets/Resources/resource/resource_39.png
 Dependencies: []

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1867636220
+CRC: 1082494861
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Res/ending/PuTong.png
+- Assets/Resources/ending/PuTong.png
 Dependencies: []
